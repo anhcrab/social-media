@@ -1,0 +1,59 @@
+.btn-logo {
+  border: 1px solid #dedede;
+}
+
+.btn-logo:hover {
+  border: 1px solid #c1e1fb;
+}
+.hide {
+  display: none;
+}
+
+.sub-logo {
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 3px;
+  padding: 6px 10px;
+}
+
+.sub-logo::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 8px;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #333;
+}
+
+.sub-add {
+  position: absolute;
+  top: 7px;
+  left: 20px;
+  width: 137px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 3px;
+  padding: 6px 10px;
+}
+
+.sub-add::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 8px;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #333;
+}
+
+//test
+
