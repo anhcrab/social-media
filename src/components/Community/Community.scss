@@ -1,0 +1,35 @@
+* {
+    background-color: #f5f3ff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    text-decoration: none;
+    list-style-type: none;
+    list-style: none;
+}
+
+.comm-wrapper {
+    position: relative;
+}
+
+//Desktop
+@media only screen and (min-width: 1025px) {
+    .comm-wrapper {
+        position: relative;
+    }
+}
+
+//Ipad Pro
+@media only screen and (max-width: 1024px) and (min-width: 415px) {
+    .comm-wrapper {
+        position: relative;
+    }
+}
+
+//Iphone 8+ 
+@media only screen and (max-width: 414px) {
+    .comm-wrapper {
+        position: relative;
+    }
+}

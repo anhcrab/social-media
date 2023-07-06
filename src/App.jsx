@@ -1,6 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import HomePage from "./pages/HomePage"
 import PersonalPage from "./pages/PersonalPage"
+import CommunityTemplate from "./pages/CommunityTemplate"
 
 
 const App = () => {
@@ -17,7 +18,8 @@ const App = () => {
   ])
 
   return(
-    <RouterProvider router={router} />
+    // <RouterProvider router={router} />
+    <CommunityTemplate />
   )
 }
 

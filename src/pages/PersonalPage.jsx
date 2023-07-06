@@ -1,4 +1,10 @@
 
-const PersonalPage = () => {}
+const PersonalPage = () => {
+    return(
+        <>
+            
+        </>
+    )
+}
 
 export default PersonalPage
