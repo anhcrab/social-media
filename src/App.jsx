@@ -11,7 +11,7 @@ const App = () => {
       element: <HomePage />
     },
     {
-      path: '/app/',
+      path: '/app/discovery',
       element: <PersonalPage />
     }
   ])
