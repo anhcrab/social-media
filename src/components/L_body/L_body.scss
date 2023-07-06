@@ -1,0 +1,157 @@
+.z-index {
+  z-index: 10000;
+}
+.trust-text {
+  margin-top: 3.5rem;
+  font-size: 1.3rem;
+  color: #a2a2a2;
+  letter-spacing: -1px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.big-img {
+  margin-left: -1.9rem;
+  width: 86vw;
+  position: relative;
+  z-index: 0;
+}
+.mobile-img {
+  margin-top: -32.5rem;
+  margin-left: 61.5rem;
+  width: 20vw;
+  position: absolute;
+  z-index: 0;
+}
+.commu {
+  width: 38rem;
+  display: flex;
+  justify-content: space-between;
+}
+.commu1 {
+  width: 6rem;
+  height: 2rem;
+}
+.commu2 {
+  width: 5rem;
+  height: 2rem;
+}
+.commu3 {
+  width: 2.13rem;
+  height: 1.7rem;
+}
+.commu4 {
+  width: 8.3rem;
+  height: 1.8rem;
+}
+
+.please-icon {
+  width: 7.2rem;
+  margin-top: 8rem;
+  margin-left: 12rem;
+}
+.work-text {
+  margin-left: -1.6rem;
+  margin-top: -1rem;
+  margin-bottom: 4rem;
+  font-size: 3.55rem;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.hover-part {
+  background-color: #a2a2a2;
+  margin-bottom: 10rem;
+}
+.support-text {
+  margin-left: -1.6rem;
+  margin-top: -1rem;
+  margin-bottom: 8rem;
+  font-size: 3.55rem;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.coin-icon {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+}
+.coin-icon-s {
+  width: 8rem;
+}
+.coin-icon-d {
+  width: 8rem;
+  height: 4.5rem;
+  margin-top: 1rem;
+}
+.coin-icon-d-1 {
+  margin-top: 1.5rem;
+  width: 8rem;
+  height: 2.9rem;
+}
+.color-container {
+  background-color: #fecb03;
+}
+.color-container-header {
+  display: flex;
+}
+.vector {
+  margin-top: 19rem;
+}
+.diff-text {
+  font-size: 4.3rem;
+  width: 35rem;
+  color: #000;
+  font-weight: 1000;
+  text-align: center;
+  font-family: sans-serif;
+  position: relative;
+  margin-left: 8rem;
+  margin-top: 7rem;
+}
+.underline {
+  margin-top: 23rem;
+  margin-left: 26.4rem;
+  width: 23.5rem;
+  height: 4rem;
+  position: absolute;
+  z-index: 0;
+}
+.gif {
+  margin-left: 2rem;
+  margin-top: 10rem;
+  width: 46.9rem;
+}
+.pc {
+  margin-left: 8rem;
+  fill: aliceblue;
+  margin-top: 8rem;
+  width: 2.6rem;
+}
+
+.pc-title {
+  width: 30rem;
+  margin-left: 8rem;
+  font-size: 4rem;
+  color: #fff;
+  font-weight: bold;
+  line-height: 4.9rem;
+}
+.pc-text {
+  color: #fff;
+  width: 32rem;
+  margin-left: 8rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.read-more {
+  width: 8rem;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  height: 2.8rem;
+  border-radius: 20px;
+  margin-top: 1.4rem;
+  margin-left: 8rem;
+}
+.read-more:hover {
+  background-color: #000000bb;
+}

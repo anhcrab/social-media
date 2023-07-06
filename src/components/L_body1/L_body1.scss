@@ -1,0 +1,90 @@
+.contain {
+  width: 100%;
+  height: 1200000px;
+}
+.div {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #1cd8d2, #93edc7);
+  color: white;
+  margin: 100px;
+  border-radius: 50px;
+}
+// [data-aos="new-animation"] {
+//   opacity: 0;
+//   transition-property: transform, opacity;
+
+//   &.aos-animate {
+//     opacity: 1;
+//   }
+
+//   @media screen and (min-width: 768px) {
+//     transform: translateY(0px);
+//     transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+//     &.aos-animate {
+//       transform: translateY(110px);
+//     }
+//   }
+// }
+header {
+  padding: 0px;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  background: #fff;
+  z-index: 1000;
+}
+
+header .logo img {
+  width: 300px;
+  transition: all linear 0.5s;
+}
+header .logo1 img {
+  width: 300px;
+  transition: all linear 0.5s;
+}
+header .logo2 img {
+  width: 300px;
+  transition: all linear 0.5s;
+}
+header .logo3 img {
+  width: 300px;
+  transition: all linear 0.5s;
+}
+
+header.fixed-header .logo img {
+  width: 100px;
+  margin-top: 30rem;
+}
+header.fixed-header .logo1 img {
+  width: 100px;
+  margin-top: 20rem;
+  margin-right: 10rem;
+}
+header.fixed-header .logo2 img {
+  width: 100px;
+  margin-top: 15rem;
+  margin-left: 3rem;
+}
+header.fixed-header .logo3 img {
+  width: 100px;
+  margin-top: 10rem;
+  margin-right: 30rem;
+}
+header.fixed-header1 .logo3 img {
+  width: 100px;
+  margin-top: 20rem;
+  margin-right: 30rem;
+}
+header.fixed-header2 .logo3 img {
+  width: 100px;
+  margin-top: 30rem;
+  margin-right: 30rem;
+}
+.box-height {
+  height: 500px;
+}

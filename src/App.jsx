@@ -1,24 +1,16 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom"
-import HomePage from "./pages/HomePage"
-import PersonalPage from "./pages/PersonalPage"
-
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import L_header from "./components/L_header/L_header";
+import L_body from "./components/L_body/L_body";
 
 const App = () => {
-
   const router = createBrowserRouter([
     {
-      path: '/',
-      element: <HomePage />
+      path: "/",
+      element: <L_body />,
     },
-    {
-      path: '/app/',
-      element: <PersonalPage />
-    }
-  ])
+  ]);
 
-  return(
-    <RouterProvider router={router} />
-  )
-}
+  return <RouterProvider router={router} />;
+};
 
-export default App
+export default App;
