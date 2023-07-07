@@ -1,13 +1,122 @@
 import "./DiscoveryBodyNo2.scss";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import communities from "../../data/communities.js";
 import Item from "../Items/Item";
 import Lesson from "../Items/Lesson";
 import lessons from "../../data/lessons.js";
+import { Context } from "../Discovery/Discovery";
 
 const DiscoveryBodyNo2 = () => {
-  const [show, setShow] = useState("body2btn1");
   const [limit, setLimit] = useState(8);
+  const { navi, setNavi, show, setShow } = useContext(Context);
+
+  const useNavi = () => {
+    if (navi === "btn1") {
+      return (
+        <>
+          <Item communities={communities} />
+        </>
+      );
+    }
+    if (navi === "btn2") {
+      return (
+        <>
+          <Item communities={communities} />
+        </>
+      );
+    }
+    if (navi === "btn3") {
+      const arr = [];
+      communities.forEach((community) => {
+        if (community.communityType.includes("🌍 DAOs")) {
+          arr.push(community);
+        }
+      });
+      return (
+        <>
+          <Item communities={arr} />
+        </>
+      );
+    }
+    if (navi === "btn4") {
+      const arr = [];
+      communities.forEach((community) => {
+        if (community.communityType.includes("🌁 NFT Community")) {
+          arr.push(community);
+        }
+      });
+      return (
+        <>
+          <Item communities={arr} />
+        </>
+      );
+    }
+    if (navi === "btn5") {
+      const arr = [];
+      communities.forEach((community) => {
+        if (community.communityType.includes("✨ Content Creator")) {
+          arr.push(community);
+        }
+      });
+      return (
+        <>
+          <Item communities={arr} />
+        </>
+      );
+    }
+    if (navi === "btn6") {
+      const arr = [];
+      communities.forEach((community) => {
+        if (community.communityType.includes("🎮 Gaming Community")) {
+          arr.push(community);
+        }
+      });
+      return (
+        <>
+          <Item communities={arr} />
+        </>
+      );
+    }
+    if (navi === "btn7") {
+      const arr = [];
+      communities.forEach((community) => {
+        if (community.communityType.includes("👥 Social")) {
+          arr.push(community);
+        }
+      });
+      return (
+        <>
+          <Item communities={arr} />
+        </>
+      );
+    }
+    if (navi === "btn8") {
+      const arr = [];
+      communities.forEach((community) => {
+        if (community.communityType.includes("🔧 Protocol")) {
+          arr.push(community);
+        }
+      });
+      return (
+        <>
+          <Item communities={arr} />
+        </>
+      );
+    }
+    if (navi === "btn9") {
+      const arr = [];
+      communities.forEach((community) => {
+        if (community.communityType.includes("🔍 Others")) {
+          arr.push(community);
+        }
+      });
+      return (
+        <>
+          <Item communities={arr} />
+        </>
+      );
+    }
+  };
 
   return (
     <>
@@ -80,68 +189,9 @@ const DiscoveryBodyNo2 = () => {
               ⚡ P️roposal
             </button>
           </div>
-
-          <div className="discoverybodyno2-wrap-items">
-            <div className="discoverybodyno2-wrap-items-community">
-              <button className="discoverybodyno2-wrap-add-community">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                  width="20"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M12 4.5v15m7.5-7.5h-15"
-                  ></path>
-                </svg>
-                <span className="discoverybodyno2-wrap-add-community-text">
-                  Add your community
-                </span>
-              </button>
-
-              {communities.map((community) => {
-                return (
-                  <Item
-                    community={community}
-                    disable={community.communityId <= limit ? false : true}
-                  />
-                );
-              })}
-            </div>
-            <button
-              onClick={() => {
-                if (limit + 6 == 20) {
-                  document
-                    .querySelector(".discoverybodyno2-wrap-item-loadmore")
-                    .classList.add("hide");
-                }
-                setLimit(limit + 6);
-              }}
-              className="discoverybodyno2-wrap-item-loadmore"
-            >
-              Load more
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="currentColor"
-                aria-hidden="true"
-                width="10"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                ></path>
-              </svg>
-            </button>
-          </div>
+          
+          {useNavi()}
+          
         </div>
       </div>
 

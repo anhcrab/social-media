@@ -1,11 +1,9 @@
-import DiscoveryBodyNo1 from "../components/DiscoveryBodyNo1/DiscoveryBodyNo1";
-import DiscoveryBodyNo2 from "../components/DiscoveryBodyNo2/DiscoveryBodyNo2";
+import Discovery from "../components/Discovery/Discovery";
 
 const DiscoveryPage = () => {
     return(
         <>
-            <DiscoveryBodyNo1/>
-            <DiscoveryBodyNo2/>
+            <Discovery/>
         </>
     )
 }
