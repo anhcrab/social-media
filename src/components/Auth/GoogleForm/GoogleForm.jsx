@@ -10,7 +10,7 @@ export default function GoogleForm() {
           onSuccess={credentialResponse => {
             const details = jwt_decode(credentialResponse.credential);
             console.log(details.family_name + " " + details.given_name);
-            window.localStorage.setItem("username", details.family_name + " " + details.given_name);
+            window.sessionStorage.setItem("username", details.family_name + " " + details.given_name);
             window.location.href ="/app"
           }}
           onError={() => {

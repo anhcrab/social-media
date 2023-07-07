@@ -3,11 +3,12 @@ import Plus from "../../asset/img/add.png";
 import "./SideBar.scss";
 import { useState } from "react";
 import { useEffect } from "react";
+import HaveLogin from "./Login/HaveLogin";
+import HaveLogout from "./Logout/HaveLogout";
 
 export default function SideBar() {
   const [showBox, setShowBox] = useState(false);
   const [showBox1, setShowBox1] = useState(false);
-  const [showBox2, setShowBox2] = useState(false);
 
   const [checkAccount, setCheckAccount] = useState("");
   const handleMouseEnter = () => {
@@ -26,20 +27,26 @@ export default function SideBar() {
     setShowBox1(false);
   };
 
-  const handleMouseEnter2 = () => {
-    setShowBox2(true);
-  };
-
-  const handleMouseLeave2 = () => {
-    setShowBox2(false);
-  };
-
   useEffect(() => {
-    const data = window.localStorage.getItem("username");
+    const data = window.sessionStorage.getItem("username");
     setCheckAccount(data);
     //window.localStorage.clear();
   }, []);
 
+  function abs() {
+    if (checkAccount != null) {
+      console.log(checkAccount);
+      return (
+        <>
+          <div style={{ position: "absolute", bottom: "5%" }}>
+            <HaveLogout></HaveLogout>
+          </div>
+        </>
+      );
+    } else {
+      return <HaveLogin></HaveLogin>;
+    }
+  }
   return (
     <>
       <div
@@ -108,39 +115,7 @@ export default function SideBar() {
           )}
         </div>
 
-        {console.log(checkAccount)}
-        <form
-          action="/auth/login"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            position: "absolute",
-            bottom: "1%",
-            width: "100%",
-          }}
-        >
-          <button style={{ background: "transparent", border: "none" }}>
-            <div
-              onMouseEnter={handleMouseEnter2}
-              onMouseLeave={handleMouseLeave2}
-              className="btn-logo"
-              style={{ borderRadius: "7px" }}
-            >
-              <i
-                className="bi bi-box-arrow-in-left"
-                style={{ fontSize: "1.4rem", padding: "2px 7px" }}
-              ></i>
-            </div>
-          </button>
-
-          {showBox2 && (
-            <div style={{ position: "relative" }}>
-              <div className="sub-login">
-                <span>Login</span>
-              </div>
-            </div>
-          )}
-        </form>
+        {abs()}
       </div>
     </>
   );
