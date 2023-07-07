@@ -1,32 +1,74 @@
 //Desktop
 @media only screen and (min-width: 1025px) {
+    .comm-sidebar-wrapper {
+        width: 100%;
+        position: relative;
+        margin-top: 20px;
+    }
+
     .comm-side-bar-container {
         width: 100%;
-        max-width: 100%;
-        position: sticky;
+        position: relative;
         top: 0px;
-        display: grid;
-        align-self: flex-start;
+        padding-left: 8px;
+        padding-right: 16px;
     }
 
     .comm-sidebar-main-container {
         border: 1px solid rgb(244, 242, 242);
         border-radius: 20px;
-        width: 300px;
-        max-width: 300px;
         background: white;
         object-fit: cover;
-        position: sticky;
-        top: 0px;
-        margin-top: 20px;
     }
 
     .comm-sidebar-top {
         position: relative;
-        margin-bottom: 2rem;
+        height: 132px;
         background: white;
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
+    }
+
+    .comm-sidebar-background {
+        width: 100%;
+    }
+
+    .comm-sidebar-bg {
+        width: 100%;
+        height: 84px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+    }
+
+    .comm-sidebar-bg-cover {
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+        height: 84px;
+        position: absolute;
+        width: 100%;
+        top: 0;
+    }
+
+    .comm-sidebar-logo {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        position: absolute;
+        top: 40%;
+        left: 7%;
+        background-color: transparent;
+    }
+
+    .comm-sidebar-name {
+        background-color: transparent;
+        text-shadow: rgba(0, 0, 0, 0.24) 0px 0px 1px;
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        color: white;
+        font-weight: bold;
+        font-size: 1.3rem;
     }
 }
 

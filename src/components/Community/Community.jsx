@@ -8,19 +8,34 @@ import './Community.scss'
 export const context = createContext()
 
 const Community = (props) => {
-    const [active, setActive] = useState('overview')
+    const [active, setActive] = useState('Overview')
     const { community } = props
     return (
         <context.Provider value={({ active, setActive, community })} >
-            <div className="comm-wrapper row">
-                <div className="col-lg-2"></div>
-                <div className="col-lg-8">
-                    <div className="row">
+            <div
+                className="comm-wrapper"
+                style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    width: '100%',
+                }}
+            >
+                <div style={{
+                    width: '1150px',
+                    display: 'flex',
+                }}
+                >
+                    <div style={{
+                        width: '30%',
+                    }}>
                         <CommunitySideBar />
-                        <CommunityMainContent />
+                    </div>
+                    <div style={{
+                        width: '70% ',
+                    }}>
+                       <CommunityMainContent />
                     </div>
                 </div>
-                <div className="col-lg-2"></div>
                 {/* <ChatBox /> */}
             </div>
         </context.Provider>

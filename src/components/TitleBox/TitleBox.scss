@@ -1,0 +1,21 @@
+//Desktop
+@media only screen and (min-width: 1025px) {
+    .comm-box-wrapper {
+        padding-left: 20px;
+        height: 54px;
+        display: flex;
+        background: white;
+        flex-direction: row;
+        align-items: center;
+        border: 1px solid rgb(244, 242, 242);
+        box-shadow: rgba(132, 148, 160, 0.12) 0px 4px 16px;
+        border-radius: 16px;
+        position: relative;
+    }
+}
+
+//Ipad Pro
+@media only screen and (max-width: 1024px) and (min-width: 415px) {}
+
+//Iphone 8+ 
+@media only screen and (max-width: 414px) {}
