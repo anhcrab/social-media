@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "./L_header.scss";
+import L_body from "../L_body/L_body";
 import Logo from "../../assets/pic/Logo.png";
 export default function L_header() {
   return (
@@ -34,25 +35,29 @@ export default function L_header() {
             </label>
             {/* For iphone */}
 
-            <button className="product_btn iphone-none">
+            <button className="product_btn iphone-none" href="#">
               <p className="menu-text">Product</p>
             </button>
             <button className="user_cases_btn iphone-none">
               <p className="menu-text">Use Cases</p>
             </button>
-            <button className="user_cases_btn iphone-none">
-              <p className="menu-text">ROBIN AI</p>
-            </button>
+            <a href="https://www.robinai.xyz/">
+              <button className="user_cases_btn iphone-none">
+                <p className="menu-text">ROBIN AI</p>
+              </button>
+            </a>
           </div>
           <div className="col-0 col-lg-0 col-xl-3"></div>
           <div className="col-2 col-lg-3 col-xl-3">
-            <button className="try-btn iphone-none">
+            <a
+              className="try-btn iphone-none"
+              href="https://manager.daolens.com/app/discovery"
+            >
               <p className="menu-text-try">Try DAO Manager</p>
-            </button>
+            </a>
           </div>
         </div>
       </div>
-
       <div className="col-0 col-lg-1 col-xl-1"></div>
     </header>
   );

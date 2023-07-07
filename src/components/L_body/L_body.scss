@@ -90,6 +90,7 @@
   background-color: #fecb03;
 }
 .color-container-header {
+  z-index: 0;
   display: flex;
 }
 .vector {
@@ -115,20 +116,34 @@
   z-index: 0;
 }
 .gif {
+  z-index: 0;
   margin-left: 2rem;
   margin-top: 10rem;
   width: 46.9rem;
 }
 .pc {
-  margin-left: 8rem;
+  margin-left: 6rem;
   fill: aliceblue;
   margin-top: 8rem;
   width: 2.6rem;
 }
-
+.pc-link {
+  margin-left: 6rem;
+  fill: aliceblue;
+  margin-top: 12rem;
+  width: 2.6rem;
+}
 .pc-title {
   width: 30rem;
-  margin-left: 8rem;
+  margin-left: 6rem;
+  font-size: 4rem;
+  color: #fff;
+  font-weight: bold;
+  line-height: 4.9rem;
+}
+.link-title {
+  width: 37rem;
+  margin-left: 6rem;
   font-size: 4rem;
   color: #fff;
   font-weight: bold;
@@ -137,7 +152,7 @@
 .pc-text {
   color: #fff;
   width: 32rem;
-  margin-left: 8rem;
+  margin-left: 6rem;
   font-size: 1.2rem;
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -148,10 +163,65 @@
   background-color: #000;
   border: none;
   height: 2.8rem;
-  border-radius: 20px;
+  border-radius: 50px;
   margin-top: 1.4rem;
-  margin-left: 8rem;
+  margin-left: 6rem;
+  margin-bottom: 25rem;
 }
 .read-more:hover {
   background-color: #000000bb;
+}
+.elem {
+  z-index: 0;
+  margin-top: 35rem !important;
+  right: 0;
+  position: absolute;
+  background-color: #fd4900;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  animation: moveToLeft 2s ease-in-out;
+  animation-delay: 500ms;
+}
+
+@keyframes moveToLeft {
+  0% {
+    right: 0;
+    transform: translateY(0px);
+  }
+  100% {
+    right: -1;
+    z-index: -0.9;
+    transform: translateY(0px);
+    border-radius: 0;
+    width: 100vw;
+    height: 1600px;
+    background-color: linear-gradient(120deg, #fd4900, #fd4900);
+  }
+}
+.glass-part {
+  margin-top: 10rem;
+  margin-bottom: 8rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.glass-icon {
+  height: 3.65rem;
+  margin-left: -7rem;
+}
+.way-text {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: -1.9rem;
+  line-height: 6.7rem;
+  margin-left: 27.5rem;
+  font-weight: bold;
+  width: 40rem;
+  font-size: 5rem;
+}
+.way-under {
+  width: 27rem;
+  margin-top: -1.8rem;
 }
