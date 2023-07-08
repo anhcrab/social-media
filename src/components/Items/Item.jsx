@@ -1,5 +1,9 @@
 import NavCommunity from "../NavCommunity/NavCommunity";
 import NavBounty from "../NavBounty/NavBounty";
+import NavDiscussions from "../NavDiscussions/NavDiscussions";
+import NavCourse from "../NavCourse/NavCourse";
+import NavEvent from "../NavEvent/NavEvent";
+import NavProposal from "../NavProposal/NavProposal";
 import { useContext } from "react";
 import { Context } from "../Discovery/Discovery";
 
@@ -9,38 +13,22 @@ const Item = (props) => {
 
   const useSelect = () => {
     if (show === "body2btn1") {
-      return communities.map((community) => {
-        return <NavCommunity community={community} />;
-      });
+      return <NavCommunity communities={communities} />;
     }
     if (show === "body2btn2") {
-      return communities.map((community) => {
-        return (
-          community.bounty.map((bounti)=>{
-            <NavBounty bounty={bounti} />
-          })
-        )
-      });
+      return <NavBounty/>;
     }
     if (show === "body2btn3") {
-      return communities.map((community) => {
-        return <NavDiscussions community={community} />;
-      });
+      return <NavDiscussions/>;
     }
     if (show === "body2btn4") {
-      return communities.map((community) => {
-        return <NavCourse community={community} />;
-      });
+      return <NavCourse/>;
     }
     if (show === "body2btn5") {
-      return communities.map((community) => {
-        return <NavEvent community={community} />;
-      });
+      return <NavEvent/>;
     }
     if (show === "body2btn6") {
-      return communities.map((community) => {
-        return <NavProposal community={community} />;
-      });
+      return <NavProposal/>;
     }
   };
 

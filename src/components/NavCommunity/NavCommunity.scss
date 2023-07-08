@@ -14,7 +14,7 @@
     grid-template-columns: repeat(3, minmax(0px, 1fr));
 }
 
-.discoverybodyno2-wrap-add-community {
+.discoverybodyno2-wrap-community {
     background: rgb(239, 246, 255);
     display: flex;
     flex-direction: column;
@@ -203,4 +203,13 @@
     color: rgb(107, 114, 128);
     font-size: 14px;
     line-height: 20px;
+}
+
+@media screen and (max-width: 420px) {
+    .discoverybodyno2-wrap-items-community {
+        grid-template-columns: repeat(1, minmax(0px, 1fr));
+    }
+    .discoverybodyno2-wrap-big {
+        overflow: hidden;
+    }
 }

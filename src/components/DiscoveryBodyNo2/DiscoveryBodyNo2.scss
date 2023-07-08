@@ -27,3 +27,14 @@
     color: #8C5BFE;
     border-bottom: 1px solid #8C5BFE;
 }
+
+@media screen and (max-width: 420px) {
+    .discoverybodyno2-wrap-bottom-item {
+        display: block !important;
+        overflow-x: hidden !important;
+    }
+    .discoverybodyno2-wrap-bottom-item-lessons {
+        width: 100% !important;
+        margin-bottom: 10px !important;
+    }
+}
