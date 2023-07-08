@@ -53,6 +53,7 @@ const Communities = () => {
               </div>
               <div className="card-border"></div>
             </a>
+            
           </div>
           <div className="div-block"></div>
         </div>

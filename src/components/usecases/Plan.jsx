@@ -359,7 +359,7 @@ const Plan = () => {
                   <div className="checkmark-holder">
                     <img src={checkicon} alt="" />
                   </div>
-                  <div className="pricing-card-borders remove-right-border"></div>
+                 
                 </div>
                 <div className="tabel-checkmark-holder">
                   <div className="checkmark-holder">
