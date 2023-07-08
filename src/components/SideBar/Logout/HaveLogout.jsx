@@ -1,12 +1,19 @@
 import "./HaveLogout.scss";
 import UserLogo from "../../../asset/img/UserLogo.png";
 import { useEffect, useState } from "react";
+import SearchBar from "../../Search/Search";
+import Notification from "../../Notification/Notification";
+
 export default function HaveLogout() {
   const [showBox, setShowBox] = useState(false);
   const [showBox2, setShowBox2] = useState(false);
   const [showBox3, setShowBox3] = useState(false);
 
-  const [checkingAccount, setCheckingAccount] = useState(true)
+  const [checkingAccount, setCheckingAccount] = useState(true);
+
+  const [search, setSearch] = useState(false);
+  const [noti, setNoti] = useState(false);
+
   const handleMouseEnter = () => {
     setShowBox(true);
   };
@@ -30,14 +37,12 @@ export default function HaveLogout() {
     setShowBox3(false);
   };
 
-  useEffect(() =>{
-
-  },[checkingAccount])
+  useEffect(() => {}, [checkingAccount]);
 
   function logoutAccount() {
     window.sessionStorage.clear();
     setCheckingAccount(false);
-    window.location.reload( )
+    window.location.reload();
   }
   return (
     <>
@@ -59,7 +64,12 @@ export default function HaveLogout() {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              <i className="bi bi-search logout-btn"></i>
+              <i
+                className="bi bi-search logout-btn"
+                onClick={() => {
+                  setSearch(!search);
+                }}
+              ></i>
             </button>
             {showBox && (
               <div style={{ position: "relative" }}>
@@ -78,23 +88,52 @@ export default function HaveLogout() {
               style={{ border: "none", background: "none" }}
               onMouseEnter={handleMouseEnter2}
               onMouseLeave={handleMouseLeave2}
+              onClick={() => {
+                setNoti(!noti);
+              }}
             >
               <i className="bi bi-bell-fill logout-btn"></i>
             </button>
+            <div
+              style={{
+                position: "absolute",
+                width: "10px",
+                height: "10px",
+                top: "-15px",
+                right: "-2px",
+              }}
+            >
+              <span
+                style={{
+                  borderRadius: "50%",
+                  backgroundColor: "blue",
+                  padding: "0 5px",
+                  paddingBottom: "3px",
+                  color: "#fff",
+                  fontSize: "0.8rem",
+                }}
+              >
+                o
+              </span>
+            </div>
+
             {showBox2 && (
-              <div style={{ position: "relative" }}>
-                <div className="sub-noti">
-                  <span>Notifications</span>
+              <>
+                <div style={{ position: "relative" }}>
+                  <div className="sub-noti">
+                    <span>Notifications</span>
+                  </div>
                 </div>
-              </div>
+              </>
             )}
           </div>
 
           <div className="" style={{ margin: "10px 0", position: "relative" }}>
             <button
               style={{ border: "none", background: "none" }}
-              onClick={handleMouseEnter3}
+              onMouseEnter={handleMouseEnter3}
               onMouseOver={handleMouseLeave3}
+              onClick={handleMouseEnter3}
             >
               <img src={UserLogo} alt="" className="logout-image" />
               <div className="sub-user-block"></div>
@@ -115,7 +154,12 @@ export default function HaveLogout() {
                     ></i>
                     <span style={{ color: "#333" }}>My Profile</span>
                   </div>
-                  <div className="logout-btns" onClick={() => {logoutAccount()}}>
+                  <div
+                    className="logout-btns"
+                    onClick={() => {
+                      logoutAccount();
+                    }}
+                  >
                     <i
                       className="bi bi-box-arrow-left"
                       style={{ marginRight: "3px", color: "red" }}
@@ -127,6 +171,14 @@ export default function HaveLogout() {
             )}
           </div>
         </div>
+      </div>
+
+      <div style={{ position: "relative" }}>
+        {search && <SearchBar value={search} setValue={setSearch}></SearchBar>}
+      </div>
+
+      <div style={{ position: "relative" }}>
+        {noti && <Notification value={noti} setValue={setNoti}></Notification>}
       </div>
     </>
   );

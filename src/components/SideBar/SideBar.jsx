@@ -11,6 +11,7 @@ export default function SideBar() {
   const [showBox1, setShowBox1] = useState(false);
 
   const [checkAccount, setCheckAccount] = useState("");
+
   const handleMouseEnter = () => {
     setShowBox(true);
   };
@@ -47,6 +48,7 @@ export default function SideBar() {
       return <HaveLogin></HaveLogin>;
     }
   }
+
   return (
     <>
       <div
@@ -82,6 +84,9 @@ export default function SideBar() {
               style={{ width: "18px", cursor: "pointer" }}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
+              onClick={() => {
+                window.location.href = "/app/";
+              }}
             ></img>
           </button>
           {showBox && (
@@ -97,6 +102,9 @@ export default function SideBar() {
           <button
             style={{ background: "transparent", border: "none" }}
             className="btn-add"
+            onClick={() => {
+              window.location.href = "/app/onboarding";
+            }}
           >
             <img
               src={Plus}

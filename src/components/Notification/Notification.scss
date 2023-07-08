@@ -1,0 +1,19 @@
+.Header-Noti {
+  align-items: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 16px 16px;
+  width: 100%;
+  z-index: 300;
+}
+
+.blur-backgrounds{
+  background-color: rgba(0, 0, 0, 0.61);
+  backdrop-filter: blur(5px);
+  position: absolute;
+  width: 80%;
+  height: 100vh;
+  z-index: 1;
+}
