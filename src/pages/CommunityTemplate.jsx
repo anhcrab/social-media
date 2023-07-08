@@ -1,22 +1,20 @@
-import { BrowserRouter, Route, RouterProvider, Routes, createBrowserRouter } from 'react-router-dom'
+import { Route, RouterProvider, Routes, createBrowserRouter } from 'react-router-dom'
 import '../components/Community/Community'
 import Community from '../components/Community/Community'
 import communities from '../data/communities'
 
 const CommunityTemplate = () => {
     
-    const routes = []
-    
-    communities.forEach((community) => {
-        routes.push({
-            path: community.pageURL,
-            element: <Community community={community} />,
-        })
-    })
-    const router = createBrowserRouter(routes)
-
     return (
-        <RouterProvider router={router} />
+        <Routes>
+            {communities.map((community) =>
+                <Route
+                    key={community.communityId}
+                    path={`${community.community}/${community.communityId}/*`}
+                    element={<Community community={community} />}
+                />
+            )}
+        </Routes>
     )
 }
 

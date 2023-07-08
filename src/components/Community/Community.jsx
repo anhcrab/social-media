@@ -1,7 +1,9 @@
 import { createContext, useState } from "react"
+import { useLocation, Route, Routes } from "react-router-dom"
 import ChatBox from "../Chatbox/ChatBox"
-import CommunityMainContent from "../CommunityMainContent/CommunityMainContent"
 import CommunitySideBar from "../CommunitySideBar/CommunitySideBar"
+import Overview from "../Overview/Overview"
+import Members from "../Members/Members"
 
 import './Community.scss'
 
@@ -33,7 +35,14 @@ const Community = (props) => {
                     <div style={{
                         width: '70% ',
                     }}>
-                       <CommunityMainContent />
+                        <div className="comm-main-wrapper">
+                            <Routes >
+                                <Route path='/*' element={<Overview />} />
+                                <Route path='overview' element={<Overview />} />
+                                <Route path={`${useLocation().pathname}/members`} element={<Members />} />
+                                <Route />
+                            </Routes>
+                        </div>
                     </div>
                 </div>
                 {/* <ChatBox /> */}

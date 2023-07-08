@@ -5,6 +5,8 @@ import SidebarBox from '../SidebarBox/SidebarBox'
 
 const CommunitySideBar = () => {
     const { active, setActive, community } = useContext(context)
+    const [status, setStatus] = useState(true)
+
     return (
         <div className="comm-sidebar-wrapper">
             <div className="comm-side-bar-container">
@@ -31,43 +33,51 @@ const CommunitySideBar = () => {
                     <div className="comm-sidebar-down">
                         <SidebarBox
                             text={'Overview'}
+                            type={'item'}
                             icon={'/src/assets/Communities/comm-side-bar/overview-icon.svg'}
                         />
                         <SidebarBox
                             text={`Members (${community.members})`}
+                            type={'item'}
                             icon={'/src/assets/Communities/comm-side-bar/members-icon.svg'}
                         />
                         <div className="comm-sidebar-list">
                             <SidebarBox
                                 text={'Modules'}
                                 icon={'none'}
-                                role={true}
-                                status={'open'}
+                                type={'list'}
+                                status={status}
+                                setStatus={setStatus}
                             />
                             <SidebarBox
                                 text={'Bounties'}
                                 icon={'/src/assets/Communities/comm-side-bar/bounty-icon.svg'}
-                                role={false}
+                                type={'item'}
+                                status={status}
                             />
                             <SidebarBox
                                 text={'Proposals'}
                                 icon={'/src/assets/Communities/comm-side-bar/proposal-icon.svg'}
-                                role={false}
+                                type={'item'}
+                                status={status}
                             />
                             <SidebarBox
                                 text={'Courses'}
                                 icon={'/src/assets/Communities/comm-side-bar/course-icon.svg'}
-                                role={false}
+                                type={'item'}
+                                status={status}
                             />
                             <SidebarBox
                                 text={'Events'}
                                 icon={'/src/assets/Communities/comm-side-bar/events.svg'}
-                                role={false}
+                                type={'item'}
+                                status={status}
                             />
                         </div>
                         <SidebarBox
                             text={'💬 Discussions'}
                             icon={'none'}
+                            type={'item'}
                         />
                     </div>
                 </div>

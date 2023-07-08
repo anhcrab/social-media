@@ -1,26 +1,39 @@
 //Desktop
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
     .comm-sidebar-item {
         width: 100%;    
         background-color: white;
-        padding-left: 24px;
-        padding-right: 16px;
+        padding: 6px 16px 3px 24px;
         cursor: pointer;
-        height: 40px;
+        height: 39px;
     }
 
+    .comm-sidebar-item:hover {
+        background-color: rgba(247, 247, 247);
+        transition: background-color 0.5s ease-in-out;
+    }
+
+    .comm-sidebar-item i {
+        background-color: white;
+    }
+
+    .comm-sidebar-item:hover i {
+        background-color: rgba(247, 247, 247);
+        transition: background-color 0.5s ease-in-out;
+    }
 
     .side-bar-active {
         border-right: 3px solid #1890ff;
+        color: #1890ff;
     }
 }
 
 //Ipad Pro
-@media only screen and (max-width: 1024px) and (min-width: 415px) {
+@media only screen and (max-width: 1025px) and (min-width: 416px) {
     
 }
 
 //Iphone 8+ 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 415px) {
     
 }

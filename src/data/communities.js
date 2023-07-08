@@ -1,6 +1,7 @@
 export default [
     {
         communityId: 1,
+        community: 'giveth',
         communityName: 'Giveth',
         members: 175,
         socialIcons: ['twitter'],
@@ -8,17 +9,11 @@ export default [
         communityType: ['🌍 DAOs'],
         backgroundURL: '/src/assets/Communities/giveth-bg.jpg',
         logoURL: '/src/assets/Communities/giveth-logo.jpg',
-        pageURL: '/app/dao/giveth/1/overview',
-        overview: [
-            {
-                overviewId: 1,
-                overviewName: 'About',
-                overviewDescription: `Giveth is building a culture and economy that rewards and empowers those who give.
-
-                Our goal is to use web3 to radically transform how public goods are funded by helping nonprofits evolve out of systems that depend on sacrifice into ones that create win-win situations for everyone involved. Beginning with a free and direct crypto donation platform on Ethereum, we onboard for-good projects and support them so that they can eventually blossom into DAOs with their own regenerative economies, with Giveth itself becoming an impact investment hub for public goods`,
-                tags: ['twitter', 'web'],
-            }
-        ],
+        pageURL: '/app/dao/giveth/1/',
+        overview: {
+            overviewDescription: '<p><strong>Giveth is building a culture and economy that rewards and empowers those who give.</strong></p><p>Our goal is to use web3 to radically transform how public goods are funded by helping nonprofits evolve out of systems that depend on sacrifice into ones that create win-win situations for everyone involved. Beginning with a free and direct crypto donation platform on Ethereum, we onboard for-good projects and support them so that they can eventually blossom into DAOs with their own regenerative economies, with Giveth itself becoming an impact investment hub for public goods</p>',
+            tags: ['twitter', 'web'],
+        },
         membersList: [
             {
                 top: 1,
@@ -904,6 +899,7 @@ export default [
     },
     {
         communityId: 2,
+        community: 'sage',
         communityName: 'SAGE ESPORTS 3.0',
         members: 162,
         socialIcons: ['twitter', 'discord'],
@@ -1815,16 +1811,54 @@ export default [
         backgroundURL: '/src/assets/Communities/daolens-bg.jpg',
         logoURL: '/src/assets/Communities/daolens-logo.jpg',
         pageURL: '/app/dao/daolens/3/overview',
-        overview: [
-            {
-                overviewId: 1,
-                overviewName: 'About',
-                overviewDescription: `Giveth is building a culture and economy that rewards and empowers those who give.
+        overview: {
+            overviewDescription: `🙏 Welcome to the official DaoLens.
 
-                Our goal is to use web3 to radically transform how public goods are funded by helping nonprofits evolve out of systems that depend on sacrifice into ones that create win-win situations for everyone involved. Beginning with a free and direct crypto donation platform on Ethereum, we onboard for-good projects and support them so that they can eventually blossom into DAOs with their own regenerative economies, with Giveth itself becoming an impact investment hub for public goods`,
-                tags: ['twitter', 'web'],
-            }
-        ],
+                DaoLens is a Business to Dao offering providing infrastructure and a suite of tools for DAO community ninjas to do their magic. If you manage a DAO, we help you on four fronts - Discovery -> Onboarding -> Contribution and Operations. Try our product to learn more! We’re excited to have you in our community
+                
+                
+                
+                ✨ How can I try the DaoLens Products?
+                
+                DAO Manager ->https://manager.daolens.com/
+                
+                If you are reading this , you are within our most loved product yet ✌️.
+                
+                DAO Manager !! Designed for those special group/communities who exists because they driving purpose within.
+                
+                Onboarding Tool -> https://app.daolens.com/onboarding
+                
+                We manage your onboarding in a way that builds the right context bringing information hidden across the tool stack that you use. If you’re a community where you have more lurkers and only a few contributors, we can help. Our self-serve offering can be deployed in under 3 minutes and it acts as a HR for your new joiners, activating and empowering them to add value to the DAO.
+                
+                At the same time, as an admin you know who joined, why they joined, how they got in and where they should be routed.
+                
+                
+                
+                📜 How can I stay updated with DaoLens?
+                
+                Join our Monday weekly calls on - we host exciting DAO operators on our podcast ‘Humans of DAOs’ LIVE on Discord. It’s a great place where guests answer community questions and YOU get to network, get to know other like-minded DAO operators. Our community’s built of the best of the best.
+                
+                Feel lost? Want any help/ support? Our community Ninjas are always here for you. Tag us directly on or raise
+                
+                
+                
+                ❤️ How can I show love?
+                
+                We love love — in fact, our community makes all the late night coding and jams worth it.
+                
+                (a) Twitter
+                
+                (b) Youtube
+                
+                (c) Instagram
+                
+                (d) Website Blogs
+                
+                
+                
+                ⚠️ Report Platform Bugs Here 👈`,
+            tags: ['twitter', 'discord', 'web'],
+        },
         membersList: [
             {
                 top: 1,

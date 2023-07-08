@@ -12,14 +12,21 @@ const App = () => {
       element: <HomePage />
     },
     {
-      path: '/app/',
+      path: '/app/*',
+      element: <PersonalPage />,
+    },
+    {
+      path: '/app/discovery/*',
       element: <PersonalPage />
+    },
+    {
+      path: '/app/dao/*',
+      element: <CommunityTemplate />
     }
   ])
 
-  return(
-    // <RouterProvider router={router} />
-    <CommunityTemplate />
+  return (
+    <RouterProvider router={router} />
   )
 }
 
