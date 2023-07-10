@@ -20,12 +20,12 @@ const People = () => {
     <>
       <div className="section">
         <div className="container">
-          <div className="title-container">
+          <div style={{paddingTop:"400px"}}className="title-container">
             <div className="center-text">
               <div className="half-title-container-m">
                 <div className="title-with-emoji">
                   <div className="fade-in-move-on-scroll-m">
-                    <h1 className="title" style={{ width: "900px" }}>
+                    <h1 className="title-2" style={{ width: "900px" }}>
                       What people are
                       <span> saying</span>
                     </h1>

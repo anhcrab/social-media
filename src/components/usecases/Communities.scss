@@ -35,8 +35,8 @@
 }
 h1.title {
   width: 38rem;
-  height: 12, 9rem;
-  margin-top: 60;
+  height: 12,9rem;
+  margin-top: 250px;
   margin-bottom: 0;
   font-weight: 600;
   display: block;
@@ -83,14 +83,14 @@ h1.title {
 .grey-cards-holder {
   margin-left: 3rem;
   margin-right: 3rem;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: -3px;
+  grid-row-gap: 99px;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   align-content: end;
   align-items: end;
-  margin-top: 130px;
+  margin-top: 250px;
   display: grid;
 }
 .white-card {
@@ -100,16 +100,21 @@ h1.title {
   align-items: flex-start;
   flex-direction: column;
   background-color: #fff;
-  width: 440px;
-  height: 440px;
+ 
   text-decoration: none;
 
   overflow: hidden;
   vertical-align: middle;
 
-  transition: color 0.375s;
+  opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+   transform-style: preserve-3d; 
+   height: 130%; 
+   width: 438px;
 }
-
+.white-card:hover{
+  height: 140%;
+  width: 438px;
+}
 .w-inline-block {
   max-width: 100%;
   display: inline-block;
@@ -135,23 +140,52 @@ h1.title {
   object-fit: contain;
 }
 .card-title-holder {
-  margin-left: 3rem;
-  margin-top: 1rem;
+  z-index: 2;
+  margin-top: 24px;
+  position: relative;
 }
 .card-title {
   color: #000;
   font-size: 2rem;
   font-weight: 550;
   position: static;
-}
-.card-description-holder {
-  margin-top: 0.3rem;
   margin-left: 3rem;
-  padding-right: 6.6rem;
+}
+.white-card:hover .card-title{
+  color: #fff;
+}
+.white-card:hover .card-description{
+  display: block;
+  color: #fff;
+  animation: dropdown 2s linear ;
+  width: 277px;
+}
+.card-description-holder  {
+  z-index: 2;
+  width: 277px;
+
+ position: relative;
   overflow: hidden;
+  margin-left: 3rem;
 }
 .card-description {
-  color: #000;
+  color: #fff;
+  
+}
+
+@keyframes dropdown {
+    0%{
+        height: 0%;
+    }
+    50%{
+        height: 50%;
+    }
+    75%{
+        height: 75%;
+    }
+    100%{
+        height: 100%;
+    }
 }
 
 .orange-circle-holder {
@@ -164,10 +198,83 @@ h1.title {
   bottom: 0%;
   left: 0%;
   right: 0%;
-
-  transition: color 0.375s;
 }
 
+.orange-circle-holder:hover :nth-child(1) {
+
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;
+
+  height: 230%;
+
+}
+
+.orange-circle-holder:hover :nth-child(2) {
+  background-color: #000;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;
+
+  height: 230%;
+}
+
+.main-circle.black {
+  background-color: #000;
+  transition: 0.5s ;
+}
+.main-circle {
+  z-index: 1;
+  width: 600px;
+  height: 600px;
+  
+  border-radius: 300px;
+  position: absolute;
+  bottom: -400px;
+  transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+
+}
+.main-circle:hover{
+  transform: translate3d(0px, 0px, 0px) scale3d(4.5, 4.5, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+.small-circle.orange {
+  background-color: #fecb03;
+  transition: 0.4s ;
+}
+.small-circle.blue2 {
+  background-color: #00c9f5;
+  transition: 0.4s ;
+}
+.small-circle.blue {
+  background-color: #00c9f5;
+  transition: 0.4s ;
+}
+.small-circle.red {
+  background-color: red;
+  transition: 0.4s ;
+}
+.small-circle.violet {
+  background-color: #8b44ff;
+  transition: 0.4s ;
+}
+.small-circle.green {
+  background-color: #45d72f;
+  transition: 0.4s ;
+}
+.small-circle {
+  z-index: 0;
+  width: 600px;
+  height: 600px;
+
+  border-radius: 300px;
+  position: absolute;
+  bottom: -400px;
+  transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+.small-circle:hover{
+  transform: translate3d(0px, 0px, 0px) scale3d(4.5, 4.5, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+ 
+}
 .card-borders {
   z-index: 0;
   border: 1px solid #ebebeb;

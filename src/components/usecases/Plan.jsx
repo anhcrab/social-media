@@ -42,7 +42,7 @@ const Plan = () => {
     }
   return (
     <>
-      <div className="title-container">
+      <div style={{paddingTop:"400px"}}className="title-container">
         <div className="center-text">
           <div className="half-title-container">
             <div className="title-with-emoji">
