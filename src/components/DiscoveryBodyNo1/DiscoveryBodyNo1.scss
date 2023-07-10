@@ -63,7 +63,7 @@ input {
     top: 6px;
 }
 
-.discoverybodyno1-wrap-header-img img{
+.discoverybodyno1-wrap-header-img img {
     width: 1000px;
     height: auto;
 }
@@ -77,7 +77,7 @@ input {
 }
 
 .discoverybodyno1-wrap-nav-menu-btn {
-    padding:10px;
+    padding: 10px;
     border-radius: 23px;
     border: 1px solid #bebebe;
     background-color: #fff;
@@ -88,58 +88,126 @@ input {
     border: 1px solid #8C5BFE;
 }
 
-.active{
+.active {
     background-color: #8C5BFE;
     color: white;
+}
+
+.discoverybodyno1-wrap-heading-bonus {
+    background: white;
+    padding: 24px 28px 8px;
+    position: fixed;
+    top: 0;
+    left: 204px;
+    z-index: 100;
+    width: 1000px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 24px 24px;
+    display: none;
+    transition: 0.5s;
+}
+
+.discoverybodyno1-wrap-heading-bonus-body1 {
+    display: flex;
+    align-items: center;
+}
+
+.discoverybodyno1-wrap-heading-bonus-body1-btn1 {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.discoverybodyno1-wrap-heading-bonus-body1-search {
+    border-radius: 43px;
+    border: 1px solid rgb(229, 231, 235);
+    padding: 6px 6px 6px 25px;
+    font-size: 14px;
+    z-index: 10;
+    width: 935px;
+}
+
+.discoverybodyno1-wrap-heading-bonus-body1-searchs.discoverybodyno1-wrap-input-searchbtn-img {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+}
+
+.invertedd {
+    display: block;
 }
 
 @media screen and (max-width: 1024px) {
     .discoverybodyno1-wrap-big {
         overflow: hidden;
     }
-    .discoverybodyno1-wrap-header-img img{
+
+    .discoverybodyno1-wrap-header-img img {
         width: 125%;
         margin-left: -20px;
     }
+
     .discoverybodyno1-wrap-nav-menu-btn {
         padding: 5px 10px;
         margin: 0 5px;
     }
+
     .discoverybodyno1-wrap-nav-menu {
         width: 100%;
     }
+
     .discoverybodyno1-wrap-input input {
         width: 500px;
+    }
+
+    .discoverybodyno1-wrap-heading-bonus {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 95%;
     }
 }
 
 @media screen and (max-width: 420px) {
     .discoverybodyno1-wrap {
-      overflow: hidden;
+        overflow: hidden;
     }
-    .discoverybodyno1-wrap-header-img img{
+
+    .discoverybodyno1-wrap-header-img img {
         height: 200px;
     }
+
     .discoverybodyno1-wrap-header-text {
         position: absolute;
         top: 50px;
         left: 10px;
-        font-size: 18px;
+        font-size: 17px;
     }
+
     .discoverybodyno1-wrap-input {
         width: 300px;
         position: absolute;
         left: 35px;
     }
+
     .discoverybodyno1-wrap-input input {
         width: 300px;
     }
+
     .discoverybodyno1-wrap-nav-menu-btn {
         padding: 10px;
         margin: 4px;
     }
+
     .discoverybodyno1-wrap-nav-menu {
         width: 100%;
         display: block;
+    }
+
+    .discoverybodyno1-wrap-heading-bonus {
+        width: 86%;
     }
 }
