@@ -1,0 +1,29 @@
+.User-name {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.profile-button{
+    border: none;
+    color: #79A3F0;
+    background-color: transparent;
+}
+
+.profile-button:hover{
+    color: #79A3F0;
+    background-color: whitesmoke; 
+}
+
+.profile-button-down{
+    border: none;
+    color: #9CA3AF;
+    background-color: transparent;
+    font-size: 18px;
+}
+
+.profile-button-down:hover{
+    background-color: whitesmoke; 
+}
