@@ -9,7 +9,6 @@ export default [
         communityType: ['🌍 DAOs'],
         backgroundURL: '/src/assets/Communities/giveth-bg.jpg',
         logoURL: '/src/assets/Communities/giveth-logo.jpg',
-        pageURL: '/app/dao/giveth/1/',
         overview: {
             overviewDescription: '<p><strong>Giveth is building a culture and economy that rewards and empowers those who give.</strong></p><p>Our goal is to use web3 to radically transform how public goods are funded by helping nonprofits evolve out of systems that depend on sacrifice into ones that create win-win situations for everyone involved. Beginning with a free and direct crypto donation platform on Ethereum, we onboard for-good projects and support them so that they can eventually blossom into DAOs with their own regenerative economies, with Giveth itself becoming an impact investment hub for public goods</p>',
             tags: ['twitter', 'web'],
@@ -907,17 +906,12 @@ export default [
         communityType: ['🎮 Gaming Community'],
         backgroundURL: '/src/assets/Communities/sage-bg.jpg',
         logoURL: '/src/assets/Communities/sage-logo.jpg',
-        pageURL: '/app/dao/sage/2/overview',
-        overview: [
-            {
-                overviewId: 1,
-                overviewName: 'About',
-                overviewDescription: `Giveth is building a culture and economy that rewards and empowers those who give.
-
-                Our goal is to use web3 to radically transform how public goods are funded by helping nonprofits evolve out of systems that depend on sacrifice into ones that create win-win situations for everyone involved. Beginning with a free and direct crypto donation platform on Ethereum, we onboard for-good projects and support them so that they can eventually blossom into DAOs with their own regenerative economies, with Giveth itself becoming an impact investment hub for public goods`,
-                tags: ['twitter', 'web'],
-            }
-        ],
+        overview: {
+            overviewId: 1,
+            overviewName: 'About',
+            overviewDescription: `<p>Building a united community of Web3 gamers👾 in India, SAGE is dedicated to educating and empowering the masses through the latest developments in decentralized gaming. Join us as we create a platform for connection, learning, and growth, driving the adoption of Web3 technology in the gaming industry. Be a part of the Web3 revolution with SAGE!</p>`,
+            tags: ['twitter', 'discord','web'],
+        },
         membersList: [
             {
                 top: 1,
@@ -1803,6 +1797,7 @@ export default [
     },
     {
         communityId: 3,
+        community: 'daolens',
         communityName: 'DaoLens',
         members: 147,
         socialIcons: ['twitter', 'discord'],
@@ -1810,53 +1805,8 @@ export default [
         communityType: ['🔍 Others'],
         backgroundURL: '/src/assets/Communities/daolens-bg.jpg',
         logoURL: '/src/assets/Communities/daolens-logo.jpg',
-        pageURL: '/app/dao/daolens/3/overview',
         overview: {
-            overviewDescription: `🙏 Welcome to the official DaoLens.
-
-                DaoLens is a Business to Dao offering providing infrastructure and a suite of tools for DAO community ninjas to do their magic. If you manage a DAO, we help you on four fronts - Discovery -> Onboarding -> Contribution and Operations. Try our product to learn more! We’re excited to have you in our community
-                
-                
-                
-                ✨ How can I try the DaoLens Products?
-                
-                DAO Manager ->https://manager.daolens.com/
-                
-                If you are reading this , you are within our most loved product yet ✌️.
-                
-                DAO Manager !! Designed for those special group/communities who exists because they driving purpose within.
-                
-                Onboarding Tool -> https://app.daolens.com/onboarding
-                
-                We manage your onboarding in a way that builds the right context bringing information hidden across the tool stack that you use. If you’re a community where you have more lurkers and only a few contributors, we can help. Our self-serve offering can be deployed in under 3 minutes and it acts as a HR for your new joiners, activating and empowering them to add value to the DAO.
-                
-                At the same time, as an admin you know who joined, why they joined, how they got in and where they should be routed.
-                
-                
-                
-                📜 How can I stay updated with DaoLens?
-                
-                Join our Monday weekly calls on - we host exciting DAO operators on our podcast ‘Humans of DAOs’ LIVE on Discord. It’s a great place where guests answer community questions and YOU get to network, get to know other like-minded DAO operators. Our community’s built of the best of the best.
-                
-                Feel lost? Want any help/ support? Our community Ninjas are always here for you. Tag us directly on or raise
-                
-                
-                
-                ❤️ How can I show love?
-                
-                We love love — in fact, our community makes all the late night coding and jams worth it.
-                
-                (a) Twitter
-                
-                (b) Youtube
-                
-                (c) Instagram
-                
-                (d) Website Blogs
-                
-                
-                
-                ⚠️ Report Platform Bugs Here 👈`,
+            overviewDescription: `<p><strong>🙏 Welcome to the official DaoLens.</strong></p><p>DaoLens is a Business to Dao offering providing infrastructure and a suite of tools for DAO community ninjas to do their magic. If you manage a DAO, we help you on four fronts - Discovery -&gt; Onboarding -&gt; Contribution and Operations. Try our product to learn more! We’re excited to have you in our community</p><p><br></p><p><strong>✨ How can I try the DaoLens Products?</strong></p><p>DAO Manager -&gt;<a href="https://manager.daolens.com/" rel="noopener noreferrer" target="_blank">https://manager.daolens.com/</a></p><p>If you are reading this , you are within our most loved product yet ✌️.</p><p>DAO Manager !! Designed for those special group/communities who exists because they driving purpose within.</p><p>Onboarding Tool -&gt; <a href="https://app.daolens.com/onboarding " rel="noopener noreferrer" target="_blank">https://app.daolens.com/onboarding </a></p><p>We manage your onboarding in a way that builds the right context bringing information hidden across the tool stack that you use. If you’re a community where you have more lurkers and only a few contributors, we can help. Our self-serve offering can be <strong>deployed in under 3 minutes</strong> and it acts as a <strong>HR for your new joiners</strong>, activating and empowering them to add value to the DAO.</p><p>At the same time, as an admin you know who joined, why they joined, how they got in and where they should be routed.</p><p><br></p><p><strong>📜 How can I stay updated with DaoLens?</strong></p><p>Join our Monday weekly calls on - we host exciting DAO operators on our podcast ‘Humans of DAOs’ LIVE on Discord. It’s a great place where guests answer community questions and YOU get to network, get to know other like-minded DAO operators. Our community’s built of the best of the best.</p><p>Feel lost? Want any help/ support? Our community Ninjas are always here for you. Tag us directly on or raise</p><p><br></p><p><strong>❤️ How can I show love?</strong></p><p>We love love — in fact, our community makes all the late night coding and jams worth it.</p><p>(a) <a href="https://twitter.com/DaoLens" rel="noopener noreferrer" target="_blank" style="color: var(--text-link);">Twitter</a></p><p>(b) <a href="https://www.youtube.com/channel/UCnj5XW4K7CRz0GpTv1W2VRw" rel="noopener noreferrer" target="_blank" style="color: var(--text-link);">Youtube</a></p>`,
             tags: ['twitter', 'discord', 'web'],
         },
         membersList: [
@@ -2744,6 +2694,7 @@ export default [
     },
     {
         communityId: 4,
+        community: 'kodeinkgp',
         communityName: 'KodeinKGP',
         members: 110,
         socialIcons: ['twitter'],
@@ -2751,17 +2702,10 @@ export default [
         communityType: ['👥 Social'],
         backgroundURL: '/src/assets/Communities/kodeinkpg-bg.jpg',
         logoURL: '/src/assets/Communities/kodeinkpg-logo.jpg',
-        pageURL: '/app/dao/kodeinkgp/4/overview',
-        overview: [
-            {
-                overviewId: 1,
-                overviewName: 'About',
-                overviewDescription: `Giveth is building a culture and economy that rewards and empowers those who give.
-
-                Our goal is to use web3 to radically transform how public goods are funded by helping nonprofits evolve out of systems that depend on sacrifice into ones that create win-win situations for everyone involved. Beginning with a free and direct crypto donation platform on Ethereum, we onboard for-good projects and support them so that they can eventually blossom into DAOs with their own regenerative economies, with Giveth itself becoming an impact investment hub for public goods`,
-                tags: ['twitter', 'web'],
-            }
-        ],
+        overview: {
+            overviewDescription: `<p>Are you ready to be a part of the decentralized revolution?</p><p><br></p><p>Look no further than the Blockchain Community introduced by KodeinKGP! The community aims to bring together individuals from all backgrounds to explore the potential of blockchain technology and its impact on our future.</p><p><br></p><p>By joining the community, you'll have the opportunity to engage in thought-provoking discussions, attend informative events, and connect with like-minded individuals who share your passion for blockchain. Together, we can learn from one another and shape the future of this technology in ways we never thought possible.</p><p><br></p><p>Here's what you can expect as a member:</p><p>1. An inclusive community that welcomes individuals of all backgrounds; no prior knowledge or experience is required.</p><p>2. Exclusive hands-on workshops to gain practical experience in blockchain technology.</p><p>3. Opportunities to participate in quizzes, hackathons and other competitions with bounties and prizes for the winners.</p><p>4. Regular discussions and blogs to stay updated on the latest developments in the blockchain space.</p><p><br></p><p>Don't miss out on this chance to be a part of a vibrant community of individuals who share a passion for blockchain. Join us today and discover new opportunities, connect with like-minded individuals, and experience the future!.</p>`,
+            tags: ['twitter', 'web'],
+        },
         membersList: [
             {
                 top: 1,
@@ -3647,6 +3591,7 @@ export default [
     },
     {
         communityId: 5,
+        community: 'daolensevents',
         communityName: 'Daolens Events',
         members: 95,
         socialIcons: ['twitter'],
@@ -3654,17 +3599,11 @@ export default [
         communityType: ['👥 Social'],
         backgroundURL: '/src/assets/Communities/daolensevents-bg.jpg',
         logoURL: '/src/assets/Communities/daolensevents-logo.jpg',
-        pageURL: '/app/dao/daolensevents/5/overview',
-        overview: [
-            {
-                overviewId: 1,
-                overviewName: 'About',
-                overviewDescription: `Giveth is building a culture and economy that rewards and empowers those who give.
+        overview: {
+            overviewDescription: `<p>We're thrilled to have you join our community of like-minded individuals who are passionate about the future of blockchain technology.</p><p><br></p><p>One of the ways we're doing this is by hosting events related to blockchain topics. Our current event, for example, is focused on the future of DAOs in 2023 and will feature industry leaders discussing topics such as scalability, governance, and token economics.</p><p><br></p><p>But that's not all, we will also be hosting events on other exciting topics such as Decentralized Finance, Tokenization, and more.</p><p><br></p><p>By participating in our platform, you will not only be learning and discussing with the community but also earning rewards from bounties and gain reputation points based on your discussion and involvement. This is all on-chain reputation and will allow you to earn NFTs and gain special access to be part of DAO Manager. You can be the first person to test and review new features to help the DAO community.</p>`,
+            tags: ['twitter', 'web'],
+        },
 
-                Our goal is to use web3 to radically transform how public goods are funded by helping nonprofits evolve out of systems that depend on sacrifice into ones that create win-win situations for everyone involved. Beginning with a free and direct crypto donation platform on Ethereum, we onboard for-good projects and support them so that they can eventually blossom into DAOs with their own regenerative economies, with Giveth itself becoming an impact investment hub for public goods`,
-                tags: ['twitter', 'web'],
-            }
-        ],
         membersList: [
             {
                 top: 1,
@@ -4550,6 +4489,7 @@ export default [
     },
     {
         communityId: 6,
+        community: 'coldscollective',
         communityName: 'COLDS Collective',
         members: 65,
         socialIcons: ['twitter'],
@@ -4557,17 +4497,10 @@ export default [
         communityType: ['🌍 DAOs'],
         backgroundURL: '/src/assets/Communities/coldscollective-bg.jpg',
         logoURL: '/src/assets/Communities/coldscollective-logo.jpg',
-        pageURL: '/app/dao/colds/6/overview',
-        overview: [
-            {
-                overviewId: 1,
-                overviewName: 'About',
-                overviewDescription: `Giveth is building a culture and economy that rewards and empowers those who give.
-
-                Our goal is to use web3 to radically transform how public goods are funded by helping nonprofits evolve out of systems that depend on sacrifice into ones that create win-win situations for everyone involved. Beginning with a free and direct crypto donation platform on Ethereum, we onboard for-good projects and support them so that they can eventually blossom into DAOs with their own regenerative economies, with Giveth itself becoming an impact investment hub for public goods`,
-                tags: ['twitter', 'web'],
-            }
-        ],
+        overview: {
+            overviewDescription: `<p>Leveraging emerging technologies to build better lives for Africans. Activating a thriving talent network onchain ⛓️🌍</p><p><br></p><p>To stay in touch, find us at the following links:</p><p><br></p><p><a href="https://coldscollective.io " rel="noopener noreferrer" target="_blank">COLDS Website</a></p><p><br></p><p><a href="https://discord.gg/colds" rel="noopener noreferrer" target="_blank">COLDS Discord</a></p><p><br></p><p><a href="https://lu.ma/coldscollective" rel="noopener noreferrer" target="_blank">COLDS Newsletter + Calendar</a></p><p><br></p><p><a href="https://www.notion.so/colds/COLDS-Collective-Compendium-46b8c5c2f3a44edbbfcf3a192420b74d?pvs=4" rel="noopener noreferrer" target="_blank">COLDS Resource Hub</a></p><p><br></p><p><a href="https://twitter.com/coldscollective" rel="noopener noreferrer" target="_blank">COLDS Twitter</a></p><p><br></p><p><a href="https://www.instagram.com/coldscollective/" rel="noopener noreferrer" target="_blank">COLDS Instagram</a></p><p><br></p><p><a href="https://www.youtube.com/channel/UCBrIMY3LJPCS-_cV1IWoS5A" rel="noopener noreferrer" target="_blank">COLDS Youtube</a></p><p><a href="https://www.youtube.com/channel/UCBrIMY3LJPCS-_cV1IWoS5A" rel="noopener noreferrer" target="_blank">COLDS Youtube</a></p><p><br></p><p><a href="https://mirror.xyz/coldscollective.eth" rel="noopener noreferrer" target="_blank">COLDS Blog</a></p><p><br></p><p><a href="https://www.linkedin.com/company/colds-collective-llc/" rel="noopener noreferrer" target="_blank">COLDS LinkedIn</a></p><p><br></p><p><a href="mailto:info@coldscollective.io" rel="noopener noreferrer" target="_blank">COLDS Email</a></p>`,
+            tags: ['twitter', 'web'],
+        },
         membersList: [
             {
                 top: 1,
@@ -5453,6 +5386,7 @@ export default [
     },
     {
         communityId: 7,
+        community: 'unitydao',
         communityName: 'UnityDAO',
         members: 55,
         socialIcons: ['twitter'],
@@ -5460,17 +5394,10 @@ export default [
         communityType: ['🌍 DAOs'],
         backgroundURL: '/src/assets/Communities/unitydao-bg.jpg',
         logoURL: '/src/assets/Communities/unitydao-logo.jpg',
-        pageURL: '/app/dao/unitydao/7/overview',
-        overview: [
-            {
-                overviewId: 1,
-                overviewName: 'About',
-                overviewDescription: `Giveth is building a culture and economy that rewards and empowers those who give.
-
-                Our goal is to use web3 to radically transform how public goods are funded by helping nonprofits evolve out of systems that depend on sacrifice into ones that create win-win situations for everyone involved. Beginning with a free and direct crypto donation platform on Ethereum, we onboard for-good projects and support them so that they can eventually blossom into DAOs with their own regenerative economies, with Giveth itself becoming an impact investment hub for public goods`,
-                tags: ['twitter', 'web'],
-            }
-        ],
+        overview: {
+            overviewDescription: `<p><br></p><p><strong><em><u>Welcome to Unity DAO Village!</u></em></strong></p><p><br></p><p>Look no further than the Blockchain Community introduced by RYI Unity! The community aims to bring together individuals from all backgrounds to explore the potential of blockchain technology and its impact on our future.</p><p><br></p><p>By joining the community, you'll have the opportunity to engage in thought-provoking discussions, attend informative events, and connect with like-minded individuals who share your passion for blockchain. Together, we can learn from one another and shape the future of this technology in ways we never thought possible.</p><p><br></p><p><strong><em>Here's what you can expect as a member:</em></strong></p><p>1. An inclusive community that welcomes individuals of all backgrounds; no prior knowledge or experience is required.</p><p>2. Exclusive hands-on workshops to gain practical experience in blockchain technology.</p><p>3. Opportunities to participate in quizzes, hackathons and other competitions with bounties and prizes for the winners.</p><p>4. Regular discussions and blogs to stay updated on the latest developments in the blockchain space.</p><p><br></p><p>Don't miss out on this chance to be a part of a vibrant community of individuals who share a passion for blockchain. Join us today and discover new opportunities, connect with like-minded individuals, and experience the future!.</p>`,
+            tags: ['twitter', 'web'],
+        },
         membersList: [
             {
                 top: 1,
@@ -6356,6 +6283,7 @@ export default [
     },
     {
         communityId: 8,
+        community: 'uniflux',
         communityName: 'Uniflux',
         members: 48,
         socialIcons: ['twitter', 'discord'],
@@ -6363,17 +6291,10 @@ export default [
         communityType: ['🔍 Others'],
         backgroundURL: '/src/assets/Communities/uniflux-bg.jpg',
         logoURL: '/src/assets/Communities/uniflux-logo.jpg',
-        pageURL: '/app/dao/uniflux/8/overview',
-        overview: [
-            {
-                overviewId: 1,
-                overviewName: 'About',
-                overviewDescription: `Giveth is building a culture and economy that rewards and empowers those who give.
-
-                Our goal is to use web3 to radically transform how public goods are funded by helping nonprofits evolve out of systems that depend on sacrifice into ones that create win-win situations for everyone involved. Beginning with a free and direct crypto donation platform on Ethereum, we onboard for-good projects and support them so that they can eventually blossom into DAOs with their own regenerative economies, with Giveth itself becoming an impact investment hub for public goods`,
-                tags: ['twitter', 'web'],
-            }
-        ],
+        overview: {
+            overviewDescription: `<p><strong>🚀 Welcome to Uniflux! </strong></p><p><br></p><p><strong style="color: rgb(0, 0, 0); background-color: transparent;">MVP soft launch information</strong></p><p><br></p><p><span style="color: rgb(0, 0, 0); background-color: transparent;">Please hit the ‘Join’ button above our logo and make a Daolens account - we recommend signing in through discord!</span></p><p><br></p><p><strong style="color: rgb(0, 0, 0); background-color: transparent;">Step 4:</strong></p><ul><li><span style="background-color: transparent;">Carefully choose an educational course </span>of your liking <span style="background-color: transparent;">through the 'Library' tab by navigating to 'Courses' </span>(obviously feel free to undertake it if you like :))<span style="background-color: transparent;">. </span></li><li><span style="background-color: transparent;">Carry out two bounties of your choosing&nbsp;in the 'Bounties' tab</span></li><li><span style="background-color: transparent;">Post about a feature you would like us to implement in the </span><span style="color: rgb(188, 197, 211);">#</span><span style="color: rgba(0, 0, 0, 0.85);">&nbsp;📣 General Discussions </span>channel</li></ul><p><br></p><p><strong style="color: rgb(0, 0, 0); background-color: transparent;">Step 5:&nbsp;</strong></p><ul><li><span style="background-color: transparent;">Feedback - the Uniflux team will be in touch with a follow-up feedback survey - thank you all!!</span></li></ul><p><br></p><p><br></p><p>☎️ <strong>Reach Us</strong></p><p>Website : <a href="https://www.uniflux.io/" rel="noopener noreferrer" target="_blank">uniflux.io</a></p><p>LinkedIn : <a href="https://www.linkedin.com/company/blocksoc/mycompany/" rel="noopener noreferrer" target="_blank">@uniflux</a></p><p>Instagram: <a href="https://twitter.com/uniflux_io" rel="noopener noreferrer" target="_blank" style="background-color: rgb(255, 255, 255); color: rgb(64, 169, 255);">@uniflux_io</a></p>`,
+            tags: ['twitter', 'web'],
+        },
         membersList: [
             {
                 top: 1,
@@ -7259,6 +7180,7 @@ export default [
     },
     {
         communityId: 9,
+        community: 'polygonvillage',
         communityName: 'Polygon Village',
         members: 47,
         socialIcons: ['twitter'],
@@ -7266,17 +7188,10 @@ export default [
         communityType: ['🌍 DAOs'],
         backgroundURL: '/src/assets/Communities/polygonvillage-bg.jpg',
         logoURL: '/src/assets/Communities/polygonvillage-logo.jpg',
-        pageURL: '/app/dao/polygon/9/overview',
-        overview: [
-            {
-                overviewId: 1,
-                overviewName: 'About',
-                overviewDescription: `Giveth is building a culture and economy that rewards and empowers those who give.
-
-                Our goal is to use web3 to radically transform how public goods are funded by helping nonprofits evolve out of systems that depend on sacrifice into ones that create win-win situations for everyone involved. Beginning with a free and direct crypto donation platform on Ethereum, we onboard for-good projects and support them so that they can eventually blossom into DAOs with their own regenerative economies, with Giveth itself becoming an impact investment hub for public goods`,
-                tags: ['twitter', 'web'],
-            }
-        ],
+        overview: {
+            overviewDescription: `<h2><strong>A full-stack ecosystem for developers to build and grow</strong></h2><p>We aim to decentralize, grow and innovate the Polygon community. As part of Polygon Village, projects building on Polygon will get access to all services and offerings ranging from hosting, audit services, infrastructure &amp; API-related services, talent discovery, and much more.</p><p><br></p><p><strong>Key components of the Polygon Village:</strong></p><p><br></p><p>•&nbsp;&nbsp;<strong>Welcome vouchers</strong>, let our partners jumpstart your project. <a href="https://manager.daolens.com/app/dao/355/channel/289/post/389" rel="noopener noreferrer" target="_blank">read more</a></p><p>•&nbsp;&nbsp;<strong>Grants</strong>, when you have started your journey receive grants and vouchers to further accelerate your project. read more</p><p>•&nbsp;&nbsp;<strong>Village talks</strong>, educational sessions and we will showcase projects from our ecosystem, projects that win a spot here will receive access to the alumni network and awards. Our goal is to support your project all the way to external partners such as accelerators or VC’s</p><p>•&nbsp;&nbsp;<strong>Bounty board</strong>, outsource your one-off tasks to our community members using our bounty board. View bounties</p><p>•&nbsp;&nbsp;<strong>Job board</strong>, need to hire talent to your project? Leverage the reach of Polygon by mirroring your positions to our job board. View Job board</p><p><br></p><p>To learn more about Polygon Village:<strong>&nbsp;</strong><a href="http://village.polygon.community/" rel="noopener noreferrer" target="_blank"><strong>http://village.polygon.community/</strong></a></p>`,
+            tags: ['twitter', 'web'],
+        },
         membersList: [
             {
                 top: 1,
@@ -8162,6 +8077,7 @@ export default [
     },
     {
         communityId: 10,
+        community: 'web3memes',
         communityName: 'Web3 Memes',
         members: 45,
         socialIcons: ['twitter'],
@@ -8169,17 +8085,10 @@ export default [
         communityType: ['✨ Content Creator'],
         backgroundURL: '/src/assets/Communities/web3memes-bg.jpg',
         logoURL: '/src/assets/Communities/web3memes-logo.jpg',
-        pageURL: '/app/dao/web3memes/10/overview',
-        overview: [
-            {
-                overviewId: 1,
-                overviewName: 'About',
-                overviewDescription: `Giveth is building a culture and economy that rewards and empowers those who give.
-
-                Our goal is to use web3 to radically transform how public goods are funded by helping nonprofits evolve out of systems that depend on sacrifice into ones that create win-win situations for everyone involved. Beginning with a free and direct crypto donation platform on Ethereum, we onboard for-good projects and support them so that they can eventually blossom into DAOs with their own regenerative economies, with Giveth itself becoming an impact investment hub for public goods`,
-                tags: ['twitter', 'web'],
-            }
-        ],
+        overview: {
+            overviewDescription: `<p>Crypto, NFTs, DAOs - everything is a meme.</p><p>🧌😎 👹</p><p><br></p>`,
+            tags: ['twitter', 'web'],
+        },
         membersList: [
             {
                 top: 1,
@@ -9065,6 +8974,7 @@ export default [
     },
     {
         communityId: 11,
+        community: 'thedaoathon',
         communityName: 'THE DAO-A-THON',
         members: 37,
         socialIcons: ['twitter'],
@@ -9072,17 +8982,10 @@ export default [
         communityType: ['🌍 DAOs'],
         backgroundURL: '/src/assets/Communities/thedaoathon-bg.jpg',
         logoURL: '/src/assets/Communities/thedaoathon-logo.jpg',
-        pageURL: '/app/dao/the-dao-a-thon/11/overview',
-        overview: [
-            {
-                overviewId: 1,
-                overviewName: 'About',
-                overviewDescription: `Giveth is building a culture and economy that rewards and empowers those who give.
-
-                Our goal is to use web3 to radically transform how public goods are funded by helping nonprofits evolve out of systems that depend on sacrifice into ones that create win-win situations for everyone involved. Beginning with a free and direct crypto donation platform on Ethereum, we onboard for-good projects and support them so that they can eventually blossom into DAOs with their own regenerative economies, with Giveth itself becoming an impact investment hub for public goods`,
-                tags: ['twitter', 'web'],
-            }
-        ],
+        overview: {
+            overviewDescription: `<p>The <strong>DAO-A-THON</strong> is an event that brings together web3 enthusiasts from Japan and worldwide to collaborate on DAO projects. The event combines elements of an ideathon and hackathon. Current DAO faces challenges such as scaling and decentralization. Some DAO is not decentralized or autonomous. Also, in nations like Japan, decentralization is still not correctly perceived.</p><p><br></p><p><br></p><p>As well as solving these issues, we want to unleash the potential of talented web3 enthusiasts to contribute to the growing ecosystem of DAOs. The event aims to promote the growth of the DAOism movement in Asia and establish it as a leading hub for new communities in this fiel</p>`,
+            tags: ['twitter', 'web'],
+        },
         membersList: [
             {
                 top: 1,
@@ -9968,6 +9871,7 @@ export default [
     },
     {
         communityId: 12,
+        community: 'cryptochasers',
         communityName: 'Crypto Chasers',
         members: 37,
         socialIcons: ['twitter', 'discord'],
@@ -9976,16 +9880,10 @@ export default [
         backgroundURL: '/src/assets/Communities/crypto-bg.jpg',
         logoURL: '/src/assets/Communities/crypto-logo.jpg',
         pageURL: '/app/dao/crypto/12/overview',
-        overview: [
-            {
-                overviewId: 1,
-                overviewName: 'About',
-                overviewDescription: `Giveth is building a culture and economy that rewards and empowers those who give.
-
-                Our goal is to use web3 to radically transform how public goods are funded by helping nonprofits evolve out of systems that depend on sacrifice into ones that create win-win situations for everyone involved. Beginning with a free and direct crypto donation platform on Ethereum, we onboard for-good projects and support them so that they can eventually blossom into DAOs with their own regenerative economies, with Giveth itself becoming an impact investment hub for public goods`,
-                tags: ['twitter', 'web'],
-            }
-        ],
+        overview: {
+            overviewDescription: `<p>帮助 Web3 新项目和用户成长</p>`,
+            tags: ['twitter', 'web'],
+        },
         membersList: [
             {
                 top: 1,
@@ -10871,6 +10769,7 @@ export default [
     },
     {
         communityId: 13,
+        community: 'dundermifflin',
         communityName: 'Dunder Mifflin',
         members: 27,
         socialIcons: ['twitter'],
@@ -10878,17 +10777,10 @@ export default [
         communityType: ['🔍 Others'],
         backgroundURL: '/src/assets/Communities/dunder-bg.jpg',
         logoURL: '/src/assets/Communities/dunder-logo.jpg',
-        pageURL: '/app/dao/dunder/13/overview',
-        overview: [
-            {
-                overviewId: 1,
-                overviewName: 'About',
-                overviewDescription: `Giveth is building a culture and economy that rewards and empowers those who give.
-
-                Our goal is to use web3 to radically transform how public goods are funded by helping nonprofits evolve out of systems that depend on sacrifice into ones that create win-win situations for everyone involved. Beginning with a free and direct crypto donation platform on Ethereum, we onboard for-good projects and support them so that they can eventually blossom into DAOs with their own regenerative economies, with Giveth itself becoming an impact investment hub for public goods`,
-                tags: ['twitter', 'web'],
-            }
-        ],
+        overview: {
+            overviewDescription: `<h1><strong>We are 📝 The Paper company 🗓</strong></h1><p><br></p><p><br></p><p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1snZeOR_oGQhC1C1IhdKMVCLKZb4ZibUX4E5wid61YYU-09cvqTjrAbmB8p2_ntjJCN0&amp;usqp=CAU" width="480" style="cursor: nwse-resize;"></p><p><br></p><p><strong>DUNDER MIFFLIN, Inc</strong>. is committed to providing its customers with quality office and information technology products, furniture, printing values and the experience required for making informed buyer decisions.</p><p>We provide our Customers with the highest standard of integrity and quality, to enable them to develop long-term professional relationships with our employees and staff.</p><p>We crusade to create a stable working environment and corporate spirit and to give unlimited opportunity to women, and to afford ordinary folk the chance to buy the same things as rich people. We are also committed to nurturing and promulgating wholesome American values.</p><p>We strive to become the company most known for changing the worldwide poor–quality image of Chinese products.</p><p><br></p><p>We are the best-performing branch within Dunder Mifflin Inc. We also have the highest happiness quotient of all the branches, all thanks to the Branch Manager, Michael Scott, (AKA World's Best Boss) and no thanks to Toby (AKA A Waste of Life). We operate by the following few ideologies:</p><ol><li>Fool me once, strike one. Fool me twice, strike three.</li><li>You miss 100 percent of the chances you don’t take.’ – Wayne Gretzky - Michael Scott)</li><li>Pizza: the great equalizer.</li></ol>`,
+            tags: ['twitter', 'web'],
+        },
         membersList: [
             {
                 top: 1,
@@ -11774,6 +11666,7 @@ export default [
     },
     {
         communityId: 14,
+        community: 'vnartistdao',
         communityName: 'VN Artists DAO',
         members: 27,
         socialIcons: ['twitter'],
@@ -11781,17 +11674,10 @@ export default [
         communityType: ['🌍 DAOs', '+1'],
         backgroundURL: '/src/assets/Communities/vnartists-bg.jpg',
         logoURL: '/src/assets/Communities/vnartists-logo.jpg',
-        pageURL: '/app/dao/vn-artists/14/overview',
-        overview: [
-            {
-                overviewId: 1,
-                overviewName: 'About',
-                overviewDescription: `Giveth is building a culture and economy that rewards and empowers those who give.
-
-                Our goal is to use web3 to radically transform how public goods are funded by helping nonprofits evolve out of systems that depend on sacrifice into ones that create win-win situations for everyone involved. Beginning with a free and direct crypto donation platform on Ethereum, we onboard for-good projects and support them so that they can eventually blossom into DAOs with their own regenerative economies, with Giveth itself becoming an impact investment hub for public goods`,
-                tags: ['twitter', 'web'],
-            }
-        ],
+        overview: {
+            overviewDescription: `<p>🥂<strong style="color: rgb(68, 68, 68);">Welcome to VN Artists DAO!</strong></p><p>VN Artists DAO (VAD) is a decentralized autonomous organization for artists from Vietnam. VAD's activities aim to advertise Vietnamese creative products to the world and create a safe environment in cyberspace for artists to help each other explore the blockchain through IRL workshops &amp; on-chain bounties.</p><p><br></p><p><span style="color: rgb(68, 68, 68);">❓</span><strong style="color: rgb(68, 68, 68);">How to be come a member?</strong></p><p>If you're reading this with a connected account, you're a member of VAD 🤩! Do you see your name on the "Members" session?</p><p><br></p><p><strong style="color: rgb(68, 68, 68);">🙌 Opportunity for members:</strong></p><ul><li>💲Learn, create and earn by claiming bounties </li><li> 🤝A community to explore blockchain together in a safe way</li><li>🎨Create beyond limit</li><li>🎉Join our free &amp; exclusive events/workshops for artists in Vietnam</li></ul><p><br></p><p>Get involved by doing bounties and claim rewards 🤑</p>`,
+            tags: ['twitter', 'web'],
+        },
         membersList: [
             {
                 top: 1,
@@ -12677,6 +12563,7 @@ export default [
     },
     {
         communityId: 15,
+        community: 'lyricstloungedao',
         communityName: 'LYRICST LOUNGE DAO',
         members: 27,
         socialIcons: ['twitter', 'discord'],
@@ -12684,17 +12571,10 @@ export default [
         communityType: ['🌍 DAOs', '+1'],
         backgroundURL: '/src/assets/Communities/lyricst-bg.jpg',
         logoURL: '/src/assets/Communities/lyricst-logo.jpg',
-        pageURL: '/app/dao/lyricst/15/overview',
-        overview: [
-            {
-                overviewId: 1,
-                overviewName: 'About',
-                overviewDescription: `Giveth is building a culture and economy that rewards and empowers those who give.
-
-                Our goal is to use web3 to radically transform how public goods are funded by helping nonprofits evolve out of systems that depend on sacrifice into ones that create win-win situations for everyone involved. Beginning with a free and direct crypto donation platform on Ethereum, we onboard for-good projects and support them so that they can eventually blossom into DAOs with their own regenerative economies, with Giveth itself becoming an impact investment hub for public goods`,
-                tags: ['twitter', 'web'],
-            }
-        ],
+        overview: {
+            overviewDescription: `<p>Lyricist Lounge DAO (LLDAO) is on a mission to create a thriving, self-sustaining ecosystem by on-boarding, incubating and accelerating the Hip Hop community into web3 through educational content, activations, advisory support and funding.</p><p><br></p><p>For more information about LLDAO please refer to our Notion page below:</p><p><br></p><p><a href="https://tinyurl.com/lyricistloungeDAO" rel="noopener noreferrer" target="_blank">https://tinyurl.com/lyricistloungeDAO</a></p>`,
+            tags: ['twitter', 'web'],
+        },
         membersList: [
             {
                 top: 1,
@@ -13580,6 +13460,7 @@ export default [
     },
     {
         communityId: 16,
+        community: 'ed3dao',
         communityName: 'ED3 DAO',
         members: 26,
         socialIcons: ['twitter'],
@@ -13587,17 +13468,10 @@ export default [
         communityType: ['🌍 DAOs'],
         backgroundURL: '/src/assets/Communities/ed3-bg.jpg',
         logoURL: '/src/assets/Communities/ed3-logo.jpg',
-        pageURL: '/app/dao/ed3dao/16/overview',
-        overview: [
-            {
-                overviewId: 1,
-                overviewName: 'About',
-                overviewDescription: `Giveth is building a culture and economy that rewards and empowers those who give.
-
-                Our goal is to use web3 to radically transform how public goods are funded by helping nonprofits evolve out of systems that depend on sacrifice into ones that create win-win situations for everyone involved. Beginning with a free and direct crypto donation platform on Ethereum, we onboard for-good projects and support them so that they can eventually blossom into DAOs with their own regenerative economies, with Giveth itself becoming an impact investment hub for public goods`,
-                tags: ['twitter', 'web'],
-            }
-        ],
+        overview: {
+            overviewDescription: `<p>We are the first DAO by educators for educators. Our mission is to serve as a launchpad for education in web3 by:</p><p><br></p><p>👋Onboarding educators into web3 through education</p><p><br></p><p>🤝Supporting innovative practices through philanthropy</p><p><br></p><p>🔬Reasearching and reporting on promising innovations</p><p><br></p><p>Our discord server is open to anyone interested in the intersection of education and web3 and you can join via this <a href="https://app.daolens.com/ed3dao/new" rel="noopener noreferrer" target="_blank">link</a>. You can also learn more about us by checking out our whitepaper <a href="https://www.ed3dao.com/" rel="noopener noreferrer" target="_blank">here</a></p><p><br></p><p><br></p>`,
+            tags: ['twitter', 'web'],
+        },
         membersList: [
             {
                 top: 1,
@@ -14483,6 +14357,7 @@ export default [
     },
     {
         communityId: 17,
+        community: 'gaoanetwork',
         communityName: 'gaoa.network',
         members: 25,
         socialIcons: ['twitter', 'discord'],
@@ -14490,17 +14365,10 @@ export default [
         communityType: ['🔍 Others'],
         backgroundURL: '/src/assets/Communities/gaoa-bg.jpg',
         logoURL: '/src/assets/Communities/gaoa-logo.jpg',
-        pageURL: '/app/dao/gaoa-network/17/overview',
-        overview: [
-            {
-                overviewId: 1,
-                overviewName: 'About',
-                overviewDescription: `Giveth is building a culture and economy that rewards and empowers those who give.
-
-                Our goal is to use web3 to radically transform how public goods are funded by helping nonprofits evolve out of systems that depend on sacrifice into ones that create win-win situations for everyone involved. Beginning with a free and direct crypto donation platform on Ethereum, we onboard for-good projects and support them so that they can eventually blossom into DAOs with their own regenerative economies, with Giveth itself becoming an impact investment hub for public goods`,
-                tags: ['twitter', 'web'],
-            }
-        ],
+        overview: {
+            overviewDescription: `<p>1-network 1-scenius fostering individual coherence &amp; collective coordination via continuous improvement, knowledge sharing and collaboration...</p>`,
+            tags: ['twitter', 'web'],
+        },
         membersList: [
             {
                 top: 1,
@@ -15386,6 +15254,7 @@ export default [
     },
     {
         communityId: 18,
+        community: 'aavegotchi',
         communityName: 'Aavegotchi',
         members: 25,
         socialIcons: ['twitter', 'discord'],
@@ -15393,17 +15262,10 @@ export default [
         communityType: ['🌍 DAOs', '+1'],
         backgroundURL: '/src/assets/Communities/aavegotchi-bg.jpg',
         logoURL: '/src/assets/Communities/aavegotchi-logo.jpg',
-        pageURL: '/app/dao/aavegotchi/18/overview',
-        overview: [
-            {
-                overviewId: 1,
-                overviewName: 'About',
-                overviewDescription: `Giveth is building a culture and economy that rewards and empowers those who give.
-
-                Our goal is to use web3 to radically transform how public goods are funded by helping nonprofits evolve out of systems that depend on sacrifice into ones that create win-win situations for everyone involved. Beginning with a free and direct crypto donation platform on Ethereum, we onboard for-good projects and support them so that they can eventually blossom into DAOs with their own regenerative economies, with Giveth itself becoming an impact investment hub for public goods`,
-                tags: ['twitter', 'web'],
-            }
-        ],
+        overview: {
+            overviewDescription: `<p>To secure and grow the Aavegotchi NFT protocol</p>`,
+            tags: ['twitter', 'web'],
+        },
         membersList: [
             {
                 top: 1,
@@ -16289,6 +16151,7 @@ export default [
     },
     {
         communityId: 19,
+        community: 'ethdenver23',
         communityName: "ETH Denver'23",
         members: 23,
         socialIcons: ['twitter', 'discord'],
@@ -16296,17 +16159,10 @@ export default [
         communityType: ['🔍 Others'],
         backgroundURL: '/src/assets/Communities/ethdenver23-bg.jpg',
         logoURL: '/src/assets/Communities/ethdenver23-logo.jpg',
-        pageURL: '/app/dao/ethdenver23/19/overview',
-        overview: [
-            {
-                overviewId: 1,
-                overviewName: 'About',
-                overviewDescription: `Giveth is building a culture and economy that rewards and empowers those who give.
-
-                Our goal is to use web3 to radically transform how public goods are funded by helping nonprofits evolve out of systems that depend on sacrifice into ones that create win-win situations for everyone involved. Beginning with a free and direct crypto donation platform on Ethereum, we onboard for-good projects and support them so that they can eventually blossom into DAOs with their own regenerative economies, with Giveth itself becoming an impact investment hub for public goods`,
-                tags: ['twitter', 'web'],
-            }
-        ],
+        overview: {
+            overviewDescription: `<h2><strong>Are you attending ETH Denver?</strong></h2><p>Well this is a place to collect and collate everything special that is happening on the sides 🥗</p><p><br></p><p>All the data here is user-generated thanks to our fellow degens, but we expect you to DYOR for accuracy.</p><p><br></p><p>See you on the events around Denver😊</p>`,
+            tags: ['twitter', 'web'],
+        },
         membersList: [
             {
                 top: 1,
@@ -17192,6 +17048,7 @@ export default [
     },
     {
         communityId: 20,
+        community: '3dfrankenpunks',
         communityName: "3D FrankenPunks",
         members: 21,
         socialIcons: ['twitter', 'discord'],
@@ -17199,17 +17056,10 @@ export default [
         communityType: ['🌍 DAOs'],
         backgroundURL: '/src/assets/Communities/3dfranken-bg.jpg',
         logoURL: '/src/assets/Communities/3dfranken-logo.jpg',
-        pageURL: '/app/dao/3dfranken/20/overview',
-        overview: [
-            {
-                overviewId: 1,
-                overviewName: 'About',
-                overviewDescription: `Giveth is building a culture and economy that rewards and empowers those who give.
-
-                Our goal is to use web3 to radically transform how public goods are funded by helping nonprofits evolve out of systems that depend on sacrifice into ones that create win-win situations for everyone involved. Beginning with a free and direct crypto donation platform on Ethereum, we onboard for-good projects and support them so that they can eventually blossom into DAOs with their own regenerative economies, with Giveth itself becoming an impact investment hub for public goods`,
-                tags: ['twitter', 'web'],
-            }
-        ],
+        overview: {
+            overviewDescription: `<p><span style="color: rgb(15, 20, 25);">We are the FrankenPunks! Our DAO vision is to create opportunities and experiences for FrankenPunk holders through the CryptoPunk IP we own.</span></p>`,
+            tags: ['twitter', 'web'],
+        },
         membersList: [
             {
                 top: 1,

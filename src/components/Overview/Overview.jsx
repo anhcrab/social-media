@@ -3,6 +3,7 @@ import { context } from "../Community/Community"
 import { useContext, useEffect } from "react"
 
 import './Overview.scss'
+import { Outlet } from "react-router-dom"
 
 const Overview = () => {
     const { active, setActive, community } = useContext(context)
@@ -30,6 +31,40 @@ const Overview = () => {
                     }}>About</h3>
                 </div>
                 <div className="comm-main-about"></div>
+                <div className="comm-main-media">
+                    {
+                        community.overview.tags.map(tag => {
+                            if (tag === 'twitter') {
+                                return (
+                                    <i
+                                        className="bi bi-twitter comm-main-media-icon"
+                                        style={{
+                                            background: 'rgb(98, 157, 255)'
+                                        }}
+                                    ></i>
+                                )
+                            } else if (tag === 'discord') {
+                                return (
+                                    <i 
+                                        className="bi bi-discord comm-main-media-icon"
+                                        style={{
+                                            background: 'rgb(98, 157, 255)'
+                                        }}
+                                    ></i>
+                                )
+                            } else if (tag === 'web') {
+                                return (
+                                    <i 
+                                        className="bi bi-globe2 comm-main-media-icon"
+                                        style={{
+                                            background: 'red'
+                                        }}
+                                    ></i>
+                                )
+                            }
+                        })
+                    }
+                </div>
             </div >
         </>
     )

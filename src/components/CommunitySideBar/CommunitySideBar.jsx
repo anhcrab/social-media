@@ -6,6 +6,7 @@ import SidebarBox from '../SidebarBox/SidebarBox'
 const CommunitySideBar = () => {
     const { active, setActive, community } = useContext(context)
     const [status, setStatus] = useState(true)
+    const { communityId} = community
 
     return (
         <div className="comm-sidebar-wrapper">
@@ -35,11 +36,13 @@ const CommunitySideBar = () => {
                             text={'Overview'}
                             type={'item'}
                             icon={'/src/assets/Communities/comm-side-bar/overview-icon.svg'}
+                            redirect={`/overview`}
                         />
                         <SidebarBox
                             text={`Members (${community.members})`}
                             type={'item'}
                             icon={'/src/assets/Communities/comm-side-bar/members-icon.svg'}
+                            redirect={`/members`}
                         />
                         <div className="comm-sidebar-list">
                             <SidebarBox
@@ -54,30 +57,35 @@ const CommunitySideBar = () => {
                                 icon={'/src/assets/Communities/comm-side-bar/bounty-icon.svg'}
                                 type={'item'}
                                 status={status}
+                                redirect={`/bounties`}
                             />
                             <SidebarBox
                                 text={'Proposals'}
                                 icon={'/src/assets/Communities/comm-side-bar/proposal-icon.svg'}
                                 type={'item'}
                                 status={status}
+                                redirect={`/proposals`}
                             />
                             <SidebarBox
                                 text={'Courses'}
                                 icon={'/src/assets/Communities/comm-side-bar/course-icon.svg'}
                                 type={'item'}
                                 status={status}
+                                redirect={`/courses`}
                             />
                             <SidebarBox
                                 text={'Events'}
                                 icon={'/src/assets/Communities/comm-side-bar/events.svg'}
                                 type={'item'}
                                 status={status}
+                                redirect={`/events`}
                             />
                         </div>
                         <SidebarBox
                             text={'💬 Discussions'}
                             icon={'none'}
                             type={'item'}
+                            redirect={`/discussions`}
                         />
                     </div>
                 </div>

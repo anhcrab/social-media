@@ -1,7 +1,8 @@
-import { useContext } from "react"
+import { useContext, useState, useEffect } from "react"
 import { context } from "../Community/Community"
 
 import './SidebarBox.scss'
+import { Link, Navigate, redirect, useNavigate, useLocation } from "react-router-dom"
 
 const SidebarBox = (props) => {
     const { active, setActive } = useContext(context)
@@ -15,8 +16,8 @@ const SidebarBox = (props) => {
     }
     const setArrow = () => {
         if (props.type === 'list') {
-            return(
-                <i 
+            return (
+                <i
                     className={`bi bi-chevron-${props.status === true ? 'up' : 'down'}`}
                     style={{
                         float: 'right',
@@ -34,22 +35,29 @@ const SidebarBox = (props) => {
         }
     }
     return (
-        <div
-            className={`comm-sidebar-item ${
-                active === props.text && props.type === 'item' ? 'side-bar-active' : ''
-            }`}
-            style={setHidden()}
-            onClick={() => {
-                setActive(props.text)
-                if (props.type === 'list') {
-                    props.setStatus(!props.status)
-                }
+        <Link 
+            to={props.redirect !== undefined ? '.' + props.redirect : ''}
+            style={{
+                textDecoration: 'none',
+                color: 'black'
             }}
         >
-            {setIcon()}
-            {props.text}
-            {setArrow()}
-        </div>
+            <div
+                className={`comm-sidebar-item ${active === props.text && props.type === 'item' ? 'side-bar-active' : ''
+                    }`}
+                style={setHidden()}
+                onClick={() => {
+                    setActive(props.text)
+                    if (props.type === 'list') {
+                        props.setStatus(!props.status)
+                    }
+                }}
+            >
+                {setIcon()}
+                {props.text}
+                {setArrow()}
+            </div>
+        </Link>
     )
 }
 

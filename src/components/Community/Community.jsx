@@ -1,5 +1,5 @@
 import { createContext, useState } from "react"
-import { useLocation, Route, Routes } from "react-router-dom"
+import { useLocation, Route, Routes, Link, Navigate, redirect, Outlet } from "react-router-dom"
 import ChatBox from "../Chatbox/ChatBox"
 import CommunitySideBar from "../CommunitySideBar/CommunitySideBar"
 import Overview from "../Overview/Overview"
@@ -36,10 +36,15 @@ const Community = (props) => {
                         width: '70% ',
                     }}>
                         <div className="comm-main-wrapper">
-                            <Routes >
-                                <Route path='/*' element={<Overview />} />
+                            <Routes>
+                                <Route path='/' element={<Navigate to={`/app/dao/${community.community}/${community.communityId}/overview`} />} />
                                 <Route path='overview' element={<Overview />} />
-                                <Route path={`${useLocation().pathname}/members`} element={<Members />} />
+                                <Route path='members' element={<Members />} />
+                                <Route path="bounties" />
+                                <Route path="proposals" />
+                                <Route path="courses" />
+                                <Route path="events" />
+                                <Route path="discussions" />
                                 <Route />
                             </Routes>
                         </div>
@@ -47,6 +52,7 @@ const Community = (props) => {
                 </div>
                 {/* <ChatBox /> */}
             </div>
+            <Outlet />
         </context.Provider>
     )
 }
