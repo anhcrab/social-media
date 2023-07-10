@@ -1,24 +1,70 @@
-.contain {
-  width: 100%;
-  height: 1200000px;
+.body {
+  /* This affects the entire page */
+  background-color: #f2f2f2;
+  max-width: 100vw;
+  min-height: 230vh;
+  position: relative;
 }
-.div {
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-  height: 300px;
-  width: 300px;
+.AI-text {
+  position: absolute;
+  margin-top: 7rem;
+  font-weight: bolder;
+  margin-left: 28rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.under {
+  margin-top: -5.5rem;
+  width: 40rem !important;
+}
+.AI-text-body {
+  font-weight: normal;
+  color: gray;
+  margin-left: 3rem;
+  width: 32.4rem;
+  text-align: center;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.AI-text-footer {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to right, #1cd8d2, #93edc7);
-  color: white;
-  margin: 100px;
+  justify-content: space-between;
+  margin-top: 4rem;
+  margin-left: 2rem;
+}
+.AI-text-btn {
+  border: none;
   border-radius: 50px;
+  background-color: #fecb03;
+  height: 3rem;
+  width: 20rem;
+  font-weight: 500;
+  font-size: 1rem;
 }
-.elevator-transition {
-  animation: repeat 1s forwards;
-  animation-delay: 1s;
+.AI-text-video {
+  margin-top: 0.8rem;
 }
-
+.right-arrow {
+  margin-top: 0.8rem;
+  margin-left: -3rem;
+}
+.AI-text-video:hover {
+  cursor: pointer;
+}
+.right-arrow:hover {
+  cursor: pointer;
+  padding: 2;
+  transition: all 0.6s ease-in;
+  margin-right: -3rem;
+}
+.pad {
+  height: 28rem;
+}
+.AI-text-title {
+  text-align: center;
+  color: black;
+  font-size: 4.6rem;
+  letter-spacing: -2px;
+}
 .elevator {
   margin: 5em 0;
   color: #fff;
@@ -32,6 +78,33 @@
   text-align: right;
   left: 5em;
 }
+.snapshot {
+  margin-right: 6rem;
+  width: 7.4rem;
+}
+.gnosis {
+  margin-top: 8rem;
+  width: 18.9rem;
+  padding-right: 15rem;
+}
+.dicourse {
+  margin-top: 8rem;
+  width: 9.9rem;
+}
+.github {
+  margin-left: 10rem;
+  width: 6rem;
+}
+.dework {
+  margin-top: 4rem;
+  padding-left: 10rem;
+  width: 14rem;
+}
+.discord {
+  margin-top: 6rem;
+  margin-left: 5rem;
+  width: 7rem;
+}
 .elevatorR {
   left: 10em;
 }
@@ -43,31 +116,51 @@
   }
 }
 .elevatorL-transition {
-  animation: moveLeft 0.7s forwards;
-  /*   animation-delay:2s; */
+  animation: moveLeft 1s forwards;
+  transition-delay: 2s;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
 }
 .elevatorR-transition {
-  animation: moveRight 0.7s forwards;
-  /*     animation-delay:2s; */
+  animation: moveRight 1s forwards;
+
+  transition-delay: 2s;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
 }
 
 @keyframes moveLeft {
   0% {
-    transform: translateX(0px) rotate(0);
+    transform: translate(-5em, -3em) rotate(0);
   }
   100% {
-    transform: translateX(-10em);
+    transform: translate(8.1em, 11em) scale(0.2, 0.2);
   }
 }
 @keyframes moveRight {
   0% {
-    transform: translateX(0px) rotate(0);
+    transform: translate(10em, -2em) rotate(0);
   }
   100% {
-    transform: translateX(10em);
+    transform: translate(-1em, 11em) scale(0.2, 0.2);
   }
+}
+.under {
+  width: 10rem;
+}
+.daos {
+}
+#container {
+  width: 200px;
+  height: 200px;
+  position: fixed;
+}
+
+#box {
+  border-radius: 50%;
+  margin-top: -10rem;
+  margin-left: 10rem;
+  width: 700%;
+  height: 700%;
+  background: rgb(0, 255, 187);
 }

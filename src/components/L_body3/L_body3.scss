@@ -1,0 +1,112 @@
+.part-1 {
+  background-color: #fecb03;
+  border-radius: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.part-1-text {
+  padding-top: 16rem;
+  margin-left: 1rem;
+  width: 23rem !important;
+  line-height: 1.95rem;
+  color: black;
+}
+.img-1 {
+  width: 50vw;
+}
+.macbook {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(180deg, #f8f8f8, #e0e0e0);
+}
+
+.macbook:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 20px;
+  background-color: #f8f8f8;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.macbook:after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 20px;
+  background-color: #f8f8f8;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.text-title-1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.text-body-1 {
+}
+.part-2 {
+  background-color: #45d72f;
+}
+.part-2-text {
+}
+.img-2 {
+}
+.text-title-2 {
+}
+.text-body-2 {
+}
+.part-3 {
+  background-color: #00c9f5;
+}
+.part-3-text {
+}
+.img-3 {
+}
+.text-title-3 {
+}
+.text-body-3 {
+}
+.part-4 {
+  background-color: #8b44ff;
+}
+.part-4-text {
+}
+.img-4 {
+}
+.text-title-4 {
+}
+.text-body-4 {
+}
+.part-5 {
+  background-color: #fd4900;
+}
+.part-5-text {
+}
+.img-5 {
+}
+.text-title-5 {
+}
+.text-body-5 {
+}
+.part-6 {
+  background-color: #0246ff;
+}
+.part-6-text {
+}
+.img-6 {
+}
+.text-title-6 {
+}
+.text-body-6 {
+}

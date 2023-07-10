@@ -56,10 +56,65 @@
   font-weight: 700;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .hover-part {
+  height: 20rem;
   background-color: #a2a2a2;
   margin-bottom: 10rem;
+  position: relative;
 }
+
+.overlay {
+  position: absolute;
+  border-top-right-radius: 150px;
+  border-top-left-radius: 150px;
+  bottom: 0;  
+  left: 0;
+  right: 0;
+  background-color: #b3c8ff;
+  overflow: hidden;
+  height: 0;
+  transition-duration: 1000ms;
+  transition: 0.3s ease-in-out;
+}
+
+.overlay1 {
+  border-top-right-radius: 700px;
+  border-top-left-radius: 700px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fecb03;
+  overflow: hidden;
+  width: 26vw;
+  height: 0;
+  transition-duration: 4000ms;
+  transition: 0.48s ease-in-out;
+}
+.hover-part-contain1:hover .overlay {
+  cursor: pointer;
+  height: 100%;
+}
+.hover-part-contain1:hover .overlay1 {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  cursor: pointer;
+  height: 120%;
+  width: 26vw;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  // -webkit-transform: translate(-50%, -50%);
+  // -ms-transform: translate(-50%, -50%);
+  // transform: translate(-50%, -50%);
+  // text-align: center;
+}
+
 .support-text {
   margin-left: -1.6rem;
   margin-top: -1rem;

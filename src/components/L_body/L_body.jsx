@@ -71,14 +71,17 @@ export default function L_body() {
         <div className="col-1"></div>
         <div className="col-10">
           <div className="row hover-part">
-            <div className="col-4">
-              <span>01</span>
-              <p>Join or Claim your Workspace</p>
-              <p>
+            <div className="col-4 hover-part-contain1">
+              <span className="hover-part-num">01</span>
+              <p className="hover-part-title">Join or Claim your Workspace</p>
+              <p className="hover-part-body">
                 If you've an existing workspace, you can simply join. If you're
                 new, you can create and claim verification all of which takes
                 less than 2 minutes.
               </p>
+
+              <div class="overlay"></div>
+              <div class="overlay1"></div>
             </div>
             <div className="col-4">
               <span>02</span>
