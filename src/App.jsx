@@ -1,7 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import HomePage from "./pages/HomePage"
 import PersonalPage from "./pages/PersonalPage"
-
+import AddCommunityPage from "./pages/AddCommunityPage"
 
 const App = () => {
 
@@ -13,6 +13,10 @@ const App = () => {
     {
       path: '/app/discovery',
       element: <PersonalPage />
+    },
+    {
+      path: '/app/onboarding',
+      element: <AddCommunityPage/>
     }
   ])
 

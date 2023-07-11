@@ -7,7 +7,9 @@ const NavCommunity = (props) => {
     <>
       <div className="discoverybodyno2-wrap-items">
         <div className={`discoverybodyno2-wrap-items-community`} >
-          <button className="discoverybodyno2-wrap-community">
+          <button className="discoverybodyno2-wrap-community" onClick={()=> {
+            window.location.href='/app/onboarding'
+          }}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
