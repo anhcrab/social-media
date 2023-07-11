@@ -369,3 +369,15 @@
     text-decoration: none;
    font-weight: 300;
 }
+@media (min-width: 1024px) {
+  .pricing-grid-wrap-name{
+    width: 250px;
+    margin-left: 20px;
+  }
+  .pricing-grid-wrap-price{
+    width: 670px;
+  }
+  .title-containet{
+    padding-top: 400px;
+  }
+}

@@ -15,12 +15,14 @@ const People = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+
   };
+  
   return (
     <>
       <div className="section">
         <div className="container">
-          <div style={{paddingTop:"400px"}}className="title-container">
+          <div className="title-container">
             <div className="center-text">
               <div className="half-title-container-m">
                 <div className="title-with-emoji">

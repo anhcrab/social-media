@@ -125,3 +125,57 @@ input.w-button {
     right: 11%;
     transform: rotate(15deg);
 }
+@media (min-width: 414px) {
+    .cta-text  {
+        color: #fff;
+        font-size: 35px;
+        font-weight: 600;
+        width: 320px;
+    }
+    .cta-iphone-holder {
+        width: 233px;
+        position: absolute;
+        top: auto;
+        bottom: -0%;
+        left: auto;
+        right: 13%;
+        transform: rotate(15deg);
+    }
+    .iphone-image {
+        z-index: 1;
+        width: 100%;
+        position: relative;
+        bottom: -10px;
+        display: inline-block;
+        opacity: 1;
+    }
+    .cta-content-holder {
+        grid-row-gap: 20px;
+        flex-direction: column;
+        display: flex;
+        margin-left: 1rem;
+    }
+    .cta-container {
+        z-index: 1;
+        padding-top: 70px;
+        height: 600px;
+    }
+    .cta-text-field{
+        width: 70%;
+    }
+    .button {
+        color: #000;
+        background-color: #fecb03;
+        border-radius: 134px;
+        padding: 22px 84px;
+        font-size: 20px;
+        font-weight: 500;
+        transition: color 0.4s, background-color 0.5s;
+        margin-top: 5px;
+    }
+    .container {
+        background-color: #f2f2f2;
+        width: 100%;
+        height: 905px;
+    }
+}

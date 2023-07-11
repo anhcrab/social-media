@@ -95,3 +95,23 @@
   color: #000 !important;
   margin-left: -2030px;
 }
+@media (min-width: 1024px) {
+  .title-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 515px;
+  }
+}
+@media (min-width: 414px) {
+  .title-2{
+    font-size: 1.8rem;
+  }
+  .emoji-holder.people {
+    background-color: #fd4900;
+    margin-top: -54px;
+    top: -10px;
+    left: 420px;
+}
+}
+
