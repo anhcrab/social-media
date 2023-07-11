@@ -1,26 +1,92 @@
 import SideBar from "../components/SideBar/SideBar";
 import backgroundCover from "../asset/img/background-User.png";
+import Waller from "../asset/img/Profile/wallet.png";
+import Tree from "../asset/img/Profile/Tree.svg";
+import Near from "../asset/img/Profile/nearWallet.png";
+import Petra from "../asset/img/Profile/petra.png";
+import Google from "../asset/img/Profile/google.svg";
+import Solana from "../asset/img/Profile/solana-sol-logo.png";
+import Acti from "../asset/img/Profile/eded.svg";
+import Contribute from "../components/ProfilePage/Contribute";
+import Noti from "../components/ProfilePage/Noti";
 import "./ProfilePage.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function ProfilePage() {
   // eslint-disable-next-line no-unused-vars
-  const [userName, setUserName] = useState(
+  const [profileUserName, setProfileUserName] = useState(
     window.sessionStorage.getItem("username")
   );
 
-  const [key, setKey] = useState(false);
+  const [username, setUserName] = useState("sqs");
+  const [news, setNews] = useState("contri");
+  const [key, setKey] = useState(true);
   function checkKey() {
     return key
-      ? "d491dc57a18165d902edd04658ea48ff426a8c602136470b9dd3abc4c1f8e85e"
-      : "d491d...e85e";
+      ? "d491d...e85e"
+      : "d491dc57a18165d902edd04658ea48ff426a8c602136470b9dd3abc4c1f8e85e";
   }
+
+  function checkEye() {
+    if (key) {
+      return (
+        <i
+          className="bi bi-eye-fill"
+          onClick={() => {
+            setKey(!key);
+          }}
+        ></i>
+      );
+    } else {
+      return (
+        <i
+          className="bi bi-eye-slash-fill"
+          onClick={() => {
+            setKey(!key);
+          }}
+        ></i>
+      );
+    }
+  }
+
+  function handDeleteAccount() {
+    const hg = document.querySelector(".ant-dropdown");
+    if (hg.classList.contains("hide")) {
+      hg.classList.remove("hide");
+    } else {
+      hg.classList.add("hide");
+    }
+  }
+
+  function checkNewsType() {
+    if (news == "contri") {
+      return <Contribute></Contribute>;
+    } else {
+      return <Noti></Noti>;
+    }
+  }
+
+  useEffect(() => {
+    const contri = document.querySelector(".contri");
+    const post = document.querySelector(".post");
+    if (news == "contri") {
+      contri.classList.add("active");
+      post.classList.remove("active");
+    } else {
+      post.classList.add("active");
+      contri.classList.remove("active");
+    }
+  }, [news]);
   return (
     <>
       <SideBar></SideBar>
       <header
         className="row"
-        style={{ backgroundColor: "#F6F5FF", height: "100%" }}
+        style={{
+          backgroundColor: "#F6F5FF",
+          height: "100%",
+          position: "relative",
+        }}
       >
         <div className="col-lg-2"></div>
         <div className="col-lg-8">
@@ -32,15 +98,42 @@ export default function ProfilePage() {
                 <img
                   src={backgroundCover}
                   alt="cover"
-                  style={{ height: "180px", width: "100%", objectFit: "cover" }}
+                  style={{
+                    height: "180px",
+                    position: "relative",
+                    width: "100%",
+                    objectFit: "cover",
+                    padding: "0",
+                  }}
                 />
+
+                <div style={{ position: "relative" }}>
+                  <div className="profile-delete-account">
+                    <i
+                      className="bi bi-three-dots"
+                      style={{
+                        padding: "0 4.5px",
+                        color: "white",
+                        fontSize: "1.2rem",
+                      }}
+                      onClick={() => {
+                        handDeleteAccount();
+                      }}
+                    ></i>
+                  </div>
+                  <button className="profile-edit-account">
+                    <i className="bi bi-pen-fill"></i>
+                    <span>Edit Profile</span>
+                  </button>
+                </div>
+
                 <div
                   className="row"
                   style={{ margin: "16px", position: "relative" }}
                 >
                   <div className="col-lg-4">
                     <div style={{ marginLeft: "152px" }}>
-                      <span className="User-name">{userName}</span>
+                      <span className="User-name">{profileUserName}</span>
                       <div>
                         <div
                           style={{
@@ -251,7 +344,7 @@ export default function ProfilePage() {
                       </svg>
                     </button>
                     <button className="profile-button-down">
-                      <i className="bi bi-eye-fill"></i>
+                      {checkEye()}
                     </button>
                   </div>
                 </div>
@@ -269,6 +362,7 @@ export default function ProfilePage() {
                 </h4>
               </div>
 
+              {/* Account Linked */}
               <div
                 className="row"
                 style={{
@@ -289,13 +383,372 @@ export default function ProfilePage() {
                 >
                   Connect account (1)
                 </div>
+
+                {/* Button */}
+                <div
+                  className="flex flex-wrap"
+                  style={{ display: "flex", gap: " 0.35rem" }}
+                >
+                  <button className="profile-account-linked">
+                    <span>
+                      <img
+                        src={Waller}
+                        alt="Wallet"
+                        style={{ width: "20px" }}
+                      />
+                    </span>
+                    <div
+                      style={{
+                        position: "absolute",
+                        top: "-7px",
+                        right: "-4px",
+                      }}
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        aria-hidden="true"
+                        className="text-gray-400"
+                        width="15px"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                  </button>
+
+                  <button className="profile-account-linked">
+                    <span>
+                      <img src={Tree} alt="Wallet" style={{ width: "20px" }} />
+                    </span>
+                    <div
+                      style={{
+                        position: "absolute",
+                        top: "-7px",
+                        right: "-4px",
+                      }}
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        aria-hidden="true"
+                        className="text-gray-400"
+                        width="15px"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                  </button>
+
+                  <button className="profile-account-linked">
+                    <span>
+                      <img src={Near} alt="Wallet" style={{ width: "20px" }} />
+                    </span>
+                    <div
+                      style={{
+                        position: "absolute",
+                        top: "-7px",
+                        right: "-4px",
+                      }}
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        aria-hidden="true"
+                        className="text-gray-400"
+                        width="15px"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                  </button>
+
+                  <button className="profile-account-linked">
+                    <span>
+                      <img src={Petra} alt="Wallet" style={{ width: "20px" }} />
+                    </span>
+                    <div
+                      style={{
+                        position: "absolute",
+                        top: "-7px",
+                        right: "-4px",
+                      }}
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        aria-hidden="true"
+                        className="text-gray-400"
+                        width="15px"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                  </button>
+
+                  <button className="profile-account-linked">
+                    <i
+                      className="bi bi-twitter"
+                      style={{ color: "#639AF8", fontSize: "1rem" }}
+                    ></i>
+                    <div
+                      style={{
+                        position: "absolute",
+                        top: "-7px",
+                        right: "-4px",
+                      }}
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        aria-hidden="true"
+                        className="text-gray-400"
+                        width="15px"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                  </button>
+
+                  <button className="profile-account-linked">
+                    <i
+                      className="bi bi-discord"
+                      style={{ color: "#639AF8", fontSize: "1rem" }}
+                    ></i>
+                    <div
+                      style={{
+                        position: "absolute",
+                        top: "-7px",
+                        right: "-4px",
+                      }}
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        aria-hidden="true"
+                        className="text-gray-400"
+                        width="15px"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                  </button>
+
+                  <button className="profile-account-linked">
+                    <img src={Google} alt="Wallet" style={{ width: "20px" }} />
+
+                    <div
+                      style={{
+                        position: "absolute",
+                        top: "-8px",
+                        right: "-4px",
+                      }}
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        aria-hidden="true"
+                        className="text-green-400"
+                        width="18px"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                  </button>
+
+                  <button className="profile-account-linked">
+                    <i
+                      className="bi bi-github"
+                      style={{ fontSize: "1.1rem" }}
+                    ></i>
+                    <div
+                      style={{
+                        position: "absolute",
+                        top: "-7px",
+                        right: "-4px",
+                      }}
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        aria-hidden="true"
+                        className="text-gray-400"
+                        width="15px"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                  </button>
+
+                  <button className="profile-account-linked">
+                    <span>
+                      <img
+                        src={Solana}
+                        alt="Wallet"
+                        style={{ width: "20px" }}
+                      />
+                    </span>
+                    <div
+                      style={{
+                        position: "absolute",
+                        top: "-7px",
+                        right: "-4px",
+                      }}
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        aria-hidden="true"
+                        className="text-gray-400"
+                        width="15px"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
               </div>
             </div>
-            <div className="col-lg-8">456</div>
+            <div className="col-lg-8">
+              <div
+                className="row"
+                style={{
+                  borderRadius: "12px",
+                  background: "white",
+                  padding: "20px",
+                  width: "100%",
+                }}
+              >
+                <div style={{ display: "flex" }}>
+                  <img src={Acti} alt="" />
+                  <div style={{ marginLeft: "7px", fontWeight: "500" }}>
+                    All Activities
+                  </div>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexWrap: "nowrap",
+                    borderBottom: "1px solid rgb(241, 245, 249)",
+                  }}
+                >
+                  <div
+                    className="profile-acti-part contri "
+                    onClick={() => {
+                      setNews("contri");
+                    }}
+                  >
+                    <div className="sub-active">
+                      <div className="profile-acti-part-amount ">0</div>
+                      <span className="profile-acti-part-text">
+                        Contributions
+                      </span>
+                    </div>
+                  </div>
+
+                  <div
+                    className="profile-acti-part post"
+                    onClick={() => {
+                      setNews("post");
+                    }}
+                  >
+                    <div className="sub-active">
+                      <div className="profile-acti-part-amount ">0</div>
+                      <span className="profile-acti-part-text">Posts</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="row">{checkNewsType()}</div>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="col-lg-2"></div>
+        <div className="col-lg-1"></div>
       </header>
+
+      <div
+        style={{
+          position: "absolute",
+          top: "0px",
+          left: "0px",
+          width: "100%",
+          height: "100%",
+          zIndex: "20000",
+        }}
+        onClick={() => {
+          handDeleteAccount();
+        }}
+        className="ant-dropdown hide"
+      >
+        <div>
+          <div
+            className="ant-dropdown-placement-bottomLeft "
+            style={{
+              minWidth: "24px",
+              left: "1050px",
+              top: "43px",
+              position: "absolute",
+            }}
+          >
+            <div className="profile-account-deleted">
+              <div style={{ padding: "5px 12px" }}>
+                <i
+                  className="bi bi-box-arrow-right"
+                  style={{ color: "red" }}
+                ></i>
+                <span style={{ color: "red", marginLeft: "4px" }}>
+                  Delete Account
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
