@@ -1,10 +1,11 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 
 import "./L_body2.scss";
 import { Context } from "../L_body23/L_body23";
 
 export default function L_body2() {
-  const { display, setDisplay } = useContext(Context);
+
+  const { display, setDisplay,setSelect,select } = useContext(Context);
 
   return (
     <>
@@ -24,6 +25,7 @@ export default function L_body2() {
                   document.querySelector(".slide-item").classList.add("active");
                   document.querySelector(".slide-item").classList.add("color");
                   setDisplay("slide-item");
+                  setSelect(1);
                 }}
               >
                 <div className="item-border">
@@ -60,6 +62,7 @@ export default function L_body2() {
                     .classList.add("active");
                   setDisplay("slide-item1");
                   document.querySelector(".slide-item").classList.add("color1");
+                  setSelect(2);
                 }}
               >
                 <div className="item-border1">
@@ -103,6 +106,7 @@ export default function L_body2() {
                     .classList.add("active");
                   document.querySelector(".slide-item").classList.add("color2");
                   setDisplay("slide-item2");
+                  setSelect(3);
                 }}
               >
                 <div className="item-border2">
@@ -139,6 +143,7 @@ export default function L_body2() {
                     .classList.add("active");
                   document.querySelector(".slide-item").classList.add("color3");
                   setDisplay("slide-item3");
+                  setSelect(4);
                 }}
               >
                 <div className="item-border3">
@@ -182,6 +187,7 @@ export default function L_body2() {
                     .classList.add("active");
                   document.querySelector(".slide-item").classList.add("color4");
                   setDisplay("slide-item4");
+                  setSelect(5);
                 }}
               >
                 <div className="item-border4">
@@ -218,6 +224,7 @@ export default function L_body2() {
                     .classList.add("active");
                   document.querySelector(".slide-item").classList.add("color5");
                   setDisplay("slide-item5");
+                  setSelect(6);
                 }}
               >
                 <div className="item-border5">

@@ -68,7 +68,7 @@
   position: absolute;
   border-top-right-radius: 150px;
   border-top-left-radius: 150px;
-  bottom: 0;  
+  bottom: 0;
   left: 0;
   right: 0;
   background-color: #b3c8ff;
@@ -149,7 +149,7 @@
   display: flex;
 }
 .vector {
-  margin-top: 19rem;
+  margin-top: 20rem;
 }
 .diff-text {
   font-size: 4.3rem;
@@ -162,6 +162,7 @@
   margin-left: 8rem;
   margin-top: 7rem;
 }
+
 .underline {
   margin-top: 23rem;
   margin-left: 26.4rem;
@@ -170,17 +171,48 @@
   position: absolute;
   z-index: 0;
 }
+
 .gif {
   z-index: 0;
   margin-left: 2rem;
   margin-top: 10rem;
   width: 46.9rem;
 }
+
+.bounties {
+  z-index: 0;
+  margin-left: -3rem;
+  margin-top: 8.5rem;
+  width: 52rem;
+  height: 37rem;
+}
 .pc {
   margin-left: 6rem;
   fill: aliceblue;
   margin-top: 8rem;
   width: 2.6rem;
+}
+.hour {
+  margin-left: 6.5rem;
+  margin-bottom: 1rem;
+}
+.hour-title {
+  margin-left: 6.5rem;
+  font-size: 4rem;
+  font-weight: bold;
+}
+.hour-text {
+  font-weight: bold;
+  margin-left: 6.5rem;
+  font-size: 1.2rem;
+  width: 32.5rem;
+}
+.iphone-p {
+  rotate: (14.2deg);
+  width: 19.8rem;
+  height: 36.5rem;
+  margin-top: -5rem;
+  margin-left: 17rem;
 }
 .pc-link {
   margin-left: 6rem;
@@ -196,6 +228,7 @@
   font-weight: bold;
   line-height: 4.9rem;
 }
+
 .link-title {
   width: 37rem;
   margin-left: 6rem;
@@ -211,6 +244,31 @@
   font-size: 1.2rem;
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.group-title {
+  width: 35rem;
+  margin-left: 6rem;
+  font-size: 4rem;
+  color: #000;
+  font-weight: bold;
+  line-height: 4.9rem;
+}
+.group-text {
+  color: #000;
+  width: 32rem;
+  margin-left: 6rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.group-i {
+  margin-left: 6.5rem;
+  margin-bottom: 2rem;
+}
+.group-img {
+  margin-top: -6rem;
+  margin-left: 3rem;
+  width: 41rem;
 }
 .read-more {
   width: 8rem;

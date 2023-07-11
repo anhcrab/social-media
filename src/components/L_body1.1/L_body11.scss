@@ -1,0 +1,33 @@
+.circle-part {
+  position: relative;
+  z-index: 0;
+  margin-top: -20rem;
+  height: 200vh;
+  width: 200vw;
+}
+
+#container {
+  position: fixed;
+  width: 20vw;
+  height: 35vh;
+}
+
+.daos-items {
+  position: absolute;
+  margin-left: 45.93rem;
+  margin-top: -19.1rem;
+}
+
+.daos {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+#box {
+  border-radius: 50%;
+  margin-top: -5rem;
+  margin-left: 30rem;
+  width: 200%;
+  height: 200%;
+  background: rgb(0, 255, 187);
+}

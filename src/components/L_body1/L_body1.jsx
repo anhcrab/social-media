@@ -7,7 +7,7 @@ import github from "../../assets/pic/github.png";
 import gnosis from "../../assets/pic/gnosis.png";
 import snapshot from "../../assets/pic/snapshot.png";
 import yellow from "../../assets/pic1/yellow1.png";
-import daos from "../../assets/pic/daos.png";
+import L_body11 from "../L_body1.1/L_body11";
 function L_body1() {
   useEffect(() => {
     const handleScroll = () => {
@@ -63,30 +63,7 @@ function L_body1() {
       }
     };
   }, []);
-  window.addEventListener(
-    "load",
-    function () {
-      var box = document.getElementById("box"),
-        docHeight = document.documentElement.offsetHeight;
 
-      window.addEventListener(
-        "scroll",
-        function () {
-          // normalize scroll position as percentage
-          var scrolled =
-              window.scrollY / ((docHeight * 100) / window.innerHeight),
-            transformValue = "scale(" + scrolled + ")";
-
-          box.style.WebkitTransform = transformValue;
-          box.style.MozTransform = transformValue;
-          box.style.OTransform = transformValue;
-          box.style.transform = transformValue;
-        },
-        false
-      );
-    },
-    false
-  );
   return (
     <div className="body">
       <div className="col-5 AI-text">
@@ -127,10 +104,8 @@ function L_body1() {
             <img className="discord" src={discord} alt="" />
           </div>
         </div>
-        <div id="container">
-          <div id="box"></div>
-        </div>
       </div>
+      <L_body11 />
     </div>
   );
 }
