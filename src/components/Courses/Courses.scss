@@ -1,0 +1,42 @@
+//Desktop
+@media only screen and (min-width: 1025px) {
+    .comm-main-tab {
+        border-radius: 20px;
+        margin-right: 8px;
+        border: 1px solid rgb(226, 232, 240);
+        font-weight: 50;
+        outline: none;
+        background: #fff;
+        box-shadow: 0 2px 0 rgba(0, 0, 0, .015);
+        color: rgba(0, 0, 0, .85);
+        cursor: pointer;
+        display: inline-block;
+        font-size: 13px;
+        height: 32px;
+        line-height: 1.5715;
+        padding: 4px 15px;
+        position: relative;
+        text-align: center;
+        touch-action: manipulation;
+        transition: all .3s;
+        user-select: none;
+        white-space: nowrap;
+        text-transform: none;
+    }
+
+    .comm-main-tab:hover {
+        background-color: transparent;
+    }
+
+    .comm-tab-slt {
+        border: 1px solid rgb(118, 169, 250);
+        color: rgb(63, 131, 248);
+        background: #e1effe;
+    }
+}
+
+//Ipad Pro
+@media only screen and (max-width: 1024px) and (min-width: 415px) {}
+
+//Iphone 8+ 
+@media only screen and (max-width: 414px) {}

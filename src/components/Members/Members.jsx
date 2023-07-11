@@ -13,10 +13,15 @@ const Members = (props) => {
             <TitleBox icon={'/src/assets/Communities/comm-side-bar/members-icon.svg'}>
                 Members
             </TitleBox>
-            <div className="comm-main-box">
+            <div 
+                className="comm-main-box"
+                style={{
+                    paddingBottom: '0',
+                }}
+            >
                 <div style={{
                     display: 'flex',
-                    padding: '20px 20px 12px 0',
+                    padding: '0 20px 12px 0',
                     font: '600 17px / 24px sans-serif',
                     fontWeight: '700',
                     opacity: 0.9,

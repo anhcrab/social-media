@@ -1,0 +1,41 @@
+//Desktop
+@media only screen and (min-width: 1025px) {
+    .comm-bounties-card {
+        width: 360px;
+        position: absolute;
+        bottom: unset;
+        top: inherit;
+        margin: 2px 0px;
+        transition: all 300ms ease 0s;
+        z-index: 11000;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 0px 10px;
+        border: 1px solid #f0f0f0;
+    }
+
+    .comm-bounties-card-head {
+        background: transparent;
+        border-bottom: 1px solid #f0f0f0;
+        border-radius: 2px 2px 0 0;
+        color: rgba(0,0,0,.85);
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: -1px;
+        min-height: 48px;
+        padding: 0 24px;
+    }
+
+    .comm-bounties-card-body {
+        padding: 0;
+    }
+}
+
+//Ipad Pro
+@media only screen and (max-width: 1024px) and (min-width: 415px) {
+    
+}
+
+//Iphone 8+ 
+@media only screen and (max-width: 414px) {
+    
+}

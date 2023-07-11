@@ -1,0 +1,58 @@
+//Desktop
+@media only screen and (min-width: 1025px) {
+    .bounties-state-filter {
+        align-items: center;
+        color: #64748b;
+        cursor: pointer;
+        display: flex;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+        padding: 10px 12px;
+        position: relative;
+    }
+
+    .bounties-state-filter-selected {
+        color: #3b82f6;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    .bounties-state-filter-selected::after {
+        background-color: #3b82f6;
+        content: "";
+        height: 2px;
+        left: -1px;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+    }
+
+    .comm-main-btn {
+        background: #fff;
+        box-shadow: 0 2px 0 rgba(0, 0, 0, .015);
+        color: rgba(0, 0, 0, .85);
+        cursor: pointer;
+        display: inline-block;
+        font-size: 14px;
+        height: 32px;
+        line-height: 1.5715;
+        padding: 4px 15px;
+        position: relative;
+        text-align: center;
+        touch-action: manipulation;
+        transition: all .3s cubic-bezier(.645, .045, .355, 1);
+        user-select: none;
+        white-space: nowrap;
+        text-transform: none;
+    }
+
+    
+}
+
+//Ipad Pro
+@media only screen and (max-width: 1024px) and (min-width: 415px) {}
+
+//Iphone 8+ 
+@media only screen and (max-width: 414px) {}

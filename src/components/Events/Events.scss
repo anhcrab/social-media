@@ -1,0 +1,38 @@
+//Desktop
+@media only screen and (min-width: 1025px) {
+    .events-state-filter {
+        align-items: center;
+        color: #64748b;
+        cursor: pointer;
+        display: flex;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+        padding: 10px 2px;
+        margin-right: 30px;
+        position: relative;
+    }
+
+    .events-state-filter-selected {
+        color: #3b82f6;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    .events-state-filter-selected::after {
+        background-color: #3b82f6;
+        content: "";
+        height: 2px;
+        left: -1px;
+        bottom: 0;
+        position: absolute;
+        width: 125%;
+    }
+}
+
+//Ipad Pro
+@media only screen and (max-width: 1024px) and (min-width: 415px) {}
+
+//Iphone 8+ 
+@media only screen and (max-width: 414px) {}
