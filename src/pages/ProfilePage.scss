@@ -138,3 +138,55 @@
     border-bottom: 2px solid rgb(59, 130, 246);
   }
 }
+
+.profile-confirm-delete {
+  border-radius: 8px;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  padding: 4px 11px;
+}
+.profile-confirm-delete:hover {
+  border-color: #40a9ff;
+  border-right-width: 1px;
+}
+
+.profile-confirm-delete:focus {
+  border-color: #40a9ff;
+  border-right-width: 1px;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+  outline: 0;
+}
+
+.profile-confirm-delete-cancel {
+  padding: 3px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 1px solid #e7e7e7;
+  background-color: #fff;
+}
+
+.profile-confirm-delete-cancel:hover {
+  border-color: #40a9ff;
+  color: #40a9ff;
+}
+
+.profile-confirm-delete-makeAction {
+  background: rgb(240, 82, 82);
+  padding: 3px 10px;
+  opacity: 0.5;
+  border-radius: 12px;
+  width: fit-content;
+  color: white;
+  border: none;
+  margin-left: 8px;
+  cursor: not-allowed;
+}
+
+.show-delete-account {
+  animation: slide 1s ease 3.5s forwards;
+}
+
+@keyframes rightToLeft {
+  from {height: 0;}
+  to {height: 300px;}
+}

@@ -9,6 +9,7 @@ import Solana from "../asset/img/Profile/solana-sol-logo.png";
 import Acti from "../asset/img/Profile/eded.svg";
 import Contribute from "../components/ProfilePage/Contribute";
 import Noti from "../components/ProfilePage/Noti";
+import Pikachu from "../asset/img/Profile/deleteGif.gif";
 import "./ProfilePage.scss";
 import { useEffect, useState } from "react";
 
@@ -77,6 +78,19 @@ export default function ProfilePage() {
       contri.classList.remove("active");
     }
   }, [news]);
+
+  function handleCopy(text) {
+    navigator.clipboard.writeText(text);
+  }
+
+  function showDeleteBox() {
+    const dele = document.querySelector(".show-delete-account");
+    if (dele.classList.contains("hide")) {
+      dele.classList.remove("hide");
+    } else {
+      dele.classList.add("hide");
+    }
+  }
   return (
     <>
       <SideBar></SideBar>
@@ -162,7 +176,12 @@ export default function ProfilePage() {
                           ></img>
                         </div>
                         <span style={{ color: "#79A3F0" }}>sqs</span>
-                        <button className="profile-button">
+                        <button
+                          className="profile-button"
+                          onClick={() => {
+                            handleCopy("sqs");
+                          }}
+                        >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
@@ -330,7 +349,14 @@ export default function ProfilePage() {
                   </div>
 
                   <div style={{ display: "flex", alignItems: "flex-start" }}>
-                    <button className="profile-button-down">
+                    <button
+                      className="profile-button-down"
+                      onClick={() => {
+                        handleCopy(
+                          "d491dc57a18165d902edd04658ea48ff426a8c602136470b9dd3abc4c1f8e85e"
+                        );
+                      }}
+                    >
                       <svg
                         style={{ marginBottom: "3px" }}
                         xmlns="http://www.w3.org/2000/svg"
@@ -653,7 +679,7 @@ export default function ProfilePage() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-8">
+            <div className="col-lg-8" style={{ padding: "0" }}>
               <div
                 className="row"
                 style={{
@@ -661,6 +687,7 @@ export default function ProfilePage() {
                   background: "white",
                   padding: "20px",
                   width: "100%",
+                  margin: "0",
                 }}
               >
                 <div style={{ display: "flex" }}>
@@ -711,6 +738,7 @@ export default function ProfilePage() {
         <div className="col-lg-1"></div>
       </header>
 
+      {/* box delete Account */}
       <div
         style={{
           position: "absolute",
@@ -735,7 +763,12 @@ export default function ProfilePage() {
               position: "absolute",
             }}
           >
-            <div className="profile-account-deleted">
+            <div
+              className="profile-account-deleted"
+              onClick={() => {
+                showDeleteBox();
+              }}
+            >
               <div style={{ padding: "5px 12px" }}>
                 <i
                   className="bi bi-box-arrow-right"
@@ -745,6 +778,124 @@ export default function ProfilePage() {
                   Delete Account
                 </span>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* control delete account when user decide to delete */}
+      <div className="show-delete-account hide">
+        <div
+          style={{
+            position: "absolute",
+            top: "0px",
+            left: "0px",
+            width: "100%",
+            zIndex: "20000",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <div
+            className="blur-background"
+            onClick={() => {
+              showDeleteBox();
+            }}
+          ></div>
+
+          <div
+            style={{
+              backgroundColor: "#fff",
+              height: "510px",
+              width: "470px",
+              borderRadius: "12px",
+              marginTop: "100px",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                padding: "16px 18px 0",
+              }}
+            >
+              <h6 style={{ fontSize: "700", marginTop: "5px" }}>
+                Delete Account
+              </h6>
+              <i
+                className="bi bi-x-lg"
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  showDeleteBox();
+                }}
+              ></i>
+            </div>
+
+            <div
+              style={{
+                minHeight: "410px",
+              }}
+            >
+              <div
+                style={{
+                  width: "100%",
+                  objectFit: "cover",
+                  padding: "10px 20px 0",
+                }}
+              >
+                <img
+                  src={Pikachu}
+                  alt=""
+                  style={{ width: "100%", borderRadius: "12px" }}
+                />
+              </div>
+
+              <div
+                style={{
+                  padding: "0 20px",
+                  width: "100%",
+                  background: "rgb(253, 232, 232)",
+                  color: "rgb(119, 29, 29)",
+                  marginTop: "18px",
+                }}
+              >
+                All your activity on the platform will be lost forever
+              </div>
+
+              <div style={{ padding: "15px 20px" }}>
+                <div
+                  style={{ color: "rgb(100, 116, 139)", marginBottom: "10px" }}
+                >
+                  Username (sqs)
+                </div>
+                <input
+                  placeholder="Type in your username to delete..."
+                  type="text"
+                  value=""
+                  className="profile-confirm-delete"
+                ></input>
+              </div>
+            </div>
+
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "flex-end",
+                padding: "10px 16px",
+                borderTop: "1px solid #f0f0f0",
+              }}
+            >
+              <button
+                className="profile-confirm-delete-cancel"
+                onClick={() => {
+                  showDeleteBox();
+                }}
+              >
+                Cancel
+              </button>
+              <button className="profile-confirm-delete-makeAction" disabled>
+                Delete Account
+              </button>
             </div>
           </div>
         </div>
