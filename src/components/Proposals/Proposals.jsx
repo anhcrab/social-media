@@ -171,7 +171,6 @@ const Proposals = () => {
                                     </div>
                                     <div style={{
                                         background: 'rgb(104, 117, 245)',
-                                        color: 'white',
                                         padding: '4px 12px',
                                         borderRadius: '18px',
                                         font: '500 13px / 20px sans-serif',

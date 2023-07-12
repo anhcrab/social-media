@@ -24,6 +24,7 @@ const Community = (props) => {
                     display: 'flex',
                     justifyContent: 'center',
                     width: '100%',
+                    zIndex: 1
                 }}
             >
                 <div style={{
@@ -57,7 +58,6 @@ const Community = (props) => {
                 </div>
                 {/* <ChatBox /> */}
             </div>
-            <Outlet />
         </context.Provider>
     )
 }

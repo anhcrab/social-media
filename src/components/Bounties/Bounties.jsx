@@ -1,18 +1,74 @@
-import { useContext, useState } from 'react'
+import { createContext, useContext, useEffect, useState } from 'react'
 import SearchBox from '../SearchBox/SearchBox'
 import './Bounties.scss'
 import { context } from '../Community/Community'
 import emptyImg from '../../assets/Communities/comm-main-empty/no_bounties.c1.svg'
 import BountiesCard from '../BountiesCard/BountiesCard'
 
+export const bountiesContext = createContext()
+
 const Bounties = () => {
     const { community } = useContext(context)
     const [selected, setSelected] = useState(1)
+    const [tab, setTab] = useState()
     const [filter, setFilter] = useState(false)
-    const [creationDate, setCreationDate] = useState(false)
-    
+    const [sort, setSort] = useState(false)
+    const [order, setOrder] = useState('Desending')
+    const handleOrder = () => {
+        if (order === 'Ascending') {
+            return (
+                <svg
+                    style={{
+                        width: '15px',
+                    }}
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        d="M12 3.75a.75.75 0 01.75.75v13.19l5.47-5.47a.75.75 0 111.06 1.06l-6.75 6.75a.75.75 0 01-1.06 0l-6.75-6.75a.75.75 0 111.06-1.06l5.47 5.47V4.5a.75.75 0 01.75-.75z"
+                        clip-rule="evenodd"
+                    ></path>
+                </svg>
+            )
+        }
+        if (order === 'Desending') {
+            return (
+                <svg
+                    style={{ width: '15px'}}
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        d="M12 20.25a.75.75 0 01-.75-.75V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l6.75-6.75a.75.75 0 011.06 0l6.75 6.75a.75.75 0 11-1.06 1.06l-5.47-5.47V19.5a.75.75 0 01-.75.75z"
+                        clip-rule="evenodd"
+                    ></path>
+                </svg>
+            )
+        }
+    }
+    useEffect(() => {
+        if (tab === 'filter') {
+            setFilter(true)
+            setSort(false)
+        }
+        if (tab === 'sort') {
+            setSort(true)
+            setFilter(false)
+        }
+        if (tab === 'none') {
+            setFilter(false)
+            setSort(false)
+        }
+    }, [tab])
+
     return (
-        <>
+        <bountiesContext.Provider value={({ order, setOrder })}>
             <SearchBox>
                 Search Bounties
             </SearchBox>
@@ -23,6 +79,7 @@ const Bounties = () => {
                 justifyContent: 'space-between',
                 alignItems: 'center',
                 borderBottom: '1px solid #d9d9d9',
+                zIndex: '10'
             }}>
                 <div style={{
                     display: 'flex',
@@ -46,80 +103,73 @@ const Bounties = () => {
                         }}
                     >🚫 Missed</span>
                 </div>
-                <div style={{
-                    marginBottom: '4px',
-                }}>
+                <div>
                     <div style={{
-                        display: 'inline-block',
-                        position: 'relative',
-                        textAlign: 'left',
+                        display: 'flex',
+                        flexDirection: 'row',
+                        justifyContent: 'space-between',
+                        alignItems: 'center',
                     }}>
-                        <button
-                            className='comm-main-btn'
-                            style={{
-                                border: '1px solid rgb(226, 232, 240)',
-                                borderRadius: '20px',
-                                marginRight: '8px',
-                                fontWeight: 500,
-                                outline: 'none',
-                            }}
-                            onClick={() => {
-                                setFilter(!filter)
-                            }}
-                        >
-                            <svg style={{ width: '15px' }}
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                                fill="currentColor"
-                                aria-hidden="true"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M3.792 2.938A49.069 49.069 0 0112 2.25c2.797 0 5.54.236 8.209.688a1.857 1.857 0 011.541 1.836v1.044a3 3 0 01-.879 2.121l-6.182 6.182a1.5 1.5 0 00-.439 1.061v2.927a3 3 0 01-1.658 2.684l-1.757.878A.75.75 0 019.75 21v-5.818a1.5 1.5 0 00-.44-1.06L3.13 7.938a3 3 0 01-.879-2.121V4.774c0-.897.64-1.683 1.542-1.836z"
-                                    clip-rule="evenodd"
-                                ></path>
-                            </svg>
-                            <span style={{ marginLeft: '8px' }}>Filters</span>
-                        </button>
+                        <div>
+                            <div style={{
+                                display: 'inline-block',
+                                textAlign: 'left',
+                            }}>
+                                <div>
+                                    <div
+                                        className={`comm-main-tab ${tab === 'filter' ? 'comm-tab-slt' : ''}`}
+                                        onClick={() => {
+                                            if (tab === 'filter') {
+                                                setTab('none')
+                                            } else {
+                                                setTab('filter')
+                                            }
+                                        }}
+                                    >
+                                        <svg style={{ width: '15px' }}
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M3.792 2.938A49.069 49.069 0 0112 2.25c2.797 0 5.54.236 8.209.688a1.857 1.857 0 011.541 1.836v1.044a3 3 0 01-.879 2.121l-6.182 6.182a1.5 1.5 0 00-.439 1.061v2.927a3 3 0 01-1.658 2.684l-1.757.878A.75.75 0 019.75 21v-5.818a1.5 1.5 0 00-.44-1.06L3.13 7.938a3 3 0 01-.879-2.121V4.774c0-.897.64-1.683 1.542-1.836z"
+                                                clip-rule="evenodd"
+                                            ></path>
+                                        </svg>
+                                        <span style={{ marginLeft: '8px' }}>Filters</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div style={{
+                                display: 'inline-block',
+                                position: 'relative',
+                                textAlign: 'left',
+                            }}>
+                                <div
+                                    className={`comm-main-tab ${tab === 'sort' ? 'comm-tab-slt' : ''}`}
+                                    onClick={() => {
+                                        if (tab === 'sort') {
+                                            setTab('none')
+                                        } else {
+                                            setTab('sort')
+                                        }
+                                    }}
+                                >
+                                    {handleOrder() }
+                                    <span style={{ marginLeft: '8px' }}>Creation date</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <BountiesCard type='filter' state={filter} />
-                    <div style={{
-                        display: 'inline-block',
-                        position: 'relative',
-                        textAlign: 'left',
-                    }}>
-                        <button
-                            className='comm-main-btn'
-                            style={{
-                                border: '1px solid rgb(226, 232, 240)',
-                                borderRadius: '20px',
-                                marginRight: '8px',
-                                fontWeight: 500,
-                                outline: 'none',
-                            }}
-                            onClick={() => {
-                                setCreationDate(!creationDate)
-                            }}
-                        >
-                            <svg style={{ width: '15px' }}
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24" fill="currentColor"
-                                aria-hidden="true"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M12 3.75a.75.75 0 01.75.75v13.19l5.47-5.47a.75.75 0 111.06 1.06l-6.75 6.75a.75.75 0 01-1.06 0l-6.75-6.75a.75.75 0 111.06-1.06l5.47 5.47V4.5a.75.75 0 01.75-.75z"
-                                    clip-rule="evenodd"
-                                ></path>
-                            </svg>
-                            <span style={{ marginLeft: '8px' }}>Creation date</span>
-                        </button>
-                    </div>
-                    <BountiesCard type='creation-date' state={creationDate} />
                 </div>
+                <BountiesCard type='sort' state={sort} />
+                <BountiesCard type='filter' state={filter} />
             </div>
             {community.bounty.length === 0 ? emptyPage() : commonPage()}
-        </>
+        </bountiesContext.Provider>
     )
 }
 
