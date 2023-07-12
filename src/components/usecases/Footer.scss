@@ -124,7 +124,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 2rem;
 
 }
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
     .footer-grid-2{
         grid-column-gap: 75px;
     }
@@ -133,7 +133,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
         height: 1019px;
     }
 }
-@media (min-width: 414px) {
+@media (max-width: 414px) {
     .footer-grid-2 {
         width: 100%;
         

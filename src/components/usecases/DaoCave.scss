@@ -125,7 +125,7 @@ input.w-button {
     right: 11%;
     transform: rotate(15deg);
 }
-@media (min-width: 414px) {
+@media (max-width: 414px) {
     .cta-text  {
         color: #fff;
         font-size: 35px;

@@ -444,7 +444,7 @@ width: 100%;
         height: 100%;
     }
 }
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   .slick-next::before {
     font-size: 3rem !important;
     color: #000 !important;
@@ -464,7 +464,7 @@ width: 100%;
   display: flex;
 }
 }
-@media (min-width: 414px) {
+@media (max-width: 414px) {
   .answer-holder1 {
     width: 200px;
 }
@@ -508,12 +508,5 @@ width: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-left: 230px;
 }
-.card-title {
-  width: 100%;
-  margin-top: -164px;
-  margin-bottom: 0;
-  font-size: 25px;
-  font-weight: 600;
-  position: static;
-}
+
 }
