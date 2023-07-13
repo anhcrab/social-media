@@ -1,6 +1,5 @@
 import React from "react";
 import "./L_header.scss";
-import L_body from "../L_body/L_body";
 import Logo from "../../assets/pic/Logo.png";
 export default function L_header() {
   return (

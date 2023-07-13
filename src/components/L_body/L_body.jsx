@@ -25,7 +25,7 @@ import AOS from "aos";
 import "./L_body.scss";
 import L_header from "../L_header/L_header";
 import L_body1 from "../L_body1/L_body1";
-import L_body11 from "../L_body1.1/L_body11";
+import L_body23 from "../L_body23/L_body23";
 export default function L_body() {
   AOS.init();
   return (
@@ -36,15 +36,7 @@ export default function L_body() {
       <div className="row" data-aos="fade-up" data-aos-duration="3000" href="#">
         <div className="col-1"></div>
         <div className="col-10 img-container">
-          <img
-            src={mac}
-            alt=""
-            style={{
-              marginLeft: "-1.9rem",
-              width: "86.6vw",
-              marginBottom: "-0.5rem",
-            }}
-          />
+          <img className="mac" src={mac} alt="" />
           <img className="big-img" src={big} alt="" />
           <img className="mobile-img" src={mobile} alt="" />
           <p className="trust-text">Trusted by leading communities</p>
@@ -69,7 +61,7 @@ export default function L_body() {
       {/* Hover part */}
       <div className="row" data-aos="fade-up" data-aos-duration="3000">
         <div className="col-1"></div>
-        <div className="col-10">
+        <div className="col-10 img-container">
           <div className="row hover-part">
             <div className="col-4 hover-part-contain1">
               <span className="hover-part-num">01</span>
@@ -249,6 +241,7 @@ export default function L_body() {
         <div>
           <img className="way-under" src={under} alt="" />
         </div>
+        <L_body23 />
       </div>
       {/* glass part */}
     </body>

@@ -115,13 +115,13 @@
   }
 }
 .elevatorL-transition {
-  animation: moveLeft 0.2s forwards;
+  animation: moveLeft 0.13s forwards;
   transition-delay: 2s;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
 }
 .elevatorR-transition {
-  animation: moveRight 0.2s forwards;
+  animation: moveRight 0.13s forwards;
   transition-delay: 2s;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
@@ -129,20 +129,24 @@
 
 @keyframes moveLeft {
   0% {
-    transform: translate(-5em, -3em) rotate(0);
+    transform: translate(-6em, -3em) rotate(0);
   }
   100% {
-    transform: translate(8.1em, 11em) scale(0.2, 0.2);
+    transform: translate(8.1em, 10em) scale(0.2, 0.2);
   }
 }
 @keyframes moveRight {
   0% {
-    transform: translate(10em, -2em) rotate(0);
+    transform: translate(12em, -2em) rotate(0);
   }
   100% {
-    transform: translate(-1em, 11em) scale(0.2, 0.2);
+    transform: translate(-1em, 10em) scale(0.2, 0.2);
   }
 }
 .under {
   width: 10rem;
+}
+.max-height {
+  z-index: -0.01;
+  height: 300vh;
 }

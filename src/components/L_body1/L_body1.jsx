@@ -104,8 +104,8 @@ function L_body1() {
             <img className="discord" src={discord} alt="" />
           </div>
         </div>
+        <L_body11 />
       </div>
-      <L_body11 />
     </div>
   );
 }
