@@ -48,7 +48,35 @@
         text-transform: none;
     }
 
-    
+    .bounties-item-wrapper {
+        width: 100%;
+        text-align: left;
+        border-radius: 16px;
+        cursor: pointer;
+        margin-bottom: 12px;
+        border: 1px solid #f0f0f0;
+    }
+
+    .bounties-item {
+        padding: 16px 20px;
+        border-radius: 16px;
+        transition: all 0.2s ease 0s;
+        background-color: #fff;
+    }
+
+    .bounty-status-bar {
+        padding: 4px 16px;
+        border-radius: 50px;
+        border: 1px solid rgb(226, 232, 240);
+    }
+
+    .bounty-status-bar span {
+        color: rgb(15, 23, 42);
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 2px;
+    }
 }
 
 //Ipad Pro

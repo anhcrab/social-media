@@ -7,7 +7,7 @@ import { context } from '../Community/Community'
 const Courses = () => {
     const { community } = useContext(context)
     const [tab, setTab] = useState('all')
-    return(
+    return (
         <>
             <SearchBox>
                 Search Courses
@@ -50,7 +50,45 @@ const Courses = () => {
                     </div>
                 </div>
             </div>
-            {community.course.length === 0 ? emptyPage() : commonPage()}
+            {community.course.length === 0 ? emptyPage() : <div>
+                {community.course.map(item =>
+                    <div className='courses-item-wrapper'>
+                        <div className="courses-item">
+                            <img src={item.courseURL} alt="course-img" style={{
+                                width: '96px',
+                                height: '96px',
+                                border: '1px solid rgb(241, 245, 249)',
+                                borderRadius: '16px',
+                                objectFit: 'cover',
+                            }} />
+                            <div style={{
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    width: '100%',
+                                    gap: '4px'
+                                }}>
+                                <h4 style={{
+                                    display: 'flex',
+                                    fontSize: '16px',
+                                    textOverflow: 'ellipsis',
+                                    color: 'rgba(0,0,0,.85)',
+                                    width: '100%',
+                                    margin: 0
+                                }}>{item.courseName}</h4>
+                                <div className='course-content'>{item.desc}</div>
+                                <div style={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    gap: '4px'
+                                }}>
+                                    <span className='course-status-bar'>📕 {item.books}</span>
+                                    <span className='course-status-bar'>⭐️ {item.stars}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                )}
+            </div >}
         </>
     )
 }
