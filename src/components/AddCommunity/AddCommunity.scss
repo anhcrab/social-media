@@ -1,17 +1,13 @@
-body {
-    // overflow: hidden;
-}
-
 .addcommunity-first {
     display: flex;
-    height: 100vh;
     overflow: hidden;
     position: relative;
+    height: 100vh;
 }
 
 .backgroundfilter {
     background: rgba(0, 0, 0, 0.5);
-    filter: blur(1px);
+    filter: blur(5px);
 }
 
 .addcommunity-first-wrap {
@@ -117,7 +113,7 @@ body {
 
 .addcommunity-create {
     display: flex;
-    justify-content: space-between !important;
+    justify-content: space-between ;
 }
 
 .addcommunity-create1 {
@@ -784,6 +780,7 @@ body {
     border-radius: 50%;
     position: relative;
     animation: 15s linear 0s infinite normal none running rotation;
+    opacity: 0.1;
 }
 
 .addcommunity-create1-wrap-avt-body3-1-circle-avt-name {
@@ -798,4 +795,30 @@ body {
     100% {
         transform: rotate(359deg);
     }
+}
+
+@media screen and (max-width: 1024px) {
+    .addcommunity-first {
+        display: none;
+    }
+    .addcommunity-first-wrap {
+        display: none;
+    }
+    .addcommunity-create1 {
+        display: none;
+    }
+    .addcommunity-create2 {
+        height: 100%;
+    }
+    .addcommunity-create2-wrap-content-page2 {
+        height: 100%;
+    }
+    .addcommunity-create2-wrap-content {
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    
 }

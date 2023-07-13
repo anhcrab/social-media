@@ -1,3 +1,44 @@
+import img1 from '../assets/Communities/giveth-bg.jpg'
+import logo1 from '../assets/Communities/giveth-logo.jpg'
+import img2 from '../assets/Communities/sage-bg.jpg'
+import logo2 from '../assets/Communities/sage-logo.jpg'
+import img3 from '../assets/Communities/daolens-bg.jpg'
+import logo3 from '../assets/Communities/daolens-logo.jpg'
+import img4 from '../assets/Communities/kodeinkpg-bg.jpg'
+import logo4 from '../assets/Communities/kodeinkpg-logo.jpg'
+import img5 from '../assets/Communities/daolensevents-bg.jpg'
+import logo5 from '../assets/Communities/daolensevents-logo.jpg'
+import img6 from '../assets/Communities/daolensevents-bg.jpg'
+import logo6 from '../assets/Communities/daolensevents-logo.jpg'
+import img7 from '../assets/Communities/unitydao-bg.jpg'
+import logo7 from '../assets/Communities/unitydao-logo.jpg'
+import img8 from '../assets/Communities/uniflux-bg.jpg'
+import logo8 from '../assets/Communities/uniflux-logo.jpg'
+import img9 from '../assets/Communities/polygonvillage-bg.jpg'
+import logo9 from '../assets/Communities/polygonvillage-logo.jpg'
+import img10 from '../assets/Communities/web3memes-bg.jpg'
+import logo10 from '../assets/Communities/web3memes-logo.jpg'
+import img11 from '../assets/Communities/thedaoathon-bg.jpg'
+import logo11 from '../assets/Communities/thedaoathon-logo.jpg'
+import img12 from '../assets/Communities/crypto-bg.jpg'
+import logo12 from '../assets/Communities/crypto-logo.jpg'
+import img13 from '../assets/Communities/dunder-bg.jpg'
+import logo13 from '../assets/Communities/dunder-logo.jpg'
+import img14 from '../assets/Communities/vnartists-bg.jpg'
+import logo14 from '../assets/Communities/vnartists-logo.jpg'
+import img15 from '../assets/Communities/lyricst-bg.jpg'
+import logo15 from '../assets/Communities/lyricst-logo.jpg'
+import img16 from '../assets/Communities/ed3-bg.jpg'
+import logo16 from '../assets/Communities/ed3-logo.jpg'
+import img17 from '../assets/Communities/gaoa-bg.jpg'
+import logo17 from '../assets/Communities/gaoa-logo.jpg'
+import img18 from '../assets/Communities/aavegotchi-bg.jpg'
+import logo18 from '../assets/Communities/aavegotchi-logo.jpg'
+import img19 from '../assets/Communities/ethdenver23-bg.jpg'
+import logo19 from '../assets/Communities/ethdenver23-logo.jpg'
+import img20 from '../assets/Communities/3dfranken-bg.jpg'
+import logo20 from '../assets/Communities/3dfranken-logo.jpg'
+
 export default [
     {
         communityId: 1,
@@ -7,8 +48,8 @@ export default [
         socialIcons: ['twitter'],
         investors: 0,
         communityType: ['🌍 DAOs'],
-        backgroundURL: '/src/assets/Communities/giveth-bg.jpg',
-        logoURL: '/src/assets/Communities/giveth-logo.jpg',
+        backgroundURL: `${img1}`,
+        logoURL: `${logo1}`,
         overview: {
             overviewDescription: '<p><strong>Giveth is building a culture and economy that rewards and empowers those who give.</strong></p><p>Our goal is to use web3 to radically transform how public goods are funded by helping nonprofits evolve out of systems that depend on sacrifice into ones that create win-win situations for everyone involved. Beginning with a free and direct crypto donation platform on Ethereum, we onboard for-good projects and support them so that they can eventually blossom into DAOs with their own regenerative economies, with Giveth itself becoming an impact investment hub for public goods</p>',
             tags: ['twitter', 'web'],
@@ -904,8 +945,8 @@ export default [
         socialIcons: ['twitter', 'discord'],
         investors: 26,
         communityType: ['🎮 Gaming Community'],
-        backgroundURL: '/src/assets/Communities/sage-bg.jpg',
-        logoURL: '/src/assets/Communities/sage-logo.jpg',
+        backgroundURL: `${img2}`,
+        logoURL: `${logo2}`,
         overview: [
             {
                 overviewId: 1,
@@ -1805,8 +1846,8 @@ export default [
         socialIcons: ['twitter', 'discord'],
         investors: 11,
         communityType: ['🔍 Others'],
-        backgroundURL: '/src/assets/Communities/daolens-bg.jpg',
-        logoURL: '/src/assets/Communities/daolens-logo.jpg',
+        backgroundURL: `${img3}`,
+        logoURL: `${logo3}`,
         overview: {
             overviewDescription: `<p><strong>🙏 Welcome to the official DaoLens.</strong></p><p>DaoLens is a Business to Dao offering providing infrastructure and a suite of tools for DAO community ninjas to do their magic. If you manage a DAO, we help you on four fronts - Discovery -&gt; Onboarding -&gt; Contribution and Operations. Try our product to learn more! We’re excited to have you in our community</p><p><br></p><p><strong>✨ How can I try the DaoLens Products?</strong></p><p>DAO Manager -&gt;<a href="https://manager.daolens.com/" rel="noopener noreferrer" target="_blank">https://manager.daolens.com/</a></p><p>If you are reading this , you are within our most loved product yet ✌️.</p><p>DAO Manager !! Designed for those special group/communities who exists because they driving purpose within.</p><p>Onboarding Tool -&gt; <a href="https://app.daolens.com/onboarding " rel="noopener noreferrer" target="_blank">https://app.daolens.com/onboarding </a></p><p>We manage your onboarding in a way that builds the right context bringing information hidden across the tool stack that you use. If you’re a community where you have more lurkers and only a few contributors, we can help. Our self-serve offering can be <strong>deployed in under 3 minutes</strong> and it acts as a <strong>HR for your new joiners</strong>, activating and empowering them to add value to the DAO.</p><p>At the same time, as an admin you know who joined, why they joined, how they got in and where they should be routed.</p><p><br></p><p><strong>📜 How can I stay updated with DaoLens?</strong></p><p>Join our Monday weekly calls on - we host exciting DAO operators on our podcast ‘Humans of DAOs’ LIVE on Discord. It’s a great place where guests answer community questions and YOU get to network, get to know other like-minded DAO operators. Our community’s built of the best of the best.</p><p>Feel lost? Want any help/ support? Our community Ninjas are always here for you. Tag us directly on or raise</p><p><br></p><p><strong>❤️ How can I show love?</strong></p><p>We love love — in fact, our community makes all the late night coding and jams worth it.</p><p>(a) <a href="https://twitter.com/DaoLens" rel="noopener noreferrer" target="_blank" style="color: var(--text-link);">Twitter</a></p><p>(b) <a href="https://www.youtube.com/channel/UCnj5XW4K7CRz0GpTv1W2VRw" rel="noopener noreferrer" target="_blank" style="color: var(--text-link);">Youtube</a></p>`,
             tags: ['twitter', 'discord', 'web'],
@@ -2702,8 +2743,8 @@ export default [
         socialIcons: ['twitter'],
         investors: 1,
         communityType: ['👥 Social'],
-        backgroundURL: '/src/assets/Communities/kodeinkpg-bg.jpg',
-        logoURL: '/src/assets/Communities/kodeinkpg-logo.jpg',
+        backgroundURL: `${img4}`,
+        logoURL: `${logo4}`,
         overview: [
             {
                 overviewId: 1,
@@ -3603,8 +3644,8 @@ export default [
         socialIcons: ['twitter'],
         investors: 7,
         communityType: ['👥 Social'],
-        backgroundURL: '/src/assets/Communities/daolensevents-bg.jpg',
-        logoURL: '/src/assets/Communities/daolensevents-logo.jpg',
+        backgroundURL: `${img5}`,
+        logoURL: `${logo5}`,
         overview: [
             {
                 overviewId: 1,
@@ -4504,8 +4545,8 @@ export default [
         socialIcons: ['twitter'],
         investors: 4,
         communityType: ['🌍 DAOs'],
-        backgroundURL: '/src/assets/Communities/coldscollective-bg.jpg',
-        logoURL: '/src/assets/Communities/coldscollective-logo.jpg',
+        backgroundURL: `${img6}`,
+        logoURL: `${logo6}`,
         overview: [
             {
                 overviewId: 1,
@@ -5405,8 +5446,8 @@ export default [
         socialIcons: ['twitter'],
         investors: 0,
         communityType: ['🌍 DAOs'],
-        backgroundURL: '/src/assets/Communities/unitydao-bg.jpg',
-        logoURL: '/src/assets/Communities/unitydao-logo.jpg',
+        backgroundURL: `${img7}`,
+        logoURL: `${logo7}`,
         overview: [
             {
                 overviewId: 1,
@@ -6306,8 +6347,8 @@ export default [
         socialIcons: ['twitter', 'discord'],
         investors: 23,
         communityType: ['🔍 Others'],
-        backgroundURL: '/src/assets/Communities/uniflux-bg.jpg',
-        logoURL: '/src/assets/Communities/uniflux-logo.jpg',
+        backgroundURL: `${img8}`,
+        logoURL: `${logo8}`,
         overview: [
             {
                 overviewId: 1,
@@ -7207,8 +7248,8 @@ export default [
         socialIcons: ['twitter'],
         investors: 5,
         communityType: ['🌍 DAOs'],
-        backgroundURL: '/src/assets/Communities/polygonvillage-bg.jpg',
-        logoURL: '/src/assets/Communities/polygonvillage-logo.jpg',
+        backgroundURL: `${img9}`,
+        logoURL: `${logo9}`,
         overview: [
             {
                 overviewId: 1,
@@ -8108,8 +8149,8 @@ export default [
         socialIcons: ['twitter'],
         investors: 1,
         communityType: ['✨ Content Creator'],
-        backgroundURL: '/src/assets/Communities/web3memes-bg.jpg',
-        logoURL: '/src/assets/Communities/web3memes-logo.jpg',
+        backgroundURL: `${img10}`,
+        logoURL: `${logo10}`,
         overview: [
             {
                 overviewId: 1,
@@ -9009,8 +9050,8 @@ export default [
         socialIcons: ['twitter'],
         investors: 3,
         communityType: ['🌍 DAOs'],
-        backgroundURL: '/src/assets/Communities/thedaoathon-bg.jpg',
-        logoURL: '/src/assets/Communities/thedaoathon-logo.jpg',
+        backgroundURL: `${img11}`,
+        logoURL: `${logo11}`,
         overview: [
             {
                 overviewId: 1,
@@ -9910,9 +9951,8 @@ export default [
         socialIcons: ['twitter', 'discord'],
         investors: 0,
         communityType: ['🌍 DAOs', '+1'],
-        backgroundURL: '/src/assets/Communities/crypto-bg.jpg',
-        logoURL: '/src/assets/Communities/crypto-logo.jpg',
-        pageURL: '/app/dao/crypto/12/overview',
+        backgroundURL: `${img12}`,
+        logoURL: `${logo12}`,
         overview: [
             {
                 overviewId: 1,
@@ -10812,8 +10852,8 @@ export default [
         socialIcons: ['twitter'],
         investors: 14,
         communityType: ['🔍 Others'],
-        backgroundURL: '/src/assets/Communities/dunder-bg.jpg',
-        logoURL: '/src/assets/Communities/dunder-logo.jpg',
+        backgroundURL: `${img13}`,
+        logoURL: `${logo13}`,
         overview: [
             {
                 overviewId: 1,
@@ -11713,8 +11753,8 @@ export default [
         socialIcons: ['twitter'],
         investors: 2,
         communityType: ['🌍 DAOs', '+1'],
-        backgroundURL: '/src/assets/Communities/vnartists-bg.jpg',
-        logoURL: '/src/assets/Communities/vnartists-logo.jpg',
+        backgroundURL: `${img14}`,
+        logoURL: `${logo14}`,
         overview: [
             {
                 overviewId: 1,
@@ -12614,8 +12654,8 @@ export default [
         socialIcons: ['twitter', 'discord'],
         investors: 0,
         communityType: ['🌍 DAOs', '+1'],
-        backgroundURL: '/src/assets/Communities/lyricst-bg.jpg',
-        logoURL: '/src/assets/Communities/lyricst-logo.jpg',
+        backgroundURL: `${img15}`,
+        logoURL: `${logo15}`,
         overview: [
             {
                 overviewId: 1,
@@ -13515,8 +13555,8 @@ export default [
         socialIcons: ['twitter'],
         investors: 2,
         communityType: ['🌍 DAOs'],
-        backgroundURL: '/src/assets/Communities/ed3-bg.jpg',
-        logoURL: '/src/assets/Communities/ed3-logo.jpg',
+        backgroundURL: `${img16}`,
+        logoURL: `${logo16}`,
         overview: [
             {
                 overviewId: 1,
@@ -14416,8 +14456,8 @@ export default [
         socialIcons: ['twitter', 'discord'],
         investors: 6,
         communityType: ['🔍 Others'],
-        backgroundURL: '/src/assets/Communities/gaoa-bg.jpg',
-        logoURL: '/src/assets/Communities/gaoa-logo.jpg',
+        backgroundURL: `${img17}`,
+        logoURL: `${logo17}`,
         overview: [
             {
                 overviewId: 1,
@@ -15317,8 +15357,8 @@ export default [
         socialIcons: ['twitter', 'discord'],
         investors: 0,
         communityType: ['🌍 DAOs', '+1'],
-        backgroundURL: '/src/assets/Communities/aavegotchi-bg.jpg',
-        logoURL: '/src/assets/Communities/aavegotchi-logo.jpg',
+        backgroundURL: `${img18}`,
+        logoURL: `${logo18}`,
         overview: [
             {
                 overviewId: 1,
@@ -16218,8 +16258,8 @@ export default [
         socialIcons: ['twitter', 'discord'],
         investors: 2,
         communityType: ['🔍 Others'],
-        backgroundURL: '/src/assets/Communities/ethdenver23-bg.jpg',
-        logoURL: '/src/assets/Communities/ethdenver23-logo.jpg',
+        backgroundURL: `${img19}`,
+        logoURL: `${logo19}`,
         overview: [
             {
                 overviewId: 1,
@@ -17119,8 +17159,8 @@ export default [
         socialIcons: ['twitter', 'discord'],
         investors: 9,
         communityType: ['🌍 DAOs'],
-        backgroundURL: '/src/assets/Communities/3dfranken-bg.jpg',
-        logoURL: '/src/assets/Communities/3dfranken-logo.jpg',
+        backgroundURL: `${img20}`,
+        logoURL: `${logo20}`,
         overview: [
             {
                 overviewId: 1,
