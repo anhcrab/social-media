@@ -68,8 +68,10 @@ const AddCommunity = () => {
                 document
                   .querySelector(".addcommunity-first")
                   .classList.remove("backgroundfilter");
+
+                const violation = document.getElementById('booooodyyyyy1');
                 window.scrollTo({
-                  top: 800,
+                  top: violation.offsetTop,
                   behavior: "smooth",
                 });
               }}
@@ -94,7 +96,7 @@ const AddCommunity = () => {
         </div>
       </div>
 
-      <div className="addcommunity-create row">
+      <div className="addcommunity-create row" id="booooodyyyyy1">
         <div className="addcommunity-create1 col-lg-6">
           <svg
             style={{ position: "absolute", top: "40px", left: "40px" }}
@@ -179,10 +181,7 @@ const AddCommunity = () => {
               </div>
 
               <div className="addcommunity-create2-wrap-content-body1">
-                <div
-                  className="addcommunity-create2-wrap-content-body1-img"
-                  style={{ width: "80px" }}
-                >
+                <div className="addcommunity-create2-wrap-content-body1-img">
                   <div className="addcommunity-create2-wrap-content-body1-img1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -527,8 +526,9 @@ const AddCommunity = () => {
               className="addcommunity-create2-bottom-btn"
               onClick={() => {
                 saveName();
+                const violation = document.getElementById('booooodyyyyy2');
                 window.scrollTo({
-                  top: 1600,
+                  top: violation.offsetTop,
                   behavior: "smooth",
                 });
               }}
@@ -558,7 +558,7 @@ const AddCommunity = () => {
         </div>
       </div>
 
-      <div className="addcommunity-create row">
+      <div className="addcommunity-create row" id="booooodyyyyy2">
         <div className="addcommunity-create1 col-lg-6">
           <svg
             style={{ position: "absolute", top: "40px", left: "40px" }}
@@ -802,8 +802,9 @@ const AddCommunity = () => {
               className="addcommunity-create2-bottom-btn"
               onClick={() => {
                 saveName();
+                const violation = document.getElementById('booooodyyyyy3');
                 window.scrollTo({
-                  top: 2400,
+                  top: violation.offsetTop,
                   behavior: "smooth",
                 });
               }}
@@ -833,7 +834,7 @@ const AddCommunity = () => {
         </div>
       </div>
 
-      <div className="addcommunity-create row">
+      <div className="addcommunity-create row" id="booooodyyyyy3">
         <div className="addcommunity-create1 col-lg-6">
           <svg
             style={{ position: "absolute", top: "40px", left: "40px" }}
@@ -1048,8 +1049,9 @@ const AddCommunity = () => {
               }}
               onClick={() => {
                 saveName();
+                const violation = document.getElementById('booooodyyyyy2');
                 window.scrollTo({
-                  top: 1600,
+                  top: violation.offsetTop,
                   behavior: "smooth",
                 });
               }}

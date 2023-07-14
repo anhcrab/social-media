@@ -798,27 +798,72 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .addcommunity-first {
-        display: none;
-    }
-    .addcommunity-first-wrap {
-        display: none;
-    }
     .addcommunity-create1 {
         display: none;
     }
-    .addcommunity-create2 {
-        height: 100%;
+    .addcommunity-first {
+        height: 100vh;
     }
-    .addcommunity-create2-wrap-content-page2 {
-        height: 100%;
+    .addcommunity-first-wrap {
+        position: absolute;
+        top: 35%;
+        left: 30%;
     }
-    .addcommunity-create2-wrap-content {
-        height: 100%;
+    .addcommunity-create2-wrap-content-body1 {
+        display: block;
     }
-
+    .addcommunity-create2-wrap-content-body1-img {
+        width: 350px;
+        padding-bottom: 30px;
+    }
 }
 
 @media screen and (max-width: 420px) {
-    
+    .addcommunity-first {
+        background: none;
+    }
+    .addcommunity-first-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .addcommunity-first-wrap-body-1-heading {
+        margin: 50px;
+    }
+    .addcommunity-first-wrap-body-1-btn.create {
+        margin-top: 50px;
+    }
+    .addcommunity-first-wrap-body-1-btn.discord {
+        margin-top: 50px;
+    }
+    .addcommunity-first-wrap-body-1-btn-create {
+        position: absolute;
+        top: 545px;
+        right: 110px;
+    }
+    .addcommunity-create2-wrap-content-body1-img {
+        width: 80px;
+    }
+    .addcommunity-create2-wrap-content-body2-content-wrap-navbar-btn svg{
+        display: none;
+    }
+    .addcommunity-create2-wrap-content-body3-2-content-subtext,
+    .addcommunity-create2-wrap-content-body2-2-module-subcontent {
+        display: none;
+    }
+    .addcommunity-create2-wrap {
+        gap: 10px;
+    }
+    .addcommunity-create2-wrap-content-heading1 {
+        font-size: 20px;
+    }
+    .addcommunity-create2-wrap-content-body3-2-content-btn {
+        padding: 0;
+    }
+    .addcommunity-create2-wrap-content-body3-2-content-icon {
+        background: none;
+        width: 20px;
+    }
 }
