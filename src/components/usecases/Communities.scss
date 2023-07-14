@@ -361,6 +361,18 @@ h1.title {
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
 }
-
+.grey-cards-holder {
+  margin-left: 0rem;
+  margin-right: 3rem;
+  grid-column-gap: -3px;
+  grid-row-gap: 99px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr ;
+  grid-auto-columns: 1fr;
+  align-content: end;
+  align-items: end;
+  margin-top: 250px;
+  display: grid;
+}
  
 }

@@ -5,44 +5,49 @@ import checkorange from "../../assets/img/usecase/Circle Orange Check Icon.svg";
 import checkX from "../../assets/img/usecase/Circle X Icon.svg";
 import { useState } from "react";
 
-
 const Plan = () => {
-    const option1 = document.querySelector(".pricing-grid1")
-    const [show1,setShow1] = useState("false")
-    function inputShow(){
-        setShow1(!show1);
-        if (show1) {
-          option1.classList.add("show");
-          
-        } else {
-          option1.classList.remove("show");
-        }
+  const option1 = document.querySelector(".pricing-grid1");
+  const option1t = document.querySelector(".arrow-image-righr-21");
+  const [show1, setShow1] = useState("false");
+  function inputShow() {
+    setShow1(!show1);
+    if (show1) {
+      option1.classList.add("show");
+      option1t.classList.add("right");
+    } else {
+      option1.classList.remove("show");
+      option1t.classList.remove("right");
     }
-    const option2 = document.querySelector(".pricing-grid2")
-    const [show2,setShow2] = useState("false")
-    function inputShow2(){
-        setShow2(!show2);
-        if (show2) {
-          option2.classList.add("show");
-          
-        } else {
-          option2.classList.remove("show");
-        }
+  }
+  const option2 = document.querySelector(".pricing-grid2");
+  const option2t = document.querySelector(".arrow-image-righr-22");
+  const [show2, setShow2] = useState("false");
+  function inputShow2() {
+    setShow2(!show2);
+    if (show2) {
+      option2.classList.add("show");
+      option2t.classList.add("right");
+    } else {
+      option2.classList.remove("show");
+      option2t.classList.remove("right");
     }
-    const option3 = document.querySelector(".pricing-grid3")
-    const [show3,setShow3] = useState("false")
-    function inputShow3(){
-        setShow3(!show3);
-        if (show3) {
-          option3.classList.add("show");
-          
-        } else {
-          option3.classList.remove("show");
-        }
+  }
+  const option3 = document.querySelector(".pricing-grid3");
+  const option3t = document.querySelector(".arrow-image-righr-23");
+  const [show3, setShow3] = useState("false");
+  function inputShow3() {
+    setShow3(!show3);
+    if (show3) {
+      option3.classList.add("show");
+      option3t.classList.add("right");
+    } else {
+      option3.classList.remove("show");
+      option3t.classList.remove("right");
     }
+  }
   return (
     <>
-      <div style={{paddingTop:"400px"}}className="title-container">
+      <div style={{ paddingTop: "400px" }} className="title-container">
         <div className="center-text">
           <div className="half-title-container">
             <div className="title-with-emoji">
@@ -108,10 +113,26 @@ const Plan = () => {
           <div className="pricing-grid-wra-er-2 top">
             <div className="pricing-grid wrap">
               <div className="pricing-detail-holder main-page nopad">
-                <div onClick={()=>{inputShow()}} className="pricing-dropdown-heading black">
+                <div
+                  onClick={() => {
+                    inputShow();
+                  }}
+                  className="pricing-dropdown-heading black"
+                >
                   DAO Manager Modules
                 </div>
-                <div className="arrow-image-righr-2 w-embed"></div>
+                <div className="arrow-image-righr-21 w-embed">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    className="bi bi-caret-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z" />
+                  </svg>
+                </div>
               </div>
             </div>
             <div className="pricing-grid1 main">
@@ -359,7 +380,6 @@ const Plan = () => {
                   <div className="checkmark-holder">
                     <img src={checkicon} alt="" />
                   </div>
-                 
                 </div>
                 <div className="tabel-checkmark-holder">
                   <div className="checkmark-holder">
@@ -389,10 +409,29 @@ const Plan = () => {
           <div className="pricing-grid-wra-er-2 ">
             <div className="pricing-grid wrap">
               <div className="pricing-detail-holder main-page nopad">
-                <div onClick={()=>{inputShow2()}} className="pricing-dropdown-heading black">
+                <div
+                  onClick={() => {
+                    inputShow2();
+                  }}
+                  className="pricing-dropdown-heading black"
+                >
                   Custom Modules
                 </div>
-                <div className="arrow-image-righr-2 w-embed"></div>
+                <div
+                  style={{ marginLeft: "-13rem" }}
+                  className="arrow-image-righr-22 w-embed"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    className="bi bi-caret-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z" />
+                  </svg>
+                </div>
               </div>
             </div>
             <div className="pricing-grid2 main">
@@ -567,9 +606,29 @@ const Plan = () => {
           <div className="pricing-grid-wra-er-2 ">
             <div className="pricing-grid wrap">
               <div className="pricing-detail-holder main-page nopad">
-                <div onClick={()=>{inputShow3()}} className="pricing-dropdown-heading black">Add-ons</div>
-               
-                <div className="arrow-image-righr-2 w-embed"></div>
+                <div
+                  onClick={() => {
+                    inputShow3();
+                  }}
+                  className="pricing-dropdown-heading black"
+                >
+                  Add-ons
+                </div>
+                <div
+                  style={{ marginLeft: "-19rem" }}
+                  className="arrow-image-righr-23 w-embed"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    className="bi bi-caret-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z" />
+                  </svg>
+                </div>
               </div>
             </div>
             <div className="pricing-grid3 main">
@@ -645,7 +704,7 @@ const Plan = () => {
           </div>
         </div>
         <a href="" className="pricing-button-more w-button">
-            View Detailed Pricing
+          View Detailed Pricing
         </a>
       </div>
     </>
