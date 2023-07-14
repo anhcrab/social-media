@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import big from "../../assets/pic1/big.png";
 import mobile from "../../assets/pic1/mobile.png";
 import mac from "../../assets/pic1/mac.png";
@@ -25,9 +25,57 @@ import AOS from "aos";
 import "./L_body.scss";
 import L_header from "../L_header/L_header";
 import L_body1 from "../L_body1/L_body1";
+import L_body12 from "../L_body1.2/L_body12";
 import L_body23 from "../L_body23/L_body23";
+import UseCase from "../../pages/UseCase";
 export default function L_body() {
   AOS.init();
+  const [docHeight, setDocHeight] = useState(0);
+  let [x, setX] = useState(0.25);
+  useEffect(() => {
+    let scrolled2 = 125;
+    setDocHeight(document.documentElement.offsetHeight);
+    console.log("docheight=" + docHeight);
+    const handleScroll = () => {
+      const scrolled3 =
+        window.scrollY / ((docHeight + window.innerHeight) / 12) + 3;
+      console.log("scroll3= " + scrolled3);
+
+      if (scrolled3 >= 92 && scrolled3 <= 120) {
+        const box1 = document.getElementById("box1");
+        const transformValue = "scale(" + scrolled3 + ")";
+        box1.style.WebkitTransform = transformValue;
+        box1.style.MozTransform = transformValue;
+        box1.style.OTransform = transformValue;
+        box1.style.transform = transformValue;
+      } else if (scrolled3 > 120 && scrolled3 <= 133) {
+        scrolled2 -= x;
+        console.log("scroll2= " + scrolled2);
+        const box1 = document.getElementById("box1");
+        const transformValue = "scale(" + scrolled2 + ")";
+        box1.style.WebkitTransform = transformValue;
+        box1.style.MozTransform = transformValue;
+        box1.style.OTransform = transformValue;
+        box1.style.transform = transformValue;
+      } else {
+        const box1 = document.getElementById("box1");
+        const transformValue = "scale(" + 3 + ")";
+        box1.style.WebkitTransform = transformValue;
+        box1.style.MozTransform = transformValue;
+        box1.style.OTransform = transformValue;
+        box1.style.transform = transformValue;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [docHeight]);
+
+  useEffect(() => {
+    setDocHeight(0);
+  });
   return (
     <body>
       <L_header className="z-index" />
@@ -124,11 +172,10 @@ export default function L_body() {
       {/* Hover part */}
 
       {/* Tree part */}
-      <div
-        className="row color-container"
-        data-aos="fade-up"
-        data-aos-duration="3000"
-      >
+
+      <div className="row color-container">
+        <div id="box1"></div>
+
         <div className="col-1"></div>
         <div className="col-10" data-aos="fade-up" data-aos-duration="3000">
           <div className="color-container-header">
@@ -138,10 +185,18 @@ export default function L_body() {
           </div>
         </div>
         <div className="col-1"></div>
-        <div className="col-6" data-aos="fade-up" data-aos-duration="3000">
+        <div
+          className="col-6 text-mess"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <img className="gif" src={gif} alt="" />
         </div>
-        <div className="col-6" data-aos="fade-up" data-aos-duration="3000">
+        <div
+          className="col-6 text-mess"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <svg
             width="47"
             height="40"
@@ -155,7 +210,9 @@ export default function L_body() {
               fill="white"
             />
           </svg>
+
           <p className="pc-title">AI Assisted Community Management</p>
+
           <p className="pc-text">
             Have you own personal AI assistant for any content creation,
             consumption, analysis and management across proposals, tasks,
@@ -163,7 +220,11 @@ export default function L_body() {
           </p>
           <button className="read-more">Read More</button>
         </div>
-        <div className="col-6" data-aos="fade-up" data-aos-duration="3000">
+        <div
+          className="col-6 text-mess"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <svg
             width="40"
             height="40"
@@ -187,13 +248,25 @@ export default function L_body() {
 
           <button className="read-more">Read More</button>
         </div>
-        <div className="col-6" data-aos="fade-up" data-aos-duration="3000">
+        <div
+          className="col-6 text-mess"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <img className="group-img" src={gate} alt="" />
         </div>
-        <div className="col-6" data-aos="fade-up" data-aos-duration="3000">
+        <div
+          className="col-6 text-mess"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <img className="bounties" src={bounties} alt="" />
         </div>
-        <div className="col-6" data-aos="fade-up" data-aos-duration="3000">
+        <div
+          className="col-6 text-mess"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <svg
             width="47"
             height="40"
@@ -244,6 +317,9 @@ export default function L_body() {
         <L_body23 />
       </div>
       {/* glass part */}
+      <div className="row">
+        <UseCase />
+      </div>
     </body>
   );
 }

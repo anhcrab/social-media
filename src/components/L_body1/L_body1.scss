@@ -115,7 +115,7 @@
   }
 }
 .elevatorL-transition {
-  animation: moveLeft 0.13s forwards;
+  animation: moveLeft 0.135s forwards;
   transition-delay: 2s;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
@@ -129,18 +129,18 @@
 
 @keyframes moveLeft {
   0% {
-    transform: translate(-6em, -3em) rotate(0);
+    transform: translate(-4em, -3em);
   }
   100% {
-    transform: translate(8.1em, 10em) scale(0.2, 0.2);
+    transform: translate(9em, 13.3em) scale(0.2, 0.2);
   }
 }
 @keyframes moveRight {
   0% {
-    transform: translate(12em, -2em) rotate(0);
+    transform: translate(9em, -1em);
   }
   100% {
-    transform: translate(-1em, 10em) scale(0.2, 0.2);
+    transform: translate(-1em, 12.8em) scale(0.2, 0.2);
   }
 }
 .under {

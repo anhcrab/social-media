@@ -13,24 +13,24 @@ export default function L_body2() {
       <div className="row">
         <div className="col-1"></div>
         <div className="col-10">
-          <div className="row slide-container">
+          <div className="row tn-slide-container">
             {/* Part 1 */}
             <div className="col-2">
               <span
-                className="slide-item active"
+                className="tn-slide-item active"
                 onClick={() => {
                   document
                     .querySelector(`.${display}`)
-                    .classList.remove("active");
-                  document.querySelector(".slide-item").classList.add("active");
-                  document.querySelector(".slide-item").classList.add("color");
-                  setDisplay("slide-item");
+                    .classList.remove("tn-active");
+                  document.querySelector(".tn-slide-item").classList.add("tn-active");
+                  document.querySelector(".tn-slide-item").classList.add("tn-color");
+                  setDisplay("tn-slide-item");
                   setSelect(1);
                 }}
               >
-                <div className="item-border">
+                <div className="tn-item-border">
                   <svg
-                    className="item-pic"
+                    className="tn-item-pic"
                     width="40"
                     height="50"
                     viewBox="0 0 40 50"
@@ -46,28 +46,28 @@ export default function L_body2() {
                     />
                   </svg>
                 </div>
-                <p className="item-text">Project</p>
+                <p className="tn-item-text">Project</p>
               </span>
             </div>
             {/* Part 2 */}
             <div className="col-2">
               <span
-                className="slide-item1 "
+                className="tn-slide-item1 "
                 onClick={() => {
                   document
                     .querySelector(`.${display}`)
-                    .classList.remove("active");
+                    .classList.remove("tn-active");
                   document
-                    .querySelector(".slide-item1")
-                    .classList.add("active");
-                  setDisplay("slide-item1");
-                  document.querySelector(".slide-item").classList.add("color1");
+                    .querySelector(".tn-slide-item1")
+                    .classList.add("tn-active");
+                  setDisplay("tn-slide-item1");
+                  document.querySelector(".tn-slide-item").classList.add("tn-color1");
                   setSelect(2);
                 }}
               >
-                <div className="item-border1">
+                <div className="tn-item-border1">
                   <svg
-                    className="item-pic1"
+                    className="tn-item-pic1"
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
@@ -90,28 +90,28 @@ export default function L_body2() {
                     />
                   </svg>
                 </div>
-                <p className="item-text">Bounties</p>
+                <p className="tn-item-text">Bounties</p>
               </span>
             </div>
             {/* Part 3 */}
             <div className="col-2">
               <span
-                className="slide-item2 "
+                className="tn-slide-item2 "
                 onClick={() => {
                   document
                     .querySelector(`.${display}`)
-                    .classList.remove("active");
+                    .classList.remove("tn-active");
                   document
-                    .querySelector(".slide-item2")
-                    .classList.add("active");
-                  document.querySelector(".slide-item").classList.add("color2");
-                  setDisplay("slide-item2");
+                    .querySelector(".tn-slide-item2")
+                    .classList.add("tn-active");
+                  document.querySelector(".tn-slide-item").classList.add("tn-color2");
+                  setDisplay("tn-slide-item2");
                   setSelect(3);
                 }}
               >
-                <div className="item-border2">
+                <div className="tn-item-border2">
                   <svg
-                    className="item-pic2"
+                    className="tn-item-pic2"
                     width="59"
                     height="49"
                     viewBox="0 0 59 49"
@@ -127,28 +127,28 @@ export default function L_body2() {
                     />
                   </svg>
                 </div>
-                <p className="item-text">Courses</p>
+                <p className="tn-item-text">Courses</p>
               </span>
             </div>
             {/* Part 4 */}
             <div className="col-2">
               <span
-                className="slide-item3 "
+                className="tn-slide-item3 "
                 onClick={() => {
                   document
                     .querySelector(`.${display}`)
-                    .classList.remove("active");
+                    .classList.remove("tn-active");
                   document
-                    .querySelector(".slide-item3")
-                    .classList.add("active");
-                  document.querySelector(".slide-item").classList.add("color3");
-                  setDisplay("slide-item3");
+                    .querySelector(".tn-slide-item3")
+                    .classList.add("tn-active");
+                  document.querySelector(".tn-slide-item").classList.add("tn-color3");
+                  setDisplay("tn-slide-item3");
                   setSelect(4);
                 }}
               >
-                <div className="item-border3">
+                <div className="tn-item-border3">
                   <svg
-                    className="item-pic3"
+                    className="tn-item-pic3"
                     width="26"
                     height="26"
                     viewBox="0 0 26 26"
@@ -171,28 +171,28 @@ export default function L_body2() {
                     />
                   </svg>
                 </div>
-                <p className="item-text">Configuration</p>
+                <p className="tn-item-text">Configuration</p>
               </span>
             </div>
             {/* Part 5 */}
             <div className="col-2">
               <span
-                className="slide-item4"
+                className="tn-slide-item4"
                 onClick={() => {
                   document
                     .querySelector(`.${display}`)
-                    .classList.remove("active");
+                    .classList.remove("tn-active");
                   document
-                    .querySelector(".slide-item4")
-                    .classList.add("active");
-                  document.querySelector(".slide-item").classList.add("color4");
-                  setDisplay("slide-item4");
+                    .querySelector(".tn-slide-item4")
+                    .classList.add("tn-active");
+                  document.querySelector(".tn-slide-item").classList.add("tn-color4");
+                  setDisplay("tn-slide-item4");
                   setSelect(5);
                 }}
               >
-                <div className="item-border4">
+                <div className="tn-item-border4">
                   <svg
-                    className="item-pic4"
+                    className="tn-item-pic4"
                     width="20"
                     height="20"
                     viewBox="0 0 20 20"
@@ -208,28 +208,28 @@ export default function L_body2() {
                     />
                   </svg>
                 </div>
-                <p className="item-text">Calendar</p>
+                <p className="tn-item-text">Calendar</p>
               </span>
             </div>
             {/* Part 6 */}
             <div className="col-2">
               <span
-                className="slide-item5"
+                className="tn-slide-item5"
                 onClick={() => {
                   document
                     .querySelector(`.${display}`)
-                    .classList.remove("active");
+                    .classList.remove("tn-active");
                   document
-                    .querySelector(".slide-item5")
-                    .classList.add("active");
-                  document.querySelector(".slide-item").classList.add("color5");
-                  setDisplay("slide-item5");
+                    .querySelector(".tn-slide-item5")
+                    .classList.add("tn-active");
+                  document.querySelector(".tn-slide-item").classList.add("tn-color5");
+                  setDisplay("tn-slide-item5");
                   setSelect(6);
                 }}
               >
-                <div className="item-border5">
+                <div className="tn-item-border5">
                   <svg
-                    className="item-pic5"
+                    className="tn-item-pic5"
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
@@ -245,7 +245,7 @@ export default function L_body2() {
                     />
                   </svg>
                 </div>
-                <p className="item-text-1">Sub- Guilds</p>
+                <p className="tn-item-text-1">Sub- Guilds</p>
               </span>
             </div>
           </div>

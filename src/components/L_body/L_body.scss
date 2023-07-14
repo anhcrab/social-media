@@ -1,5 +1,5 @@
 .img-container {
-  z-index: 4;
+  // z-index: 4;
 }
 .trust-text {
   margin-top: 3.5rem;
@@ -145,11 +145,10 @@
   height: 2.9rem;
 }
 .color-container {
-  z-index: -99999;
   background-color: #fecb03;
+  width: 100vw;
 }
 .color-container-header {
-  z-index: 4;
   display: flex;
 }
 .vector {
@@ -336,4 +335,22 @@
 .way-under {
   width: 27rem;
   margin-top: -1.8rem;
+}
+.text-mess {
+  z-index: 0;
+}
+#container1 {
+  text-align: center;
+  transition: 2s ease-in-out;
+}
+
+#box1 {
+  margin-left: 66rem;
+  margin-top: 46rem;
+  border-radius: 50%;
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  background-color: #ff0000;
+  transform: scale(3);
 }

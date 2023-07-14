@@ -5,7 +5,7 @@ import L_body3 from "../L_body3/L_body3";
 export const Context = createContext();
 
 const L_body23 = () => {
-  const [display, setDisplay] = useState("slide-item");
+  const [display, setDisplay] = useState("tn-slide-item");
   const [select, setSelect] = useState(1);
   return (
     <Context.Provider value={{ display, setDisplay, setSelect, select }}>
