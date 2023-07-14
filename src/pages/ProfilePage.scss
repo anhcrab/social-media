@@ -215,7 +215,7 @@
   display: none;
 }
 
-.for-phone{
+.for-phone {
   display: none;
 }
 
@@ -225,6 +225,10 @@
   }
 
   .not-for-Ipad {
+    display: none;
+  }
+
+  .for-phone {
     display: none;
   }
 
@@ -356,7 +360,7 @@
   }
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 416px) and (min-width: 300px) {
   .not-for-phone {
     display: none;
   }
@@ -365,22 +369,14 @@
     display: none;
   }
 
+  .for-phone {
+    display: none;
+  }
+
   .for-small {
     display: block;
   }
 
-  .ant-dropdown-placement-bottomLeft {
-    min-width: 24px;
-    left: 58%;
-    top: 43px;
-    position: absolute;
-  }
-
-  .for-phone{
-    display: block;
-    
-  }
-  
   .cover-navbar {
     display: flex;
     align-items: center;
@@ -495,5 +491,12 @@
     top: -100vh;
     right: -39vw;
     z-index: -1;
+  }
+
+  .asdf {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    width: 100px !important;
   }
 }

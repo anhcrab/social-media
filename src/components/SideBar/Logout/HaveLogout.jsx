@@ -191,13 +191,8 @@ export default function HaveLogout() {
       <div className="for-small">
         <div>
           <div
-            className="row"
-            style={{
-              display: "flex",
-              flexWrap: "nowrap",
-              justifyContent: "center",
-              width: "250px",
-            }}
+            className="row asdf"
+            
           >
             <div
               style={{
@@ -361,7 +356,6 @@ export default function HaveLogout() {
           </div>
         </div>
       </div>
-
 
       <div style={{ position: "relative" }}>
         {search && <SearchBar value={search} setValue={setSearch}></SearchBar>}
