@@ -1,4 +1,8 @@
 import './MemberList.scss'
+import logo from '../../assets/Communities/comm-main-members/Suzy_main-1671190074890.png'
+import top1 from '../../assets/Communities/comm-main-members/medal_1.svg'
+import top2 from '../../assets/Communities/comm-main-members/medal_2.svg'
+import top3 from '../../assets/Communities/comm-main-members/medal_3.svg'
 
 const MemberList = (props) => {
     const { list } = props
@@ -7,7 +11,7 @@ const MemberList = (props) => {
         if (rank === 1) {
             return (
                 <img
-                    src='/src/assets/Communities/comm-main-members/medal_1.svg'
+                    src={top1}
                     style={{
                         marginRight: '10px',
                         width: '30px',
@@ -17,7 +21,7 @@ const MemberList = (props) => {
         } else if (rank === 2) {
             return (
                 <img
-                    src='/src/assets/Communities/comm-main-members/medal_2.svg'
+                    src={top2}
                     style={{
                         marginRight: '10px',
                         width: '30px',
@@ -27,7 +31,7 @@ const MemberList = (props) => {
         } else if (rank === 3) {
             return (
                 <img
-                    src='/src/assets/Communities/comm-main-members/medal_3.svg'
+                    src={top3}
                     style={{
                         marginRight: '10px',
                         width: '30px',
@@ -64,7 +68,7 @@ const MemberList = (props) => {
                     }}>
                         {rankFilter(item.top)}
                         <img
-                            src="/src/assets/Communities/comm-main-members/Suzy_main-1671190074890.png"
+                            src={logo}
                             alt=""
                             style={{
                                 width: '36px',

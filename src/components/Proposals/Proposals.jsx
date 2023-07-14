@@ -1,9 +1,11 @@
 import { useContext, useState } from 'react'
 import SearchBox from '../SearchBox/SearchBox'
+import TitleBox from '../TitleBox/TitleBox'
 import './Proposals.scss'
 import { context } from '../Community/Community'
 import emptyImg from '../../assets/Communities/comm-main-empty/no_proposal.svg'
 import avatar from '../../assets/Communities/comm-main-members/Suzy_main-1671190074890.png'
+import icon from '../../assets/Communities/comm-side-bar/proposal-icon.svg'
 
 const Proposals = () => {
     const { community } = useContext(context)
@@ -12,6 +14,11 @@ const Proposals = () => {
         <div style={{
             overflowY: 'auto'
         }}>
+            <div className="comm-title-box-container">
+                <TitleBox icon={icon}>
+                    Proposals
+                </TitleBox>
+            </div>
             <SearchBox>
                 Search Proposals
             </SearchBox>
@@ -151,6 +158,7 @@ const Proposals = () => {
                                 <div style={{
                                     display: 'flex',
                                     justifyContent: 'space-between',
+                                    marginBottom: '10px',
                                 }}>
                                     <div>
                                         <img
@@ -186,9 +194,9 @@ const Proposals = () => {
                                         fontFamily: 'sans-serif',
                                         fontSize: '16px'
                                     }}>{p.title}</strong></div>
-                                    <div style={{
+                                    <div className='comm-proposals-mb' style={{
                                         fontFamily: 'sans-serif',
-                                        fontSize: '14px',                                        
+                                        fontSize: '14px',
                                     }}>{p.text}</div>
                                 </div>
                             </div>

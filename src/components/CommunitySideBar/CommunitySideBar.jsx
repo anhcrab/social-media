@@ -2,12 +2,16 @@ import { useContext, useState } from 'react'
 import './CommunitySideBar.scss'
 import { context } from '../Community/Community'
 import SidebarBox from '../SidebarBox/SidebarBox'
+import iconOverview from '../..//assets/Communities/comm-side-bar/overview-icon.svg'
+import iconMember from '../../assets/Communities/comm-side-bar/members-icon.svg'
+import iconBounty from '../../assets/Communities/comm-side-bar/bounty-icon.svg'
+import iconCourse from '../../assets/Communities/comm-side-bar/course-icon.svg'
+import iconProposal from '../../assets/Communities/comm-side-bar/proposal-icon.svg'
+import iconEvent from '../../assets/Communities/comm-side-bar/events.svg'
 
 const CommunitySideBar = () => {
-    const { active, setActive, community } = useContext(context)
+    const { community, mobileStatus, setMobileStatus } = useContext(context)
     const [status, setStatus] = useState(true)
-    const { communityId} = community
-
     return (
         <div className="comm-sidebar-wrapper">
             <div className="comm-side-bar-container">
@@ -35,15 +39,16 @@ const CommunitySideBar = () => {
                         <SidebarBox
                             text={'Overview'}
                             type={'item'}
-                            icon={'/src/assets/Communities/comm-side-bar/overview-icon.svg'}
+                            icon={iconOverview}
                             redirect={`/overview`}
                         />
                         <SidebarBox
                             text={`Members (${community.members})`}
                             type={'item'}
-                            icon={'/src/assets/Communities/comm-side-bar/members-icon.svg'}
+                            icon={iconMember}
                             redirect={`/members`}
                         />
+                        <div style={{ width: '100%', height: '2px', backgroundColor: '#f5f3ff' }}></div>
                         <div className="comm-sidebar-list">
                             <SidebarBox
                                 text={'Modules'}
@@ -54,42 +59,42 @@ const CommunitySideBar = () => {
                             />
                             <SidebarBox
                                 text={'Bounties'}
-                                icon={'/src/assets/Communities/comm-side-bar/bounty-icon.svg'}
+                                icon={iconBounty}
                                 type={'item'}
                                 status={status}
                                 redirect={`/bounties`}
                             />
                             <SidebarBox
                                 text={'Proposals'}
-                                icon={'/src/assets/Communities/comm-side-bar/proposal-icon.svg'}
+                                icon={iconProposal}
                                 type={'item'}
                                 status={status}
                                 redirect={`/proposals`}
                             />
                             <SidebarBox
                                 text={'Courses'}
-                                icon={'/src/assets/Communities/comm-side-bar/course-icon.svg'}
+                                icon={iconCourse}
                                 type={'item'}
                                 status={status}
                                 redirect={`/courses`}
                             />
                             <SidebarBox
                                 text={'Events'}
-                                icon={'/src/assets/Communities/comm-side-bar/events.svg'}
+                                icon={iconEvent}
                                 type={'item'}
                                 status={status}
                                 redirect={`/events`}
                             />
                         </div>
-                        <SidebarBox
-                            text={'💬 Discussions'}
-                            icon={'none'}
-                            type={'item'}
-                            redirect={`/discussions`}
-                        />
                     </div>
                 </div>
             </div>
+            <i 
+                className="bi bi-arrow-left-circle-fill comm-sidebar-close-btn"
+                onClick={() => {
+                    setMobileStatus(false)
+                }}
+            ></i>
         </div>
     )
 }

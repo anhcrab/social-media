@@ -60,7 +60,123 @@
 }
 
 //Ipad Pro
-@media only screen and (max-width: 1025px) and (min-width: 416px) {}
+@media only screen and (max-width: 1025px) and (min-width: 416px) {
+    .comm-main-box {
+        display: flex;
+        flex-direction: column;
+        background: white;
+        padding: 24px 20px;
+        border-radius: 16px;
+        box-shadow: rgba(132, 148, 160, 0.12) 0px 4px 16px;
+        font-family: Inter, sans-serif;
+    }
+
+    .comm-main-about {
+        margin-bottom: 0px;
+        width: 100%;
+        word-break: break-word;
+        overflow: hidden;
+        height: auto;
+        color: rgba(0, 0, 0, .85);
+        overflow-wrap: break-word;
+    }
+
+    .comm-main-about p {
+        font-size: 14px;
+        line-height: 160%;
+        color: rgb(15, 23, 42);
+        margin: 0;
+        font-weight: 500;
+        font-family: Inter, sans-serif;
+        overflow-wrap: break-word;
+        word-break: break-word;
+    }
+
+    .comm-main-about strong {
+        font-size: 14px;
+        line-height: 160%;
+        color: rgb(15, 23, 42);
+        margin: 0;
+        font-family: Inter, sans-serif;
+        overflow-wrap: break-word;
+        word-break: break-word;
+    }
+
+    .comm-main-media {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 10px;
+    }
+
+    .comm-main-media-icon {
+        border-radius: 2px;
+        color: white;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
 
 //Iphone 8+ 
-@media only screen and (max-width: 415px) {}
+@media only screen and (max-width: 415px) {
+    .comm-main-box {
+        display: flex;
+        flex-direction: column;
+        background: white;
+        padding: 24px 20px;
+        border-radius: 16px;
+        box-shadow: rgba(132, 148, 160, 0.12) 0px 4px 16px;
+        font-family: Inter, sans-serif;
+    }
+
+    .comm-main-about {
+        margin-bottom: 0px;
+        width: 100%;
+        word-break: break-word;
+        overflow: hidden;
+        height: auto;
+        color: rgba(0, 0, 0, .85);
+        overflow-wrap: break-word;
+    }
+
+    .comm-main-about p {
+        font-size: 14px;
+        line-height: 160%;
+        color: rgb(15, 23, 42);
+        margin: 0;
+        font-weight: 500;
+        font-family: Inter, sans-serif;
+        overflow-wrap: break-word;
+        word-break: break-word;
+    }
+
+    .comm-main-about strong {
+        font-size: 14px;
+        line-height: 160%;
+        color: rgb(15, 23, 42);
+        margin: 0;
+        font-family: Inter, sans-serif;
+        overflow-wrap: break-word;
+        word-break: break-word;
+    }
+
+    .comm-main-media {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 10px;
+    }
+
+    .comm-main-media-icon {
+        border-radius: 2px;
+        color: white;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

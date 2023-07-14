@@ -8,7 +8,19 @@
 }
 
 //Ipad Pro
-@media only screen and (max-width: 1024px) and (min-width: 415px) {}
+@media only screen and (max-width: 1024px) and (min-width: 415px) {
+    .comm-main-members {
+        max-height: 600px;
+        overflow-y: auto;
+        margin-bottom: 10px;
+    }
+}
 
 //Iphone 8+ 
-@media only screen and (max-width: 414px) {}
+@media only screen and (max-width: 414px) {
+    .comm-main-members {
+        max-height: 600px;
+        overflow-y: auto;
+        margin-bottom: 10px;
+    }
+}

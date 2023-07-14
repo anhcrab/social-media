@@ -1,18 +1,18 @@
 import TitleBox from "../TitleBox/TitleBox"
 import { context } from "../Community/Community"
 import { useContext, useEffect } from "react"
+import icon from '../../assets/Communities/comm-side-bar/overview-icon.svg'
 
 import './Overview.scss'
-import { Outlet } from "react-router-dom"
 
 const Overview = () => {
-    const { active, setActive, community } = useContext(context)
+    const { community } = useContext(context)
     useEffect(() => {
         document.querySelector('.comm-main-about').innerHTML = community.overview.overviewDescription
     })
     return (
         <>
-            <TitleBox icon={'/src/assets/Communities/comm-side-bar/overview-icon.svg'}>
+            <TitleBox icon={icon}>
                 Overview
             </TitleBox>
             <div className="comm-main-box">

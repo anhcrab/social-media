@@ -2,11 +2,18 @@ import SearchBox from '../SearchBox/SearchBox'
 import emptyImg from '../../assets/Communities/comm-main-empty/eventsFeedEmpty.svg'
 import './Events.scss'
 import { useState } from 'react'
+import TitleBox from '../TitleBox/TitleBox'
+import icon from '../../assets/Communities/comm-side-bar/events.svg'
 
 const Events = () => {
     const [selected, setSelected] = useState(1)
     return (
         <>
+            <div className="comm-title-box-container">
+                <TitleBox icon={icon}>
+                    Events
+                </TitleBox>
+            </div>
             <SearchBox>
                 Search Events
             </SearchBox>

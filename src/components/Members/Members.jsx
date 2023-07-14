@@ -3,6 +3,7 @@ import TitleBox from "../TitleBox/TitleBox"
 import './Members.scss'
 import { context } from "../Community/Community"
 import MemberList from "../MemberList/MemberList"
+import icon1 from '../../assets/Communities/comm-side-bar/members-icon.svg'
 
 const Members = (props) => {
     const { icon, text } = props
@@ -10,7 +11,7 @@ const Members = (props) => {
     const [timechoice, setTimechoice] = useState('all-time')
     return (
         <>
-            <TitleBox icon={'/src/assets/Communities/comm-side-bar/members-icon.svg'}>
+            <TitleBox icon={icon1}>
                 Members
             </TitleBox>
             <div 

@@ -3,12 +3,19 @@ import emptyImg from '../../assets/Communities/comm-main-empty/no_course.13.svg'
 import './Courses.scss'
 import { useContext, useState } from 'react'
 import { context } from '../Community/Community'
+import TitleBox from '../TitleBox/TitleBox'
+import icon from '../../assets/Communities/comm-side-bar/course-icon.svg'
 
 const Courses = () => {
     const { community } = useContext(context)
     const [tab, setTab] = useState('all')
     return (
         <>
+            <div className="comm-title-box-container">
+                <TitleBox icon={icon}>
+                    Courses
+                </TitleBox>
+            </div>
             <SearchBox>
                 Search Courses
             </SearchBox>
@@ -62,11 +69,11 @@ const Courses = () => {
                                 objectFit: 'cover',
                             }} />
                             <div style={{
-                                    display: 'flex',
-                                    flexDirection: 'column',
-                                    width: '100%',
-                                    gap: '4px'
-                                }}>
+                                display: 'flex',
+                                flexDirection: 'column',
+                                width: '100%',
+                                gap: '4px'
+                            }}>
                                 <h4 style={{
                                     display: 'flex',
                                     fontSize: '16px',

@@ -5,7 +5,7 @@ import './SidebarBox.scss'
 import { Link, Navigate, redirect, useNavigate, useLocation } from "react-router-dom"
 
 const SidebarBox = (props) => {
-    const { active, setActive } = useContext(context)
+    const { active, setActive, setMobileStatus } = useContext(context)
     const setIcon = () => {
         if (props.type === 'item' && props.icon !== 'none') {
             return (
@@ -35,29 +35,33 @@ const SidebarBox = (props) => {
         }
     }
     return (
-        <Link 
-            to={props.redirect !== undefined ? '.' + props.redirect : ''}
-            style={{
-                textDecoration: 'none',
-                color: 'black'
-            }}
-        >
-            <div
-                className={`comm-sidebar-item ${active === props.text && props.type === 'item' ? 'side-bar-active' : ''
-                    }`}
-                style={setHidden()}
-                onClick={() => {
-                    setActive(props.text)
-                    if (props.type === 'list') {
-                        props.setStatus(!props.status)
-                    }
+        <>
+            <Link 
+                to={props.redirect !== undefined ? '.' + props.redirect : '#'}
+                style={{
+                    textDecoration: 'none',
+                    color: 'black'
                 }}
             >
-                {setIcon()}
-                {props.text}
-                {setArrow()}
-            </div>
-        </Link>
+                <div
+                    className={`comm-sidebar-item ${active === props.text && props.type === 'item' ? 'side-bar-active' : ''
+                        }`}
+                    style={setHidden()}
+                    onClick={() => {
+                        setActive(props.text)
+                        if (props.type === 'list') {
+                            props.setStatus(!props.status)
+                        } else {
+                            setMobileStatus(false)
+                        }
+                    }}
+                >
+                    {setIcon()}
+                    {props.text}
+                    {setArrow()}
+                </div>
+            </Link> 
+        </>
     )
 }
 

@@ -1,86 +1,131 @@
-//Desktop
-@media only screen and (min-width: 1025px) {
-    .bounties-state-filter {
-        align-items: center;
-        color: #64748b;
-        cursor: pointer;
-        display: flex;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 24px;
-        padding: 10px 12px;
-        position: relative;
-    }
+.bounties-menu {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    border-bottom: 1px solid #d9d9d9;
+}
 
-    .bounties-state-filter-selected {
-        color: #3b82f6;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 24px;
-    }
+.comm-title-box-container {
+    display: none;
+}
 
-    .bounties-state-filter-selected::after {
-        background-color: #3b82f6;
-        content: "";
-        height: 2px;
-        left: -1px;
-        bottom: 0;
-        position: absolute;
-        width: 100%;
-    }
+.bounties-state-filter {
+    align-items: center;
+    color: #64748b;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 10px 12px;
+    position: relative;
+}
 
-    .comm-main-btn {
-        background: #fff;
-        box-shadow: 0 2px 0 rgba(0, 0, 0, .015);
-        color: rgba(0, 0, 0, .85);
-        cursor: pointer;
-        display: inline-block;
-        font-size: 14px;
-        height: 32px;
-        line-height: 1.5715;
-        padding: 4px 15px;
-        position: relative;
-        text-align: center;
-        touch-action: manipulation;
-        transition: all .3s cubic-bezier(.645, .045, .355, 1);
-        user-select: none;
-        white-space: nowrap;
-        text-transform: none;
-    }
+.bounties-state-filter-selected {
+    color: #3b82f6;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
 
-    .bounties-item-wrapper {
-        width: 100%;
-        text-align: left;
-        border-radius: 16px;
-        cursor: pointer;
-        margin-bottom: 12px;
-        border: 1px solid #f0f0f0;
-    }
+.bounties-state-filter-selected::after {
+    background-color: #3b82f6;
+    content: "";
+    height: 2px;
+    left: -1px;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
 
-    .bounties-item {
-        padding: 16px 20px;
-        border-radius: 16px;
-        transition: all 0.2s ease 0s;
-        background-color: #fff;
-    }
+.comm-main-btn {
+    background: #fff;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, .015);
+    color: rgba(0, 0, 0, .85);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    height: 32px;
+    line-height: 1.5715;
+    padding: 4px 15px;
+    position: relative;
+    text-align: center;
+    transition: all .3s cubic-bezier(.645, .045, .355, 1);
+    user-select: none;
+    white-space: nowrap;
+    text-transform: none;
+}
 
-    .bounty-status-bar {
-        padding: 4px 16px;
-        border-radius: 50px;
-        border: 1px solid rgb(226, 232, 240);
-    }
+.bounties-item-wrapper {
+    width: 100%;
+    text-align: left;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-bottom: 12px;
+    border: 1px solid #f0f0f0;
+}
 
-    .bounty-status-bar span {
-        color: rgb(15, 23, 42);
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 16px;
-        margin-bottom: 2px;
-    }
+.bounties-item {
+    padding: 16px 20px;
+    border-radius: 16px;
+    transition: all 0.2s ease 0s;
+    background-color: #fff;
+}
+
+.bounty-status-bar {
+    padding: 4px 16px;
+    display: inline-block;
+    border-radius: 50px;
+    border: 1px solid rgb(226, 232, 240);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.bounty-status-bar span {
+    color: rgb(15, 23, 42);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 2px;
+}
+.bountiess-item-date{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    color: rgb(100, 116, 139);
 }
 
 //Ipad Pro
-@media only screen and (max-width: 1024px) and (min-width: 415px) {}
+@media only screen and (max-width: 1025px) and (min-width: 416px) {
+    .comm-title-box-container {
+        display: block;
+    }
+    .bountiess-item-date{
+        display: none;
+    }
+}
 
 //Iphone 8+ 
-@media only screen and (max-width: 414px) {}
+@media only screen and (max-width: 415px) {
+    .comm-title-box-container {
+        display: block;
+    }
+    .bounties-menu {
+        flex-direction: column-reverse;
+    }
+
+    .bounties-menu-item{ 
+        width: 100%;
+        display: flex;
+        float: left;
+    }
+
+    .bountiess-item-date{
+        display: none;
+    }
+}

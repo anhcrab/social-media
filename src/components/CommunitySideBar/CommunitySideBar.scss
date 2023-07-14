@@ -25,6 +25,10 @@
         object-fit: cover;
     }
 
+    .comm-sidebar-add-community{
+        display: none;
+    }
+
     .comm-sidebar-top {
         position: relative;
         height: 132px;
@@ -81,7 +85,9 @@
 
     .comm-sidebar-list {
         margin: 1px 0;
-        border: 0.893px solid rgb(244, 244, 245);
+    }
+    .comm-sidebar-close-btn{
+        display: none;
     }
 }
 
@@ -91,6 +97,7 @@
         width: 100%;
         position: relative;
         margin-top: 20px;
+        overflow-y: hidden;
     }
 
     .comm-side-bar-container {
@@ -113,39 +120,23 @@
 
     .comm-sidebar-top {
         position: relative;
-        height: 132px;
+        height: 100px;
         background: white;
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
     }
 
     .comm-sidebar-background {
-        width: 100%;
-    }
-
-    .comm-sidebar-bg {
-        width: 100%;
-        height: 84px;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        object-fit: cover;
-    }
-
-    .comm-sidebar-bg-cover {
-        background: linear-gradient(360deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
-        height: 84px;
-        position: absolute;
-        width: 100%;
-        top: 0;
+        display: none;
     }
 
     .comm-sidebar-logo {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         border: 1px solid #fff;
         position: absolute;
-        top: 40%;
+        top: 10%;
         left: 7%;
         background-color: transparent;
     }
@@ -154,9 +145,9 @@
         background-color: transparent;
         text-shadow: rgba(0, 0, 0, 0.24) 0px 0px 1px;
         position: absolute;
-        top: 40%;
-        left: 30%;
-        color: white;
+        top: 20%;
+        left: 27%;
+        color: rgba(0, 0, 0, 0.65);
         font-weight: bold;
         font-size: 1.3rem;
     }
@@ -167,7 +158,16 @@
 
     .comm-sidebar-list {
         margin: 1px 0;
-        border: 0.893px solid rgb(244, 244, 245);
+    }
+    .comm-sidebar-close-btn{
+        display: block;
+        position: relative;
+        float: right;
+        padding: 5px;
+        margin-top: 100px;
+        font-size: 30px;
+        color: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
     }
 }
 
@@ -177,6 +177,7 @@
         width: 100%;
         position: relative;
         margin-top: 20px;
+        overflow-y: hidden;
     }
 
     .comm-side-bar-container {
@@ -199,39 +200,23 @@
 
     .comm-sidebar-top {
         position: relative;
-        height: 132px;
+        height: 100px;
         background: white;
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
     }
 
     .comm-sidebar-background {
-        width: 100%;
-    }
-
-    .comm-sidebar-bg {
-        width: 100%;
-        height: 84px;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        object-fit: cover;
-    }
-
-    .comm-sidebar-bg-cover {
-        background: linear-gradient(360deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
-        height: 84px;
-        position: absolute;
-        width: 100%;
-        top: 0;
+        display: none;
     }
 
     .comm-sidebar-logo {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         border: 1px solid #fff;
         position: absolute;
-        top: 40%;
+        top: 10%;
         left: 7%;
         background-color: transparent;
     }
@@ -240,9 +225,9 @@
         background-color: transparent;
         text-shadow: rgba(0, 0, 0, 0.24) 0px 0px 1px;
         position: absolute;
-        top: 40%;
-        left: 30%;
-        color: white;
+        top: 20%;
+        left: 27%;
+        color: rgba(0, 0, 0, 0.65);
         font-weight: bold;
         font-size: 1.3rem;
     }
@@ -253,6 +238,15 @@
 
     .comm-sidebar-list {
         margin: 1px 0;
-        border: 0.893px solid rgb(244, 244, 245);
+    }
+    .comm-sidebar-close-btn{
+        display: block;
+        position: relative;
+        float: right;
+        padding: 5px;
+        margin-top: 100px;
+        font-size: 30px;
+        color: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
     }
 }

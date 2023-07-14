@@ -1,5 +1,5 @@
 //Desktop
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1026px) {
     .comm-box-wrapper {
         padding-left: 20px;
         height: 54px;
@@ -13,10 +13,57 @@
         position: relative;
         margin-bottom: 16px;
     }
+    .nav-mb {
+        display: none;
+    }
 }
 
 //Ipad Pro
-@media only screen and (max-width: 1024px) and (min-width: 415px) {}
+@media only screen and (max-width: 1025px) and (min-width: 416px) {
+    .comm-box-wrapper {
+        padding-left: 20px;
+        height: 54px;
+        display: flex;
+        background: white;
+        flex-direction: row;
+        align-items: center;
+        border: 1px solid rgb(244, 242, 242);
+        box-shadow: rgba(132, 148, 160, 0.12) 0px 4px 16px;
+        border-radius: 16px;
+        position: relative;
+        margin-bottom: 16px;
+    }
+    .nav-mb {
+        width: 20px;
+        font-size: 25px;
+        font-weight: 800;
+        margin-right: 10px;
+        margin-left: -10px;
+        cursor: pointer;
+    }
+}
 
 //Iphone 8+ 
-@media only screen and (max-width: 414px) {}
+@media only screen and (max-width: 415px) {
+    .comm-box-wrapper {
+        padding-left: 20px;
+        height: 54px;
+        display: flex;
+        background: white;
+        flex-direction: row;
+        align-items: center;
+        border: 1px solid rgb(244, 242, 242);
+        box-shadow: rgba(132, 148, 160, 0.12) 0px 4px 16px;
+        border-radius: 16px;
+        position: relative;
+        margin-bottom: 16px;
+    }
+    .nav-mb {
+        width: 20px;
+        font-size: 25px;
+        font-weight: 800;
+        margin-right: 10px;
+        margin-left: -10px;
+        cursor: pointer;
+    }
+}

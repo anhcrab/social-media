@@ -1,8 +1,10 @@
 import { createContext, useContext, useEffect, useState } from 'react'
 import SearchBox from '../SearchBox/SearchBox'
+import TitleBox from '../TitleBox/TitleBox'
 import './Bounties.scss'
 import { context } from '../Community/Community'
 import emptyImg from '../../assets/Communities/comm-main-empty/no_bounties.c1.svg'
+import icon from '../../assets/Communities/comm-side-bar/bounty-icon.svg'
 import diamondIcon from '../../assets/Communities/diamondIconGreen.svg'
 
 export const bountiesContext = createContext()
@@ -14,44 +16,7 @@ const Bounties = () => {
     const [filter, setFilter] = useState(false)
     const [sort, setSort] = useState(false)
     const [order, setOrder] = useState('Ascending')
-    const handleOrder = () => {
-        if (order === 'Ascending') {
-            return (
-                <svg
-                    style={{
-                        width: '15px',
-                    }}
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    aria-hidden="true"
-                >
-                    <path
-                        fill-rule="evenodd"
-                        d="M12 3.75a.75.75 0 01.75.75v13.19l5.47-5.47a.75.75 0 111.06 1.06l-6.75 6.75a.75.75 0 01-1.06 0l-6.75-6.75a.75.75 0 111.06-1.06l5.47 5.47V4.5a.75.75 0 01.75-.75z"
-                        clip-rule="evenodd"
-                    ></path>
-                </svg>
-            )
-        }
-        if (order === 'Desending') {
-            return (
-                <svg
-                    style={{ width: '15px' }}
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    aria-hidden="true"
-                >
-                    <path
-                        fill-rule="evenodd"
-                        d="M12 20.25a.75.75 0 01-.75-.75V6.31l-5.47 5.47a.75.75 0 01-1.06-1.06l6.75-6.75a.75.75 0 011.06 0l6.75 6.75a.75.75 0 11-1.06 1.06l-5.47-5.47V19.5a.75.75 0 01-.75.75z"
-                        clip-rule="evenodd"
-                    ></path>
-                </svg>
-            )
-        }
-    }
+
     useEffect(() => {
         if (tab === 'filter') {
             setFilter(true)
@@ -70,19 +35,16 @@ const Bounties = () => {
 
     return (
         <bountiesContext.Provider value={({ order, setOrder })}>
+            <div className="comm-title-box-container">
+                <TitleBox icon={icon}>
+                    Bounties
+                </TitleBox>
+            </div>
             <SearchBox>
                 Search Bounties
             </SearchBox>
-            <div style={{
-                marginBottom: '16px',
-                display: 'flex',
-                flexDirection: 'row',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                borderBottom: '1px solid #d9d9d9',
-                zIndex: '10'
-            }}>
-                <div style={{
+            <div className='bounties-menu'>
+                <div className='bounties-menu-item' style={{
                     display: 'flex',
                 }}>
                     <span
@@ -104,7 +66,7 @@ const Bounties = () => {
                         }}
                     >🚫 Missed</span>
                 </div>
-                <div>
+                <div className='bounties-menu-item'>
                     <div style={{
                         display: 'flex',
                         flexDirection: 'row',
@@ -159,7 +121,21 @@ const Bounties = () => {
                                         }
                                     }}
                                 >
-                                    {handleOrder()}
+                                    <svg
+                                        style={{
+                                            width: '15px',
+                                        }}
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M12 3.75a.75.75 0 01.75.75v13.19l5.47-5.47a.75.75 0 111.06 1.06l-6.75 6.75a.75.75 0 01-1.06 0l-6.75-6.75a.75.75 0 111.06-1.06l5.47 5.47V4.5a.75.75 0 01.75-.75z"
+                                            clip-rule="evenodd"
+                                        ></path>
+                                    </svg>
                                     <span style={{ marginLeft: '8px' }}>Creation date</span>
                                 </div>
                             </div>
@@ -203,13 +179,7 @@ const Bounties = () => {
                                         </svg> : '🆓 '}
                                         {item.bountyType}
                                     </div>
-                                    <div style={{
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                        gap: '4px',
-                                        fontSize: '12px',
-                                        color: 'rgb(100, 116, 139)'
-                                    }}>
+                                    <div className='bountiess-item-date'>
                                         • Posted by
                                         <span style={{
                                             color: 'rgb(100, 116, 139)',
@@ -273,25 +243,23 @@ const Bounties = () => {
                                 </div>
                                 <div style={{
                                     display: 'flex',
-                                    justifyContent: 'space-between',
+                                    flexWrap: 'wrap',
+                                    justifyContent: 'space-between'
                                 }}>
                                     <div style={{
                                         display: 'flex',
                                         gap: '8px',
+                                        flexWrap: 'wrap',
                                     }}>
-                                        {item.xp!== undefined ? <div className='bounty-status-bar'>
+                                        {item.xp !== undefined ? <div className='bounty-status-bar'>
                                             <span>⭐️{item.xp}XP</span>
                                         </div> : ''}
                                         {item.submissions !== undefined ? <div className='bounty-status-bar'>
-                                            <span>
-                                                📜 <span>{item.submissions}</span> Submissions
-                                            </span>
+                                            📜 {item.submissions} Submissions
                                         </div> : ''}
                                         {item.token !== undefined ? <div className='bounty-status-bar'>
-                                            <span>
-                                                <img src={diamondIcon} alt="dia-icon" />
-                                                {' ' + item.token} MATIC
-                                            </span>
+                                            <img src={diamondIcon} alt="dia-icon" />
+                                            {' ' + item.token} MATIC
                                         </div> : ''}
                                     </div>
                                 </div>

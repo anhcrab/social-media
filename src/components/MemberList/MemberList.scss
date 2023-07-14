@@ -1,5 +1,5 @@
 //Desktop
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1026px) {
     .comm-main-members-item {
         height: 54px;
         display: flex;
@@ -16,7 +16,35 @@
 }
 
 //Ipad Pro
-@media only screen and (max-width: 1024px) and (min-width: 415px) {}
+@media only screen and (max-width: 1025px) and (min-width: 416px) {
+    .comm-main-members-item {
+        height: 54px;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        font: 500 14px / 20px Inter;
+        margin-bottom: 8px;
+        padding-right: 20px;
+        gap: 8px;
+        border-radius: 12px;
+    }
+}
 
 //Iphone 8+ 
-@media only screen and (max-width: 414px) {}
+@media only screen and (max-width: 415px) {
+    .comm-main-members-item {
+        height: 54px;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        font: 500 14px / 20px Inter;
+        margin-bottom: 8px;
+        padding-right: 20px;
+        gap: 8px;
+        border-radius: 12px;
+    }
+}

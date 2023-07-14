@@ -21,30 +21,97 @@ html {
     background-color: #f5f3ff;
 }
 
-.comm-main-wrapper {
-    width: 100%;
-    position: relative;
-    margin-top: 20px;
-    overflow-y: auto;
-}
+
 
 //Desktop
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1026px) {
     .comm-wrapper {
         position: relative;
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+        width: 100%;
+    }
+    .comm-container {
+        width: 1150px;
+        display: flex;
+    }
+    .comm-sidebar {
+        width: 30%;
+        overflow: hidden;
+    }
+    .comm-content {
+        width: 70%;
+        overflow: hidden;
+    }
+    .comm-main-wrapper {
+        width: 100%;
+        position: relative;
+        margin-top: 20px;
+        overflow-y: auto;
     }
 }
 
 //Ipad Pro
-@media only screen and (max-width: 1024px) and (min-width: 415px) {
+@media only screen and (max-width: 1025px) and (min-width: 416px) {
     .comm-wrapper {
         position: relative;
+    }
+    .comm-container {
+    }
+    .comm-sidebar {
+        display: none;
+    }
+    .comm-sidebar-open {
+        display: block;
+        position: fixed;
+        z-index: 1000;
+        background-color: #fff;
+        width: 30%;
+        height: 100%;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -2px;
+    }
+    .comm-content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .comm-main-wrapper {
+        width: 98%;
+        position: relative;
+        margin-top: 20px;
+        overflow-y: auto;
     }
 }
 
 //Iphone 8+ 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 415px) {
     .comm-wrapper {
         position: relative;
+    }
+    .comm-container {
+    }
+    .comm-sidebar {
+        display: none;
+    }
+    .comm-sidebar-open {
+        display: block;
+        position: fixed;
+        z-index: 1000;
+        background-color: #fff;
+        width: 80%;
+        height: 100%;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -2px;
+    }
+    .comm-content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .comm-main-wrapper {
+        width: 98%;
+        position: relative;
+        margin-top: 20px;
+        overflow-y: auto;
     }
 }

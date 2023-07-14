@@ -1,5 +1,5 @@
 //Desktop
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1026px) {
     .comm-main-tab {
         border-radius: 20px;
         margin-right: 8px;
@@ -78,7 +78,157 @@
 }
 
 //Ipad Pro
-@media only screen and (max-width: 1024px) and (min-width: 415px) {}
+@media only screen and (max-width: 1025px) and (min-width: 416px) {
+    .comm-main-tab {
+        border-radius: 20px;
+        margin-right: 8px;
+        border: 1px solid rgb(226, 232, 240);
+        font-weight: 50;
+        outline: none;
+        background: #fff;
+        box-shadow: 0 2px 0 rgba(0, 0, 0, .015);
+        color: rgba(0, 0, 0, .85);
+        cursor: pointer;
+        display: inline-block;
+        font-size: 13px;
+        height: 32px;
+        line-height: 1.5715;
+        padding: 3px 10px;
+        position: relative;
+        text-align: center;
+        touch-action: manipulation;
+        transition: all .3s;
+        user-select: none;
+        white-space: nowrap;
+        text-transform: none;
+    }
+
+    .comm-main-tab:hover {
+        background-color: transparent;
+    }
+
+    .comm-tab-slt {
+        border: 1px solid rgb(118, 169, 250);
+        color: rgb(63, 131, 248);
+        background: #e1effe;
+    }
+
+    .courses-item-wrapper {
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        border: 1px solid #f0f0f0;
+        border-radius: 16px;
+        margin-bottom: 13px;
+    }
+
+    .courses-item {
+        overflow-x: hidden;
+        background: white;
+        border-radius: 12px;
+        padding: 20px;
+        display: flex;
+        gap: 5px 20px;
+    }
+
+    .course-content {
+        color: rgb(100, 116, 139);
+        margin: 0px;
+        font-size: 14px;
+        width: 100%;
+        white-space: pre-wrap;
+        word-break: break-word;
+        cursor: pointer;
+        -webkit-line-clamp: 2;
+    }
+
+    .course-status-bar {
+        padding: 3px 16px;
+        border-radius: 50px;
+        border: 1px solid rgb(226, 232, 240);
+        margin-top: 15px;
+        color: rgb(15, 23, 42);
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 2px;
+    }
+}
 
 //Iphone 8+ 
-@media only screen and (max-width: 414px) {}
+@media only screen and (max-width: 415px) {
+    .comm-main-tab {
+        border-radius: 20px;
+        margin-right: 8px;
+        border: 1px solid rgb(226, 232, 240);
+        font-weight: 50;
+        outline: none;
+        background: #fff;
+        box-shadow: 0 2px 0 rgba(0, 0, 0, .015);
+        color: rgba(0, 0, 0, .85);
+        cursor: pointer;
+        display: inline-block;
+        font-size: 13px;
+        height: 32px;
+        line-height: 1.5715;
+        padding: 3px 10px;
+        position: relative;
+        text-align: center;
+        touch-action: manipulation;
+        transition: all .3s;
+        user-select: none;
+        white-space: nowrap;
+        text-transform: none;
+    }
+
+    .comm-main-tab:hover {
+        background-color: transparent;
+    }
+
+    .comm-tab-slt {
+        border: 1px solid rgb(118, 169, 250);
+        color: rgb(63, 131, 248);
+        background: #e1effe;
+    }
+
+    .courses-item-wrapper {
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        border: 1px solid #f0f0f0;
+        border-radius: 16px;
+        margin-bottom: 13px;
+    }
+
+    .courses-item {
+        overflow-x: hidden;
+        background: white;
+        border-radius: 12px;
+        padding: 20px;
+        display: flex;
+        gap: 5px 20px;
+    }
+
+    .course-content {
+        color: rgb(100, 116, 139);
+        margin: 0px;
+        font-size: 14px;
+        width: 100%;
+        white-space: pre-wrap;
+        word-break: break-word;
+        cursor: pointer;
+        -webkit-line-clamp: 2;
+    }
+
+    .course-status-bar {
+        padding: 3px 16px;
+        border-radius: 50px;
+        border: 1px solid rgb(226, 232, 240);
+        margin-top: 15px;
+        color: rgb(15, 23, 42);
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 2px;
+    }
+}

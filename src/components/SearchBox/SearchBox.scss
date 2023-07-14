@@ -1,5 +1,5 @@
 //Desktop
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1026px) {
     .comm-search-box-wrapper {
         display: flex;
         align-items: center;
@@ -45,7 +45,93 @@
 }
 
 //Ipad Pro
-@media only screen and (max-width: 1024px) and (min-width: 415px) {}
+@media only screen and (max-width: 1025px) and (min-width: 416px) {
+    .comm-search-box-wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        margin-top: 0px;
+    }
+
+    .comm-search-box {
+        padding: 8px 20px;
+        border-radius: 12px;
+        border-color: rgb(226, 232, 240);
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #d9d9d9;
+        color: rgba(0, 0, 0, .85);
+        display: inline-flex;
+        font-size: 14px;
+        line-height: 1.5715;
+        min-width: 0;
+        position: relative;
+        transition: all .3s;
+        width: 100%;
+    }
+
+    .comm-search-icon {
+        margin-right: 4px;
+        align-items: center;
+        display: flex;
+        flex: none;
+    }
+
+    .comm-search-input {
+        padding: 0;
+        outline: none;
+        border: none;
+        font-weight: 600;
+        opacity: 0.4;
+        font-family: sans-serif;
+        text-overflow: ellipsis;
+        touch-action: manipulation;
+        margin-top: 3px;
+    }
+}
 
 //Iphone 8+ 
-@media only screen and (max-width: 414px) {}
+@media only screen and (max-width: 415px) {
+    .comm-search-box-wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        margin-top: 0px;
+    }
+
+    .comm-search-box {
+        padding: 8px 20px;
+        border-radius: 12px;
+        border-color: rgb(226, 232, 240);
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #d9d9d9;
+        color: rgba(0, 0, 0, .85);
+        display: inline-flex;
+        font-size: 14px;
+        line-height: 1.5715;
+        min-width: 0;
+        position: relative;
+        transition: all .3s;
+        width: 100%;
+    }
+
+    .comm-search-icon {
+        margin-right: 4px;
+        align-items: center;
+        display: flex;
+        flex: none;
+    }
+
+    .comm-search-input {
+        padding: 0;
+        outline: none;
+        border: none;
+        font-weight: 600;
+        opacity: 0.4;
+        font-family: sans-serif;
+        text-overflow: ellipsis;
+        touch-action: manipulation;
+        margin-top: 3px;
+    }
+}
