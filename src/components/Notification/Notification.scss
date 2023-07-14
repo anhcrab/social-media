@@ -9,11 +9,20 @@
   z-index: 300;
 }
 
-.blur-backgrounds{
+.blur-backgrounds {
   background-color: rgba(0, 0, 0, 0.61);
   backdrop-filter: blur(5px);
   position: absolute;
   width: 80%;
   height: 100vh;
   z-index: 1;
+}
+
+.Noti-part {
+  height: 100vh;
+  width: 99vw;
+  position: absolute;
+  top: -95vh;
+  right: -1500px;
+  z-index: -1;
 }

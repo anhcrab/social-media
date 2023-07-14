@@ -51,79 +51,81 @@ export default function SideBar() {
 
   return (
     <>
-      <div
-        style={{
-          height: "100vh",
-          backgroundColor: "#FFFFFF",
-          position: "fixed",
-          boxShadow: "rgba(180, 195, 205, 0.1) 0px 4px 24px",
-          zIndex: "300",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            margin: "18px 0",
-          }}
-        >
-          <button
+      <div className="not-for-phone not-for-Ipad">
+        <div className="cover-navbar">
+          <div
             style={{
-              borderRadius: "12px",
-              justifyContent: "center",
-              alignItems: "center",
               display: "flex",
-              minHeight: "40px",
-              padding: "7px 10px",
-              backgroundColor: "#fff",
+              justifyContent: "center",
+              margin: "18px 0",
             }}
-            className="btn-logo"
           >
-            <img
-              src={logo}
-              style={{ width: "18px", cursor: "pointer" }}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-              onClick={() => {
-                window.location.href = "/app/";
+            <button
+              style={{
+                borderRadius: "12px",
+                justifyContent: "center",
+                alignItems: "center",
+                display: "flex",
+                minHeight: "40px",
+                padding: "7px 10px",
+                backgroundColor: "#fff",
               }}
-            ></img>
-          </button>
-          {showBox && (
-            <div style={{ position: "relative" }}>
-              <div className="sub-logo">
-                <span>Discover</span>
+              className="btn-logo"
+            >
+              <img
+                src={logo}
+                style={{ width: "18px", cursor: "pointer" }}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+                onClick={() => {
+                  window.location.href = "/app/";
+                }}
+              ></img>
+            </button>
+            {showBox && (
+              <div style={{ position: "relative" }}>
+                <div className="sub-logo">
+                  <span>Discover</span>
+                </div>
               </div>
-            </div>
-          )}
-        </div>
+            )}
+          </div>
 
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          <button
-            style={{ background: "transparent", border: "none" }}
-            className="btn-add"
-            onClick={() => {
-              window.location.href = "/app/onboarding";
-            }}
-          >
-            <img
-              src={Plus}
-              style={{ width: "3rem" }}
-              onMouseEnter={handleMouseEnter1}
-              onMouseLeave={handleMouseLeave1}
-            />
-          </button>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <button
+              style={{ background: "transparent", border: "none" }}
+              className="btn-add"
+              onClick={() => {
+                window.location.href = "/app/onboarding";
+              }}
+            >
+              <img
+                src={Plus}
+                style={{ width: "3rem" }}
+                onMouseEnter={handleMouseEnter1}
+                onMouseLeave={handleMouseLeave1}
+              />
+            </button>
 
-          {showBox1 && (
-            <div style={{ position: "relative" }}>
-              <div className="sub-add">
-                <span>Add Community</span>
+            {showBox1 && (
+              <div style={{ position: "relative" }}>
+                <div className="sub-add">
+                  <span>Add Community</span>
+                </div>
               </div>
-            </div>
-          )}
-        </div>
+            )}
+          </div>
 
-        {abs()}
+          {abs()}
+        </div>
+      </div>
+
+      <div className="for-small">
+        <div className="cover-navbar">
+          {/* 1 */}
+
+          {abs()}
+        </div>
       </div>
     </>
   );

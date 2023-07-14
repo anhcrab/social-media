@@ -20,14 +20,29 @@ export default function SearchBar(props) {
         ></div>
         <div
           style={{
-            position: "absolute",
-            top:"-80vh",
-            right:"-67vw"
+            position: "fixed",
+            display: "flex",
+            top: "20%",
+            left: "0",
+            right: "0",
+            width: "100%",
+            justifyContent: "center",
           }}
         >
-          <div style={{display:"flex", backgroundColor:"#fff", padding:"15px 30px", borderRadius:"15px"}}>
-            <i className="bi bi-search" style={{marginRight:"15px"}}></i>
-            <input type="text" placeholder="Search for keywords" style={{border:"none", width:"500px"}}/>
+          <div
+            style={{
+              display: "flex",
+              backgroundColor: "#fff",
+              padding: "15px 30px",
+              borderRadius: "15px",
+            }}
+          >
+            <i className="bi bi-search" style={{ marginRight: "15px" }}></i>
+            <input
+              type="text"
+              placeholder="Search for keywords"
+              style={{ border: "none", width: "35vw" }}
+            />
           </div>
         </div>
       </div>

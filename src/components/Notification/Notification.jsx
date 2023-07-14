@@ -6,16 +6,7 @@ import logoNoti from "../../asset/img/logoNoti.svg";
 export default function Notification(props) {
   return (
     <>
-      <div
-        style={{
-          height: "100vh",
-          width: "99vw",
-          position: "absolute",
-          top: "-95vh",
-          right: "-1500px",
-          zIndex: "-1",
-        }}
-      >
+      <div className="Noti-part">
         <div className="row" style={{ height: "100%", width: "100%" }}>
           <div
             className="col-lg-4"
@@ -49,16 +40,17 @@ export default function Notification(props) {
               </span>
             </div>
           </div>
-          <div className="col-lg-8" style={{ padding: "0", display:"flex", alignItems:"center" }}>
+          <div
+            className="col-lg-8"
+            style={{ padding: "0", display: "flex", alignItems: "center" }}
+          >
             <div
               className="blur-backgrounds"
               onClick={() => {
                 // eslint-disable-next-line react/prop-types
                 props.setValue(!props.value);
               }}
-            >
-                
-            </div>
+            ></div>
           </div>
         </div>
       </div>
