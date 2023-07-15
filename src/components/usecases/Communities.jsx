@@ -10,7 +10,7 @@ import community from "../../assets/img/usecase/community.svg";
 const Communities = () => {
   return (
     <>
-      <div className="container">
+      <div className="container" data-aos="fade-up" data-aos-duration="3000">
         <div className="tittle-container">
           <div className="center-text">
             <div className="half-title-container">

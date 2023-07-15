@@ -108,7 +108,11 @@ const Question = () => {
   }
   return (
     <>
-      <div className="section-organe">
+      <div
+        className="section-organe"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+      >
         <div className="container-organe">
           <div className="title-container">
             <div className="center-text-organe">

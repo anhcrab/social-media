@@ -333,9 +333,6 @@ export default function L_body() {
         <L_body23 />
       </div>
       {/* glass part */}
-      <div className="row">
-        <UseCase />
-      </div>
     </body>
   );
 }

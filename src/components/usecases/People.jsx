@@ -20,7 +20,7 @@ const People = () => {
   
   return (
     <>
-      <div className="section">
+      <div className="section" data-aos="fade-up" data-aos-duration="3000">
         <div className="container">
           <div className="title-container">
             <div className="center-text">

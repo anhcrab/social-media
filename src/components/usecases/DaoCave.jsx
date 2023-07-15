@@ -4,7 +4,7 @@ import iphone from "../../assets/img/usecase/1080.png"
 const DaoCave = () =>{ 
     return(
     <>
-    <div className="container">
+    <div className="container" data-aos="fade-up" data-aos-duration="3000">
         <div className="cta-container">
             <div className="w-layout-grid">
             <div className="content">
