@@ -40,17 +40,19 @@ export default function Notification(props) {
               </span>
             </div>
           </div>
-          <div
-            className="col-lg-8"
-            style={{ padding: "0", display: "flex", alignItems: "center" }}
-          >
+          <div className="not-for-phone-ne">
             <div
-              className="blur-backgrounds"
-              onClick={() => {
-                // eslint-disable-next-line react/prop-types
-                props.setValue(!props.value);
-              }}
-            ></div>
+              className="col-lg-8"
+              style={{ padding: "0", display: "flex", alignItems: "center" }}
+            >
+              <div
+                className="blur-backgrounds"
+                onClick={() => {
+                  // eslint-disable-next-line react/prop-types
+                  props.setValue(!props.value);
+                }}
+              ></div>
+            </div>
           </div>
         </div>
       </div>

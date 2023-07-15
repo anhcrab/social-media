@@ -280,7 +280,7 @@ export default function HaveLogout() {
                   width: "10px",
                   height: "10px",
                   top: "-2px",
-                  right: "104px",
+                  right: "28px",
                 }}
               >
                 <span
