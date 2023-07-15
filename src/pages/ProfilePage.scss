@@ -1,0 +1,502 @@
+.User-name {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.profile-button {
+  border: none;
+  color: #79a3f0;
+  background-color: transparent;
+}
+
+.profile-button:hover {
+  color: #79a3f0;
+  background-color: whitesmoke;
+}
+
+.profile-button-down {
+  border: none;
+  color: #9ca3af;
+  background-color: transparent;
+  font-size: 18px;
+}
+
+.profile-button-down:hover {
+  background-color: whitesmoke;
+}
+
+.profile-account-linked {
+  color: rgb(1, 71, 55);
+  font-size: 12px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  padding: 8px 12px;
+  gap: 6px;
+  display: inline-flex;
+  border: 0px;
+  width: 56px;
+  height: 56px;
+  position: relative;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  background: rgb(244, 247, 249);
+  margin-bottom: 10px;
+}
+
+.text-green-400 {
+  color: green;
+}
+
+.profile-delete-account {
+  position: absolute;
+  top: -170px;
+  right: 140px;
+  background-color: rgba(0, 0, 0, 0.16);
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 8px,
+    rgba(0, 45, 121, 0.1) 3.6px -3.6px 3.6px inset,
+    rgba(255, 255, 255, 0.1) -3.6px 3.6px 3.6px inset;
+  backdrop-filter: blur(3.6px);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.profile-edit-account {
+  height: 32px;
+  position: absolute;
+  top: -170px;
+  right: 12px;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  color: rgb(100, 116, 139);
+  align-items: center;
+  gap: 6px;
+  z-index: 20;
+}
+
+.profile-account-deleted {
+  background-color: #fff;
+  padding: 4px 0;
+  border-radius: 12px;
+  display: flex;
+  width: 170px;
+}
+
+.profile-account-deleted:hover {
+  cursor: pointer;
+}
+.hide {
+  display: none;
+}
+
+.sub-active {
+  display: flex;
+  padding: 10px 12px;
+  gap: 8px;
+  align-items: center;
+  color: #333;
+}
+
+.profile-acti-part-amount {
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.profile-acti-part-text {
+  color: #333;
+}
+
+.profile-acti-part:hover {
+  cursor: pointer;
+}
+
+.active {
+  .profile-acti-part-amount {
+    background: rgb(59, 130, 246);
+    color: white;
+  }
+
+  .profile-acti-part-text {
+    color: rgb(59, 130, 246);
+    display: flex;
+    align-items: center;
+  }
+
+  .sub-active {
+    border-bottom: 2px solid rgb(59, 130, 246);
+  }
+}
+
+.profile-confirm-delete {
+  border-radius: 8px;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  padding: 4px 11px;
+}
+.profile-confirm-delete:hover {
+  border-color: #40a9ff;
+  border-right-width: 1px;
+}
+
+.profile-confirm-delete:focus {
+  border-color: #40a9ff;
+  border-right-width: 1px;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+  outline: 0;
+}
+
+.profile-confirm-delete-cancel {
+  padding: 3px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 1px solid #e7e7e7;
+  background-color: #fff;
+}
+
+.profile-confirm-delete-cancel:hover {
+  border-color: #40a9ff;
+  color: #40a9ff;
+}
+
+.profile-confirm-delete-makeAction {
+  background: rgb(240, 82, 82);
+  padding: 3px 10px;
+  opacity: 0.5;
+  border-radius: 12px;
+  width: fit-content;
+  color: white;
+  border: none;
+  margin-left: 8px;
+  cursor: not-allowed;
+}
+
+.show-delete-account {
+  animation: slide 1s ease 3.5s forwards;
+}
+
+.ant-dropdown-placement-bottomLeft {
+  min-width: 24px;
+  left: 72%;
+  top: 43px;
+  position: absolute;
+}
+
+@keyframes rightToLeft {
+  from {
+    height: 0;
+  }
+  to {
+    height: 300px;
+  }
+}
+
+//responisve
+.not-for-phone {
+  display: block;
+}
+
+.not-for-Ipad {
+  display: block;
+}
+
+.for-small {
+  display: none;
+}
+
+.for-phone {
+  display: none;
+}
+
+@media screen and (max-width: 1026px) and (min-width: 415px) {
+  .not-for-phone {
+    display: none;
+  }
+
+  .not-for-Ipad {
+    display: none;
+  }
+
+  .for-phone {
+    display: none;
+  }
+
+  .for-small {
+    display: block;
+  }
+
+  .ant-dropdown-placement-bottomLeft {
+    min-width: 24px;
+    left: 85%;
+    top: 43px;
+    position: absolute;
+  }
+
+  .cover-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    height: 72px;
+    position: fixed;
+    width: 100vw;
+    bottom: 0px;
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid rgb(244, 242, 242);
+    z-index: 20;
+  }
+
+  .logout-image {
+    width: 60px;
+    border-radius: 50%;
+    padding: 3px;
+  }
+
+  .sub-noti {
+    position: absolute;
+    top: -30px;
+    left: 70px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 3px;
+    padding: 6px 8px;
+  }
+
+  .sub-noti::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 8px;
+    left: -10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #333;
+  }
+
+  .sub-search {
+    position: absolute;
+    top: -30px;
+    left: 145px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 3px;
+    padding: 6px 8px;
+  }
+
+  .sub-search::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 8px;
+    left: -10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #333;
+  }
+
+  .sub-noti1 {
+    position: absolute;
+    top: -30px;
+    left: 150px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 3px;
+    padding: 6px 8px;
+  }
+
+  .sub-noti1::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 8px;
+    left: -10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #333;
+  }
+
+  .sub-user {
+    position: absolute;
+    top: -71px;
+    left: 80px;
+    background-color: #f0efef;
+    color: #fff;
+    border-radius: 10px;
+    padding: 6px 8px;
+  }
+
+  .sub-user::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 28px;
+    left: -10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #f0efef;
+  }
+  .Noti-part {
+    height: 100vh;
+    width: 99vw;
+    position: absolute;
+    top: -100vh;
+    right: -39vw;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 416px) and (min-width: 300px) {
+  .not-for-phone {
+    display: none;
+  }
+
+  .not-for-Ipad {
+    display: none;
+  }
+
+  .for-phone {
+    display: none;
+  }
+
+  .for-small {
+    display: block;
+  }
+
+  .cover-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    height: 72px;
+    position: fixed;
+    width: 100vw;
+    bottom: 0px;
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid rgb(244, 242, 242);
+    z-index: 20;
+  }
+
+  .logout-image {
+    width: 60px;
+    border-radius: 50%;
+    padding: 3px;
+  }
+
+  .sub-noti {
+    position: absolute;
+    top: -30px;
+    left: 70px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 3px;
+    padding: 6px 8px;
+  }
+
+  .sub-noti::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 8px;
+    left: -10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #333;
+  }
+
+  .sub-search {
+    position: absolute;
+    top: -30px;
+    left: 145px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 3px;
+    padding: 6px 8px;
+  }
+
+  .sub-search::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 8px;
+    left: -10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #333;
+  }
+
+  .sub-noti1 {
+    position: absolute;
+    top: -30px;
+    left: 150px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 3px;
+    padding: 6px 8px;
+  }
+
+  .sub-noti1::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 8px;
+    left: -10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #333;
+  }
+
+  .sub-user {
+    position: absolute;
+    top: -71px;
+    left: 80px;
+    background-color: #f0efef;
+    color: #fff;
+    border-radius: 10px;
+    padding: 6px 8px;
+  }
+
+  .sub-user::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 28px;
+    left: -10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #f0efef;
+  }
+  .Noti-part {
+    height: 100vh;
+    width: 99vw;
+    position: absolute;
+    top: -100vh;
+    right: -39vw;
+    z-index: -1;
+  }
+
+  .asdf {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    width: 100px !important;
+  }
+}

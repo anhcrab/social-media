@@ -1,0 +1,118 @@
+.discoverybodyno2-wrap-add-community {
+    display: none;
+}
+
+.navbounty-wrap-items {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 22px 24px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    gap: 12px;
+}
+
+.navbounty-wrap-item {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+}
+
+.navbounty-wrap-item-card {
+    width: 100%;
+    text-align: left;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.navbounty-wrap-item-card-body {
+    padding: 16px 20px;
+    border-radius: 16px;
+    transition: all 0.2s ease 0s;
+    border: 1px solid rgb(240, 240, 240);
+}
+
+.navbounty-wrap-item-card-body:hover {
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05)!important;
+}
+
+.navbounty-wrap-item-card-body-heading {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    margin-bottom: 12px;
+}
+
+.navbounty-wrap-item-card-body-heading-wrap {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.navbounty-wrap-item-card-body-heading-wrap-info {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+}
+
+.navbounty-wrap-item-card-body-heading-wrap-info-posted {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    color: rgb(100, 116, 139);
+}
+
+.navbounty-wrap-item-card-body-heading-wrap-info-posted-by {
+    color: inherit;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.navbounty-wrap-item-card-body-heading-wrap-info-datetime {
+    color: rgb(100, 116, 139);
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.navbounty-wrap-item-card-body-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.navbounty-wrap-item-card-body-title-text {
+    padding-right: 0;
+    margin-bottom: 0;
+}
+
+.navbounty-wrap-item-card-body-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbounty-wrap-item-card-body-bottom-options {
+    display: flex;
+    gap: 8px;
+}
+
+.navbounty-wrap-item-card-body-bottom-option {
+    padding: 4px 16px;
+    border-radius: 50px;
+    border: 1px solid rgb(226, 232, 240);
+}
+
+.navbounty-wrap-item-card-body-bottom-option-button {
+    color: rgb(15, 23, 42);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+@media screen and (max-width: 420px) {
+    .navbounty-wrap-item {
+        grid-template-columns: repeat(1, minmax(0px, 1fr));
+    }
+}

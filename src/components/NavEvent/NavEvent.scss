@@ -1,0 +1,15 @@
+.navevent-wrap-item {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 22px 24px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    gap: 12px;
+}
+
+.navevent-wrap-item-text {
+    font-weight: 500;
+    margin-bottom: .5em;
+    margin-top: 0;
+}

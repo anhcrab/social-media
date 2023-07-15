@@ -1,0 +1,86 @@
+
+
+.navcourse-wrap-item-card {
+    height: 100%;
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 12px;
+}
+
+.navcourse-wrap-item-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05)!important;
+
+}
+
+.navcourse-wrap-item-card-body {
+    overflow-x: hidden;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.navcourse-wrap-item-card-bodys {
+    display: flex;
+    align-content: flex-start;
+    // gap: 5px 20px;
+}
+
+.navcourse-wrap-item-card-bodys-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.navcourse-wrap-item-card-bodys-info-heading {
+    font-size: 16px;
+    text-overflow: ellipsis;
+    display: inline;
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+    height: 40px;
+}
+
+.navcourse-wrap-item-card-bodys-info-text {
+    color: rgb(100, 116, 139);
+    margin: 0px;
+    width: 100%;
+    white-space: pre-wrap;
+    word-break: break-word;
+    cursor: pointer;
+    height: 50%;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.navcourse-wrap-item-card-bodys-info-books {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    overflow: hidden;
+    height: 20px;
+    padding: 20px 0;
+}
+
+.navcourse-wrap-item-card-bodys-info-books-icon {
+    display: inline-flex;
+    font-size: 12px;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px solid rgb(226, 232, 240);
+    border-radius: 30px;
+    gap: 4px;
+    white-space: nowrap;
+}
+
+.navcourse-wrap-item-card-bodys-img {
+    padding-right: 120px;
+}
+
+.navcourse-wrap-item-card-bodys-img img {
+    width: 96px;
+    height: 96px;
+    border: 1px solid rgb(241, 245, 249);
+    border-radius: 16px;
+    object-fit: cover;
+}

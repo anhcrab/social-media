@@ -1,0 +1,66 @@
+.tn-circle-part {
+  z-index: 0;
+  position: relative;
+  height: 200vh;
+  width: 100vw;
+}
+
+.tn-none {
+  display: none;
+}
+
+#tn-container {
+  z-index: 3;
+  position: fixed;
+  width: 15vw;
+  height: 18vh;
+}
+
+.tn-position {
+  width: auto;
+  height: auto;
+  display: none;
+}
+
+.tn-daos-items {
+  position: absolute;
+  margin-left: 22.65rem;
+  margin-top: -27.8rem;
+}
+
+.tn-thinhcode {
+  width: 15vw;
+  height: 20vh;
+}
+
+.tn-daos {
+  margin-top: -1.7rem;
+  width: 50rem;
+  height: 50rem;
+  transform: scale(0.1);
+}
+
+.none {
+  display: none;
+}
+
+#tn-text-daos {
+  font-weight: 900;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  margin-left: 8rem;
+  margin-top: -22rem;
+  font-size: 5rem;
+  transition: 0.7s all ease-in-out;
+}
+
+#tn-box {
+  border-radius: 50%;
+  margin-top: 80rem;
+  margin-left: 43rem;
+  width: 150%;
+  height: 150%;
+  background: #00ff1e;
+  transform: scale(0.002);
+  box-shadow: 0 0 5px 5px rgba(73, 73, 73, 0.255);
+}

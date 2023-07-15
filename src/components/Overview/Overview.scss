@@ -41,18 +41,19 @@
         word-break: break-word;
     }
 
-    .comm-main-media {
+    .comm-main-media-qa {
         display: flex;
         align-items: center;
         gap: 12px;
         margin-top: 10px;
+        width: 200px;
+        object-fit: contain;
     }
 
-    .comm-main-media-icon {
+    .comm-main-media-icon-qa {
         border-radius: 2px;
         color: white;
-        width: 20px;
-        height: 20px;
+        
         display: flex;
         align-items: center;
         justify-content: center;

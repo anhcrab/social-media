@@ -1,0 +1,40 @@
+.discoverybodyno2-wrap-big {
+    display: flex;
+    justify-content: center;
+    background-color: #F5F3FF;
+    padding-bottom: 15px;
+}
+
+.discoverybodyno2-wrap {
+    width: 1000px;
+}
+
+.discoverybodyno2-wrap-nav-header {
+    background: white;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    padding: 12px 24px 0px;
+    border-bottom: 1px solid rgb(243, 244, 246);
+}
+
+.discoverybodyno2-wrap-nav-menu-btn {
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.active1 {
+    color: #8C5BFE;
+    border-bottom: 1px solid #8C5BFE;
+}
+
+@media screen and (max-width: 420px) {
+    .discoverybodyno2-wrap-bottom-item {
+        display: block !important;
+        overflow-x: hidden !important;
+    }
+    .discoverybodyno2-wrap-bottom-item-lessons {
+        width: 100% !important;
+        margin-bottom: 10px !important;
+    }
+}

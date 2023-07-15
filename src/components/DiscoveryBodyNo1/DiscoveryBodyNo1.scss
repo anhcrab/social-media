@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+input {
+    outline: none;
+    padding: 8px 0;
+    width: 70%;
+}
+
+.discoverybodyno1-wrap-big {
+    display: flex;
+    justify-content: center;
+    background-color: #F5F3FF;
+    padding-bottom: 15px;
+}
+
+.discoverybodyno1-wrap {
+    display: block;
+}
+
+.discoverybodyno1-wrap-header-text {
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    top: 50px;
+    left: 250px;
+
+}
+
+.discoverybodyno1-wrap-header-img {
+    position: relative;
+    background-color: #fff;
+}
+
+.discoverybodyno1-wrap-input {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 60px;
+    bottom: 40px;
+    border-radius: 43px;
+    border: none;
+    padding: 6px 6px 6px 25px;
+    font-size: 14px;
+    z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    background-color: white;
+    width: 850px;
+}
+
+.discoverybodyno1-wrap-input-searchbtn-img svg {
+    color: white;
+    background-color: #8C5BFE;
+    padding: 8px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: 6px;
+}
+
+.discoverybodyno1-wrap-header-img img {
+    width: 1000px;
+    height: auto;
+}
+
+.discoverybodyno1-wrap-nav-menu {
+    background-color: #fff;
+    padding: 15px 0;
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.discoverybodyno1-wrap-nav-menu-btn {
+    padding: 5px;
+    border-radius: 23px;
+    border: 1px solid #bebebe;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.discoverybodyno1-wrap-nav-menu-btn:hover {
+    border: 1px solid #8C5BFE;
+}
+
+.active {
+    background-color: #8C5BFE;
+    color: white;
+}
+
+.discoverybodyno1-wrap-heading-bonus {
+    background: white;
+    padding: 24px 28px 8px;
+    position: fixed;
+    top: 0;
+    left: 300px;
+    z-index: 100;
+    width: 1050px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 24px 24px;
+    display: none;
+    transition: 0.5s;
+}
+
+.discoverybodyno1-wrap-heading-bonus-body1 {
+    display: flex;
+    align-items: center;
+}
+
+.discoverybodyno1-wrap-heading-bonus-body1-btn1 {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.discoverybodyno1-wrap-heading-bonus-body1-search {
+    border-radius: 43px;
+    border: 1px solid rgb(229, 231, 235);
+    padding: 6px 6px 6px 25px;
+    font-size: 14px;
+    z-index: 10;
+    width: 935px;
+}
+
+.discoverybodyno1-wrap-heading-bonus-body1-searchs.discoverybodyno1-wrap-input-searchbtn-img {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+}
+
+.invertedd {
+    display: block;
+}
+
+@media screen and (max-width: 1024px) {
+    .discoverybodyno1-wrap-big {
+        overflow: hidden;
+    }
+
+    .discoverybodyno1-wrap-header-img img {
+        width: 125%;
+        margin-left: -20px;
+    }
+
+    .discoverybodyno1-wrap-nav-menu-btn {
+        padding: 5px 10px;
+        margin: 0 5px;
+    }
+
+    .discoverybodyno1-wrap-nav-menu {
+        width: 100%;
+    }
+
+    .discoverybodyno1-wrap-input input {
+        width: 500px;
+    }
+
+    .discoverybodyno1-wrap-heading-bonus {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .discoverybodyno1-wrap {
+        overflow: hidden;
+    }
+
+    .discoverybodyno1-wrap-header-img img {
+        height: 200px;
+    }
+
+    .discoverybodyno1-wrap-header-text {
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        font-size: 17px;
+    }
+
+    .discoverybodyno1-wrap-input {
+        width: 300px;
+        position: absolute;
+        left: 35px;
+    }
+
+    .discoverybodyno1-wrap-input input {
+        width: 300px;
+    }
+
+    .discoverybodyno1-wrap-nav-menu-btn {
+        padding: 10px;
+        margin: 4px;
+    }
+
+    .discoverybodyno1-wrap-nav-menu {
+        width: 100%;
+        display: block;
+    }
+
+    .discoverybodyno1-wrap-heading-bonus {
+        width: 86%;
+    }
+}

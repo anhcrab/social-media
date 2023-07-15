@@ -1,0 +1,456 @@
+.tn-trust-text {
+  overflow: hidden;
+  margin-top: 3.5rem;
+  font-size: 1.3rem;
+  color: #a2a2a2;
+  letter-spacing: -1px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tn-mac1 {
+  overflow: hidden;
+  margin-left: -1rem;
+  width: 84.5vw;
+  margin-bottom: -0.5rem;
+}
+
+.tn-big-img {
+  overflow: hidden;
+  margin-left: -1.9rem;
+  width: 86vw;
+  position: relative;
+}
+
+.tn-mobile-img {
+  overflow: hidden;
+  margin-top: -32.5rem;
+  margin-left: 61.5rem;
+  width: 20vw;
+  position: absolute;
+}
+
+.tn-commu {
+  overflow: hidden;
+  width: 38rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tn-commu1 {
+  overflow: hidden;
+  width: 6rem;
+  height: 2rem;
+}
+
+.tn-commu2 {
+  overflow: hidden;
+  width: 5rem;
+  height: 2rem;
+}
+
+.tn-commu3 {
+  overflow: hidden;
+  width: 2.13rem;
+  height: 1.7rem;
+}
+
+.tn-commu4 {
+  overflow: hidden;
+  width: 8.3rem;
+  height: 1.8rem;
+}
+
+.tn-please-icon {
+  overflow: hidden;
+  width: 7.2rem;
+  margin-top: 8rem;
+  margin-left: 12rem;
+}
+
+.tn-work-text {
+  overflow: hidden;
+  margin-left: -0.5rem;
+  margin-top: -1rem;
+  margin-bottom: 4rem;
+  font-size: 3.55rem;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tn-hover-part {
+  overflow: hidden;
+  height: 20rem;
+  background-color: #a2a2a2;
+  margin-bottom: 10rem;
+  position: relative;
+}
+
+.tn-overlay {
+  overflow: hidden;
+  position: absolute;
+  border-top-right-radius: 150px;
+  border-top-left-radius: 150px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #b3c8ff;
+  overflow: hidden;
+  height: 0;
+  transition-duration: 1000ms;
+  transition: 0.3s ease-in-out;
+}
+
+.tn-overlay1 {
+
+  border-top-right-radius: 700px;
+  border-top-left-radius: 700px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fecb03;
+  overflow: hidden;
+  width: 26vw;
+  height: 0;
+  transition-duration: 4000ms;
+  transition: 0.48s ease-in-out;
+}
+
+.tn-hover-part-contain1:hover .tn-overlay {
+  overflow: hidden;
+  cursor: pointer;
+  height: 100%;
+}
+
+.tn-hover-part-contain1:hover .tn-overlay1 {
+  overflow: hidden;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  cursor: pointer;
+  height: 120%;
+  width: 26vw;
+}
+
+.tn-text {
+  overflow: hidden;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.tn-support-text {
+  overflow: hidden;
+  margin-left: 1rem;
+  margin-top: -1rem;
+  margin-bottom: 8rem;
+  font-size: 3.55rem;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tn-coin-icon {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+}
+
+.tn-coin-icon-s {
+  overflow: hidden;
+  width: 8rem;
+}
+
+.tn-coin-icon-d {
+  width: 8rem;
+  overflow: hidden;
+  height: 4.5rem;
+  margin-top: 1rem;
+}
+
+.tn-coin-icon-d-1 {
+  overflow: hidden;
+  margin-top: 1.5rem;
+  width: 8rem;
+  height: 2.9rem;
+}
+
+.tn-color-container {
+  overflow: hidden;
+  position: relative;
+  background-color: #fecb03;
+  width: 100vw;
+}
+
+.tn-container {
+  overflow: hidden;
+  width: 8vw;
+  height: 12vh;
+  position: fixed;
+}
+
+.tn-color-container-header {
+  display: flex;
+  overflow: hidden;
+}
+
+.tn-vector {
+  overflow: hidden;
+  margin-top: 20rem;
+}
+
+.tn-diff-text {
+  overflow: hidden;
+  font-size: 4.3rem;
+  width: 35rem;
+  color: #000;
+  font-weight: 1000;
+  text-align: center;
+  font-family: sans-serif;
+  position: relative;
+  margin-left: 8rem;
+  margin-top: 7rem;
+}
+
+.tn-underline {
+  overflow: hidden;
+  margin-top: 23rem;
+  margin-left: 26.4rem;
+  width: 23.5rem;
+  height: 4rem;
+  position: absolute;
+}
+
+.tn-gif {
+  overflow: hidden;
+  margin-left: 2rem;
+  margin-top: 10rem;
+  width: 46.9rem;
+}
+
+.tn-bounties {
+  overflow: hidden;
+  margin-left: -3rem;
+  margin-top: 8.5rem;
+  width: 52rem;
+  height: 37rem;
+}
+
+.tn-pc {
+  overflow: hidden;
+  margin-left: 6rem;
+  fill: aliceblue;
+  margin-top: 8rem;
+  width: 2.6rem;
+}
+
+.tn-hour {
+  overflow: hidden;
+  margin-left: 6.5rem;
+  margin-bottom: 1rem;
+}
+
+.tn-hour-title {
+  overflow: hidden;
+  margin-left: 6.5rem;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.tn-hour-text {
+  overflow: hidden;
+  font-weight: bold;
+  margin-left: 6.5rem;
+  font-size: 1.2rem;
+  width: 32.5rem;
+}
+
+.tn-iphone-p {
+  overflow: hidden;
+  rotate: (14.2deg);
+  width: 19.8rem;
+  height: 36.5rem;
+  margin-top: 1rem;
+  margin-left: 17rem;
+}
+
+.tn-pc-link {
+  overflow: hidden;
+  margin-left: 6rem;
+  fill: aliceblue;
+  margin-top: 12rem;
+  width: 2.6rem;
+}
+
+.tn-pc-title {
+  overflow: hidden;
+  width: 30rem;
+  margin-left: 6rem;
+  font-size: 4rem;
+  color: #fff;
+  font-weight: bold;
+  line-height: 4.9rem;
+}
+
+.tn-link-title {
+  overflow: hidden;
+  width: 37rem;
+  margin-left: 6rem;
+  font-size: 4rem;
+  color: #fff;
+  font-weight: bold;
+  line-height: 4.9rem;
+}
+
+.tn-pc-text {
+  overflow: hidden;
+  color: #fff;
+  width: 32rem;
+  margin-left: 6rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tn-group-title {
+  overflow: hidden;
+  width: 35rem;
+  margin-left: 6rem;
+  font-size: 4rem;
+  color: #000;
+  font-weight: bold;
+  line-height: 4.9rem;
+}
+
+.tn-group-text {
+  overflow: hidden;
+  color: #000;
+  width: 32rem;
+  margin-left: 6rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tn-group-i {
+  overflow: hidden;
+  margin-left: 6.5rem;
+  margin-bottom: 2rem;
+}
+
+.tn-group-img {
+  overflow: hidden;
+  margin-top: -6rem;
+  margin-left: 3rem;
+  width: 41rem;
+}
+
+.tn-read-more {
+  overflow: hidden;
+  width: 8rem;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  height: 2.8rem;
+  border-radius: 50px;
+  margin-top: 1.4rem;
+  margin-left: 6rem;
+  margin-bottom: 25rem;
+}
+
+.tn-read-more:hover {
+  background-color: #000000bb;
+}
+
+.tn-elem {
+  overflow: hidden;
+  margin-top: 35rem !important;
+  right: 0;
+  position: absolute;
+  background-color: #fd4900;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  animation: moveToLeft 2s ease-in-out;
+  animation-delay: 500ms;
+}
+
+@keyframes moveToLeft {
+  0% {
+    right: 0;
+    transform: translateY(0px);
+  }
+
+  100% {
+    right: -1;
+    transform: translateY(0px);
+    border-radius: 0;
+    width: 100vw;
+    height: 1600px;
+    background-color: linear-gradient(120deg, #fd4900, #fd4900);
+  }
+}
+
+.tn-glass-part {
+  overflow: hidden;
+  margin-top: 10rem;
+  margin-bottom: 8rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.tn-glass-icon {
+  height: 3.65rem;
+  overflow: hidden;
+  margin-left: -7rem;
+}
+
+.tn-way-text {
+  overflow: hidden;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: -1.9rem;
+  line-height: 6.7rem;
+  margin-left: 27.5rem;
+  font-weight: bold;
+  width: 40rem;
+  font-size: 5rem;
+}
+
+.tn-way-under {
+  overflow: hidden;
+  width: 27rem;
+  margin-top: -1.8rem;
+}
+
+.tn-text-mess {
+  z-index: 0;
+  overflow: hidden;
+}
+
+#tn-container1 {
+  overflow: hidden;
+  text-align: center;
+  transition: 2s ease-in-out;
+}
+
+#tn-box1 {
+  overflow: hidden;
+  margin-left: 66rem;
+  margin-top: 46rem;
+  border-radius: 50%;
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  background-color: #ffa7a7;
+  transform: scale(3);
+  transition: 0.4s all ease-in-out;
+}
+
+#tn-box2 {
+  overflow: hidden;
+  margin-top: 90rem !important;
+}

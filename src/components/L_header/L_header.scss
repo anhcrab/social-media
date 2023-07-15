@@ -1,0 +1,249 @@
+
+.header_menu {
+  z-index: 5;
+  background-color: #fff;
+  border-radius: 50px;
+  height: 5.6rem;
+  width: 92vw !important;
+  margin-top: 2rem !important;
+  margin-left: 3.8rem;
+  position: fixed;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo_menu {
+  overflow: hidden;
+  margin-top: -0.4rem;
+  margin-left: 2.1rem;
+  width: 7rem;
+}
+
+.logo_menu:hover {
+  cursor: pointer;
+}
+
+.product_btn,
+.user_cases_btn,
+.robin_ai_btn {
+  height: 2.7rem;
+  width: 7rem;
+
+  background-color: #fff;
+  margin: 1.5rem 0 0 2.2rem;
+  font-size: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 550;
+  border: none;
+  overflow: hidden;
+}
+
+.product_btn:hover,
+.user_cases_btn:hover,
+.robin_ai_btn:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.menu-text {
+  overflow: hidden;
+  margin-top: 0.4rem;
+}
+
+.try-btn {
+  overflow: hidden;
+  width: 11.2rem;
+  height: 3rem;
+  display: flex;
+  font-size: 0.86rem;
+  margin-top: 1.3rem;
+  margin-left: 10rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border: none;
+  color: #fff;
+  background-color: #8b44ff;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.try-btn:hover {
+  background-color: #662cc5;
+  text-decoration: none;
+}
+
+.menu-text-try {
+  font-size: 0.85rem;
+  overflow: hidden;
+  margin-left: 1.6rem;
+  margin-top: 0.9rem;
+}
+
+.none {
+  display: none;
+}
+
+@media (min-width: 375px) and (max-width: 812px) {
+  .header_menu {
+    overflow: hidden;
+    margin-top: 0.4rem !important;
+    margin-left: 1.5rem;
+    border-radius: 20px;
+    height: 4rem;
+  }
+
+  .logo_menu {
+    overflow: hidden;
+    margin-left: 0.5rem;
+    width: 6.2rem;
+    display: flex;
+    margin-top: 1.4rem;
+  }
+
+  .iphone-none {
+    display: none;
+  }
+
+  .label .menu {
+    overflow: hidden;
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    z-index: 100;
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    border-radius: 50% 50% 50% 50%;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
+    cursor: pointer;
+  }
+
+  label .hamburger {
+    overflow: hidden;
+    position: absolute;
+    top: 1.98rem;
+    right: 1.4rem;
+    width: 30px;
+    height: 3.3px;
+    background: #69d2e7;
+    display: block;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  label .hamburger:after,
+  label .hamburger:before {
+    overflow: hidden;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #69d2e7;
+    cursor: pointer;
+  }
+
+  label .hamburger:before {
+    overflow: hidden;
+    top: -7px;
+  }
+
+  label .hamburger:after {
+    overflow: hidden;
+    bottom: -7px;
+  }
+
+  label input {
+    display: none;
+  }
+
+  label input:checked+.menu {
+    overflow: hidden;
+    box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
+    border-radius: 0;
+  }
+
+  label input:checked+.menu .hamburger {
+    overflow: hidden;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  label input:checked+.menu .hamburger:after {
+    overflow: hidden;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    bottom: 0;
+  }
+
+  label input:checked+.menu .hamburger:before {
+    overflow: hidden;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top: 0;
+  }
+
+  label input:checked+.menu+ul {
+    overflow: hidden;
+    opacity: 1;
+  }
+
+  label ul {
+    z-index: 200;
+    overflow: hidden;
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    -webkit-transition: 0.25s 0s ease-in-out;
+    transition: 0.25s 0s ease-in-out;
+  }
+
+  label a {
+    margin-bottom: 1em;
+    overflow: hidden;
+    display: block;
+    color: #f38630;
+    text-decoration: none;
+  }
+
+  .try-btn {
+    overflow: hidden;
+    margin-left: 1rem;
+  }
+
+  .iphone_cartory {
+    overflow: hidden;
+    margin-left: -1rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .ipad_none {
+    display: none;
+  }
+
+  .try-btn {
+    margin-left: 0;
+    position: absolute;
+    margin-left: 44rem;
+    margin-top: -2.7rem;
+  }
+}
+
+@media (min-width: 1377px) {
+  .desktop_none {
+    display: none;
+  }
+}

@@ -1,7 +1,10 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import HomePage from "./pages/HomePage"
-import PersonalPage from "./pages/PersonalPage"
 import CommunityTemplate from "./pages/CommunityTemplate"
+import DiscoveryPage from "./pages/DiscoveryPage"
+import AddCommunityPage from "./pages/AddCommunityPage"
+import Login from '../src/components/Auth/login'
+import ProfilePage from "./pages/ProfilePage"
 
 
 const App = () => {
@@ -12,16 +15,26 @@ const App = () => {
       element: <HomePage />
     },
     {
-      path: '/app/*',
-      element: <PersonalPage />,
     },
     {
       path: '/app/discovery/*',
-      element: <PersonalPage />
+      element: <DiscoveryPage />
     },
     {
       path: '/app/dao/*',
       element: <CommunityTemplate />
+    },
+    {
+      path: '/app/onboarding/',
+      element: <AddCommunityPage />
+    },
+    {
+      path: '/app/profile/*',
+      element: <ProfilePage />
+    },
+    {
+      path:'/auth/login',
+      element: <Login/>
     }
   ])
 

@@ -31,24 +31,30 @@ const Overview = () => {
                     }}>About</h3>
                 </div>
                 <div className="comm-main-about"></div>
-                <div className="comm-main-media">
+                <div className="comm-main-media-qa">
                     {
                         community.overview.tags.map(tag => {
                             if (tag === 'twitter') {
                                 return (
                                     <i
-                                        className="bi bi-twitter comm-main-media-icon"
+                                        className="bi bi-twitter comm-main-media-icon-qa"
                                         style={{
-                                            background: 'rgb(98, 157, 255)'
+                                            background: 'rgb(98, 157, 255)',
+                                            color: 'white',
+                                            width: '20px',
+                                            height: '20px',
                                         }}
                                     ></i>
                                 )
                             } else if (tag === 'discord') {
                                 return (
                                     <i 
-                                        className="bi bi-discord comm-main-media-icon"
+                                        className="bi bi-discord comm-main-media-icon-qa"
                                         style={{
-                                            background: 'rgb(98, 157, 255)'
+                                            background: 'rgb(98, 157, 255)',
+                                            color: 'white',
+                                            width: '20px',
+                                            height: '20px',
                                         }}
                                     ></i>
                                 )
@@ -57,7 +63,14 @@ const Overview = () => {
                                     <i 
                                         className="bi bi-globe2 comm-main-media-icon"
                                         style={{
-                                            background: 'red'
+                                            background: 'red',
+                                            color: 'white',
+                                            paddingLeft: '3px',
+                                            width: '20px',
+                                            height: '20px',
+                                            objectFit: 'contain',
+                                            overflow: 'hidden',
+                                            borderRadius: '2px'
                                         }}
                                     ></i>
                                 )
