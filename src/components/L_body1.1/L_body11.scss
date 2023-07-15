@@ -1,26 +1,27 @@
-.circle-part {
+.tn-circle-part {
   z-index: 0;
   position: relative;
   height: 200vh;
   width: 100vw;
 }
-.none {
+.tn-none {
   display: none;
 }
-#container {
+#tn-container {
+  z-index: 3;
   position: fixed;
   width: 8vw;
   height: 12vh;
 }
-.position {
+.tn-position {
   width: auto;
   height: auto;
   display: none;
 }
 .tn-daos-items {
   position: absolute;
-  margin-left: 45.93rem;
-  margin-top: -19.1rem;
+  margin-left: 22.65rem;
+  margin-top: -27.8rem;
 }
 .tn-thinhcode {
   width: 15vw;
@@ -28,11 +29,22 @@
 }
 .tn-daos {
   margin-top: -1.7rem;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 50rem;
+  height: 50rem;
   transform: scale(0.1);
 }
-
+.none {
+  display: none;
+}
+#tn-text-daos {
+  font-weight: 900;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  margin-left: 8rem;
+  margin-top: -22rem;
+  font-size: 5rem;
+  transition: 0.7s all ease-in-out;
+}
 #tn-box {
   border-radius: 50%;
   margin-top: -40rem;
@@ -41,4 +53,5 @@
   height: 150%;
   background: #ffff;
   transform: scale(0.002);
+  box-shadow: 0 0 5px 5px rgba(73, 73, 73, 0.255);
 }

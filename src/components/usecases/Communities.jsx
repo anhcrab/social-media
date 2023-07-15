@@ -109,7 +109,10 @@ const Communities = () => {
               </div>
               <div className="card-description-holder">
                 <p className="card-description">
-                Support inter-guild competitions, reward top gamers with exclusive access to rewards, unify all guild leads under one umbrella and much more. Take it one notch above by allowing cross game reputation. 
+                  Support inter-guild competitions, reward top gamers with
+                  exclusive access to rewards, unify all guild leads under one
+                  umbrella and much more. Take it one notch above by allowing
+                  cross game reputation.
                 </p>
               </div>
               <div className="orange-circle-holder">
@@ -160,7 +163,6 @@ const Communities = () => {
               </div>
               <div className="card-border"></div>
             </a>
-            
           </div>
           <div className="div-block"></div>
         </div>

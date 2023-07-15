@@ -1,57 +1,54 @@
-.img-container {
-  // z-index: 4;
-}
-.trust-text {
+.tn-trust-text {
   margin-top: 3.5rem;
   font-size: 1.3rem;
   color: #a2a2a2;
   letter-spacing: -1px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.mac {
+.tn-mac {
   margin-left: -1.9rem;
   width: 86.6vw;
   margin-bottom: -0.5rem;
 }
-.big-img {
+.tn-big-img {
   margin-left: -1.9rem;
   width: 86vw;
   position: relative;
 }
-.mobile-img {
+.tn-mobile-img {
   margin-top: -32.5rem;
   margin-left: 61.5rem;
   width: 20vw;
   position: absolute;
 }
-.commu {
+.tn-commu {
   width: 38rem;
   display: flex;
   justify-content: space-between;
 }
-.commu1 {
+.tn-commu1 {
   width: 6rem;
   height: 2rem;
 }
-.commu2 {
+.tn-commu2 {
   width: 5rem;
   height: 2rem;
 }
-.commu3 {
+.tn-commu3 {
   width: 2.13rem;
   height: 1.7rem;
 }
-.commu4 {
+.tn-commu4 {
   width: 8.3rem;
   height: 1.8rem;
 }
 
-.please-icon {
+.tn-please-icon {
   width: 7.2rem;
   margin-top: 8rem;
   margin-left: 12rem;
 }
-.work-text {
+.tn-work-text {
   margin-left: -1.6rem;
   margin-top: -1rem;
   margin-bottom: 4rem;
@@ -60,14 +57,14 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.hover-part {
+.tn-hover-part {
   height: 20rem;
   background-color: #a2a2a2;
   margin-bottom: 10rem;
   position: relative;
 }
 
-.overlay {
+.tn-overlay {
   position: absolute;
   border-top-right-radius: 150px;
   border-top-left-radius: 150px;
@@ -81,7 +78,7 @@
   transition: 0.3s ease-in-out;
 }
 
-.overlay1 {
+.tn-overlay1 {
   border-top-right-radius: 700px;
   border-top-left-radius: 700px;
   position: absolute;
@@ -95,30 +92,26 @@
   transition-duration: 4000ms;
   transition: 0.48s ease-in-out;
 }
-.hover-part-contain1:hover .overlay {
+.tn-hover-part-contain1:hover .tn-overlay {
   cursor: pointer;
   height: 100%;
 }
-.hover-part-contain1:hover .overlay1 {
+.tn-hover-part-contain1:hover .tn-overlay1 {
   border-top-right-radius: 0px;
   border-top-left-radius: 0px;
   cursor: pointer;
   height: 120%;
   width: 26vw;
 }
-.text {
+.tn-text {
   color: white;
   font-size: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
-  // -webkit-transform: translate(-50%, -50%);
-  // -ms-transform: translate(-50%, -50%);
-  // transform: translate(-50%, -50%);
-  // text-align: center;
 }
 
-.support-text {
+.tn-support-text {
   margin-left: -1.6rem;
   margin-top: -1rem;
   margin-bottom: 8rem;
@@ -126,35 +119,41 @@
   font-weight: 700;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.coin-icon {
+.tn-coin-icon {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10rem;
 }
-.coin-icon-s {
+.tn-coin-icon-s {
   width: 8rem;
 }
-.coin-icon-d {
+.tn-coin-icon-d {
   width: 8rem;
   height: 4.5rem;
   margin-top: 1rem;
 }
-.coin-icon-d-1 {
+.tn-coin-icon-d-1 {
   margin-top: 1.5rem;
   width: 8rem;
   height: 2.9rem;
 }
-.color-container {
+.tn-color-container {
+  position: relative;
   background-color: #fecb03;
   width: 100vw;
 }
-.color-container-header {
+.tn-container {
+  width: 8vw;
+  height: 12vh;
+  position: fixed;
+}
+.tn-color-container-header {
   display: flex;
 }
-.vector {
+.tn-vector {
   margin-top: 20rem;
 }
-.diff-text {
+.tn-diff-text {
   font-size: 4.3rem;
   width: 35rem;
   color: #000;
@@ -166,7 +165,7 @@
   margin-top: 7rem;
 }
 
-.underline {
+.tn-underline {
   margin-top: 23rem;
   margin-left: 26.4rem;
   width: 23.5rem;
@@ -174,53 +173,53 @@
   position: absolute;
 }
 
-.gif {
+.tn-gif {
   margin-left: 2rem;
   margin-top: 10rem;
   width: 46.9rem;
 }
 
-.bounties {
+.tn-bounties {
   margin-left: -3rem;
   margin-top: 8.5rem;
   width: 52rem;
   height: 37rem;
 }
-.pc {
+.tn-pc {
   margin-left: 6rem;
   fill: aliceblue;
   margin-top: 8rem;
   width: 2.6rem;
 }
-.hour {
+.tn-hour {
   margin-left: 6.5rem;
   margin-bottom: 1rem;
 }
-.hour-title {
+.tn-hour-title {
   margin-left: 6.5rem;
   font-size: 4rem;
   font-weight: bold;
 }
-.hour-text {
+.tn-hour-text {
   font-weight: bold;
   margin-left: 6.5rem;
   font-size: 1.2rem;
   width: 32.5rem;
 }
-.iphone-p {
+.tn-iphone-p {
   rotate: (14.2deg);
   width: 19.8rem;
   height: 36.5rem;
   margin-top: -5rem;
   margin-left: 17rem;
 }
-.pc-link {
+.tn-pc-link {
   margin-left: 6rem;
   fill: aliceblue;
   margin-top: 12rem;
   width: 2.6rem;
 }
-.pc-title {
+.tn-pc-title {
   width: 30rem;
   margin-left: 6rem;
   font-size: 4rem;
@@ -229,7 +228,7 @@
   line-height: 4.9rem;
 }
 
-.link-title {
+.tn-link-title {
   width: 37rem;
   margin-left: 6rem;
   font-size: 4rem;
@@ -237,7 +236,7 @@
   font-weight: bold;
   line-height: 4.9rem;
 }
-.pc-text {
+.tn-pc-text {
   color: #fff;
   width: 32rem;
   margin-left: 6rem;
@@ -245,7 +244,7 @@
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.group-title {
+.tn-group-title {
   width: 35rem;
   margin-left: 6rem;
   font-size: 4rem;
@@ -253,7 +252,7 @@
   font-weight: bold;
   line-height: 4.9rem;
 }
-.group-text {
+.tn-group-text {
   color: #000;
   width: 32rem;
   margin-left: 6rem;
@@ -261,16 +260,16 @@
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.group-i {
+.tn-group-i {
   margin-left: 6.5rem;
   margin-bottom: 2rem;
 }
-.group-img {
+.tn-group-img {
   margin-top: -6rem;
   margin-left: 3rem;
   width: 41rem;
 }
-.read-more {
+.tn-read-more {
   width: 8rem;
   color: #fff;
   background-color: #000;
@@ -281,10 +280,10 @@
   margin-left: 6rem;
   margin-bottom: 25rem;
 }
-.read-more:hover {
+.tn-read-more:hover {
   background-color: #000000bb;
 }
-.elem {
+.tn-elem {
   margin-top: 35rem !important;
   right: 0;
   position: absolute;
@@ -310,7 +309,7 @@
     background-color: linear-gradient(120deg, #fd4900, #fd4900);
   }
 }
-.glass-part {
+.tn-glass-part {
   margin-top: 10rem;
   margin-bottom: 8rem;
   width: 100vw;
@@ -318,11 +317,11 @@
   flex-direction: column;
   text-align: center;
 }
-.glass-icon {
+.tn-glass-icon {
   height: 3.65rem;
   margin-left: -7rem;
 }
-.way-text {
+.tn-way-text {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin-top: -1.9rem;
@@ -332,25 +331,29 @@
   width: 40rem;
   font-size: 5rem;
 }
-.way-under {
+.tn-way-under {
   width: 27rem;
   margin-top: -1.8rem;
 }
-.text-mess {
+.tn-text-mess {
   z-index: 0;
 }
-#container1 {
+#tn-container1 {
   text-align: center;
   transition: 2s ease-in-out;
 }
 
-#box1 {
+#tn-box1 {
   margin-left: 66rem;
   margin-top: 46rem;
   border-radius: 50%;
   position: absolute;
   width: 10rem;
   height: 10rem;
-  background-color: #ff0000;
+  background-color: #ffa7a7;
   transform: scale(3);
+  transition: 0.4s all ease-in-out;
+}
+#tn-box2 {
+  margin-top: 90rem !important;
 }

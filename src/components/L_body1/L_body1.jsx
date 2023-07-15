@@ -27,27 +27,27 @@ function L_body1() {
   useEffect(() => {
     const handleIntersection = (entries) => {
       entries.forEach((entry) => {
-        const elevator = document.querySelector(".elevator");
-        const elevatorL = document.querySelector(".elevatorL");
-        const elevatorR = document.querySelector(".elevatorR");
+        const elevator = document.querySelector(".tn-elevator");
+        const elevatorL = document.querySelector(".tn-elevatorL");
+        const elevatorR = document.querySelector(".tn-elevatorR");
 
         if (entry.isIntersecting) {
-          elevator.classList.add("elevator-transition");
-          elevatorL.classList.add("elevatorL-transition");
-          elevatorR.classList.add("elevatorR-transition");
+          elevator.classList.add("tn-elevator-transition");
+          elevatorL.classList.add("tn-elevatorL-transition");
+          elevatorR.classList.add("tn-elevatorR-transition");
         } else {
-          elevator.classList.remove("elevator-transition");
-          elevatorL.classList.remove("elevatorL-transition");
-          elevatorR.classList.remove("elevatorR-transition");
+          elevator.classList.remove("tn-elevator-transition");
+          elevatorL.classList.remove("tn-elevatorL-transition");
+          elevatorR.classList.remove("tn-elevatorR-transition");
         }
       });
     };
 
     const observer = new IntersectionObserver(handleIntersection);
 
-    const elevator = document.querySelector(".elevator");
-    const elevatorL = document.querySelector(".elevatorL");
-    const elevatorR = document.querySelector(".elevatorR");
+    const elevator = document.querySelector(".tn-elevator");
+    const elevatorL = document.querySelector(".tn-elevatorL");
+    const elevatorR = document.querySelector(".tn-elevatorR");
 
     if (elevator && elevatorL && elevatorR) {
       observer.observe(elevator);
@@ -65,43 +65,43 @@ function L_body1() {
   }, []);
 
   return (
-    <div className="body">
-      <div className="col-5 AI-text">
-        <p className="AI-text-title">AI-Powered Community Management</p>
-        <img className="under" src={yellow} alt="" />
-        <p className="AI-text-body">
+    <div className="tn-body">
+      <div className="col-5 tn-AI-text">
+        <p className="tn-AI-text-title">AI-Powered Community Management</p>
+        <img className="tn-under" src={yellow} alt="" />
+        <p className="tn-AI-text-body">
           Combine everything from discussion management, bounties and task
           management, voting, payouts, education and rewards.
         </p>
-        <div className="AI-text-footer">
-          <button className="AI-text-btn">Upgrade to DAO Manager</button>
-          <div className="AI-text-video">Watch Explainer Video</div>
-          <i className="bi bi-arrow-right right-arrow"></i>
+        <div className="tn-AI-text-footer">
+          <button className="tn-AI-text-btn">Upgrade to DAO Manager</button>
+          <div className="tn-AI-text-video">Watch Explainer Video</div>
+          <i className="bi bi-arrow-right tn-right-arrow"></i>
         </div>
       </div>
-      <div className="pad"></div>
-      <div className="row elevator">
-        <div className="col-5 elevatorL">
-          <div className="snap-icon">
-            <img className="snapshot" src={snapshot} alt="" />
+      <div className="tn-pad"></div>
+      <div className="row tn-elevator">
+        <div className="col-5 tn-elevatorL">
+          <div className="tn-snap-icon">
+            <img className="tn-snapshot" src={snapshot} alt="" />
           </div>
           <div>
-            <img className="gnosis" src={gnosis} alt="" />
+            <img className="tn-gnosis" src={gnosis} alt="" />
           </div>
           <div>
-            <img className="dicourse" src={discourse} alt="" />
+            <img className="tn-dicourse" src={discourse} alt="" />
           </div>
         </div>
 
-        <div className="col-2 elevatorR">
+        <div className="col-2 tn-elevatorR">
           <div>
-            <img className="github" src={github} alt="" />
+            <img className="tn-github" src={github} alt="" />
           </div>
           <div>
-            <img className="dework" src={dework} alt="" />
+            <img className="tn-dework" src={dework} alt="" />
           </div>
           <div>
-            <img className="discord" src={discord} alt="" />
+            <img className="tn-discord" src={discord} alt="" />
           </div>
         </div>
         <L_body11 />
